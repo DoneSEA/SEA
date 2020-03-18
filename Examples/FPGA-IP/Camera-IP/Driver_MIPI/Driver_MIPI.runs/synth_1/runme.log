@@ -1,0 +1,930 @@
+
+*** Running vivado
+    with args -log Driver_MIPI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Driver_MIPI.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Driver_MIPI.tcl -notrace
+Command: synth_design -top Driver_MIPI -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25140 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 452.199 ; gain = 101.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:72]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:106]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter IDLE_BG bound to: 1 - type: integer 
+	Parameter PATTERN0 bound to: 2 - type: integer 
+	Parameter PATTERN1 bound to: 3 - type: integer 
+	Parameter IDLE_GR bound to: 4 - type: integer 
+	Parameter PATTERN2 bound to: 5 - type: integer 
+	Parameter PATTERN3 bound to: 6 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-11828-DESKTOP-DU9F0PS/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element col_cnt_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:214]
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:285]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:286]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (7#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:23]
+WARNING: [Synth 8-3917] design Driver_MIPI has port Camera_GPIO driven by constant 1
+WARNING: [Synth 8-3331] design Driver_Bayer_To_RGB has unconnected port hsync_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 507.551 ; gain = 156.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 507.551 ; gain = 156.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 507.551 ; gain = 156.809
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Data_To_Csi'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Data_To_Csi'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Data_Read'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Data_Read'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_Csi_To_Dvp0/bram0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_Csi_To_Dvp0/bram0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram1'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram1'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram2'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram2'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 795.629 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 795.629 ; gain = 444.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 795.629 ; gain = 444.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property DONT_TOUCH = true for Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Csi_To_Dvp0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 795.629 ; gain = 444.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unpack_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '7' to '6' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:287]
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'Driver_Bayer_To_RGB'
+INFO: [Synth 8-5544] ROM "color_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                 IDLE_BG |                              001 |                             0001
+                PATTERN0 |                              010 |                             0010
+                PATTERN1 |                              011 |                             0011
+                 IDLE_GR |                              100 |                             0100
+                PATTERN2 |                              101 |                             0101
+                PATTERN3 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'Driver_Bayer_To_RGB'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 795.629 ; gain = 444.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/unpack_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Driver_MIPI has port Camera_GPIO driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/hsync_delay_r_reg[6]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/vsync_delay_r_reg[6]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_g_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_g_reg[0]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_b_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_b_reg[0]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_r_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_r_reg[0]) is unused and will be removed from module Driver_MIPI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 795.629 ; gain = 444.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 798.305 ; gain = 447.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 798.676 ; gain = 447.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Driver_MIPI | Driver_Bayer_To_RGB0/hsync_delay_r_reg[5] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/vsync_delay_r_reg[5] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/de_delay_r_reg[5]    | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/de_pos_r2_reg        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/line2_reg[0][7]      | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |csi2_d_phy_rx_0 |         1|
+|2     |csi_to_axis_0   |         1|
+|3     |blk_mem_gen_1   |         3|
+|4     |blk_mem_gen_0   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_1    |     1|
+|3     |blk_mem_gen_1__1 |     1|
+|4     |blk_mem_gen_1__2 |     1|
+|5     |csi2_d_phy_rx_0  |     1|
+|6     |csi_to_axis_0    |     1|
+|7     |CARRY4           |    15|
+|8     |LUT1             |     3|
+|9     |LUT2             |    37|
+|10    |LUT3             |    37|
+|11    |LUT4             |    25|
+|12    |LUT5             |    61|
+|13    |LUT6             |    49|
+|14    |SRL16E           |    12|
+|15    |FDRE             |   179|
+|16    |IBUF             |     3|
+|17    |OBUF             |    29|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-----------------------+--------------------+------+
+|      |Instance               |Module              |Cells |
++------+-----------------------+--------------------+------+
+|1     |top                    |                    |   553|
+|2     |  Driver_Bayer_To_RGB0 |Driver_Bayer_To_RGB |   316|
+|3     |  Driver_Csi_To_Dvp0   |Driver_Csi_To_Dvp   |   134|
++------+-----------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 825.305 ; gain = 186.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 825.305 ; gain = 474.563
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 825.305 ; gain = 486.410
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/Driver_MIPI.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Driver_MIPI_utilization_synth.rpt -pb Driver_MIPI_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 825.305 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 16:04:07 2019...
+
+*** Running vivado
+    with args -log Driver_MIPI.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Driver_MIPI.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Driver_MIPI.tcl -notrace
+Command: synth_design -top Driver_MIPI -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 41528 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 451.973 ; gain = 101.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:72]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:106]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter IDLE_BG bound to: 1 - type: integer 
+	Parameter PATTERN0 bound to: 2 - type: integer 
+	Parameter PATTERN1 bound to: 3 - type: integer 
+	Parameter IDLE_GR bound to: 4 - type: integer 
+	Parameter PATTERN2 bound to: 5 - type: integer 
+	Parameter PATTERN3 bound to: 6 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/.Xil/Vivado-51072-DESKTOP-DU9F0PS/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-6014] Unused sequential element col_cnt_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:214]
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'hsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:285]
+WARNING: [Synth 8-3936] Found unconnected internal register 'vsync_delay_r_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:286]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (7#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_MIPI.v:23]
+WARNING: [Synth 8-3917] design Driver_MIPI has port Camera_GPIO driven by constant 1
+WARNING: [Synth 8-3331] design Driver_Bayer_To_RGB has unconnected port hsync_in
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 507.348 ; gain = 156.590
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 507.348 ; gain = 156.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 507.348 ; gain = 156.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Data_To_Csi'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0/csi_to_axis_0_in_context.xdc] for cell 'Data_To_Csi'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Data_Read'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc] for cell 'Data_Read'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_Csi_To_Dvp0/bram0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'Driver_Csi_To_Dvp0/bram0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram1'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram1'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram2'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'Driver_Bayer_To_RGB0/bram2'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 795.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 795.625 ; gain = 444.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 795.625 ; gain = 444.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk_Rx_Data_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Rx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0/csi2_d_phy_rx_0_in_context.xdc, line 12).
+Applied set_property DONT_TOUCH = true for Data_To_Csi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Data_Read. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Csi_To_Dvp0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_Bayer_To_RGB0/bram2. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 795.625 ; gain = 444.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unpack_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'de_delay_r_reg' and it is trimmed from '7' to '6' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.srcs/sources_1/new/Driver_Bayer_To_RGB.v:287]
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'Driver_Bayer_To_RGB'
+INFO: [Synth 8-5544] ROM "color_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                 IDLE_BG |                              001 |                             0001
+                PATTERN0 |                              010 |                             0010
+                PATTERN1 |                              011 |                             0011
+                 IDLE_GR |                              100 |                             0100
+                PATTERN2 |                              101 |                             0101
+                PATTERN3 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'Driver_Bayer_To_RGB'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 795.625 ; gain = 444.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_Csi_To_Dvp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Driver_Bayer_To_RGB 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/vdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_Csi_To_Dvp0/unpack_cnt" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design Driver_MIPI has port Camera_GPIO driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/hsync_delay_r_reg[6]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/vsync_delay_r_reg[6]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_g_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_g_reg[0]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_b_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_b_reg[0]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_r_reg[1]) is unused and will be removed from module Driver_MIPI.
+WARNING: [Synth 8-3332] Sequential element (Driver_Bayer_To_RGB0/color_r_reg[0]) is unused and will be removed from module Driver_MIPI.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 795.625 ; gain = 444.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 798.242 ; gain = 447.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 798.539 ; gain = 447.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Driver_MIPI | Driver_Bayer_To_RGB0/hsync_delay_r_reg[5] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/vsync_delay_r_reg[5] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/de_delay_r_reg[5]    | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/de_pos_r2_reg        | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Driver_MIPI | Driver_Bayer_To_RGB0/line2_reg[0][7]      | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |csi2_d_phy_rx_0 |         1|
+|2     |csi_to_axis_0   |         1|
+|3     |blk_mem_gen_1   |         3|
+|4     |blk_mem_gen_0   |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_1    |     1|
+|3     |blk_mem_gen_1__1 |     1|
+|4     |blk_mem_gen_1__2 |     1|
+|5     |csi2_d_phy_rx_0  |     1|
+|6     |csi_to_axis_0    |     1|
+|7     |CARRY4           |    15|
+|8     |LUT1             |     3|
+|9     |LUT2             |    37|
+|10    |LUT3             |    37|
+|11    |LUT4             |    25|
+|12    |LUT5             |    61|
+|13    |LUT6             |    49|
+|14    |SRL16E           |    12|
+|15    |FDRE             |   179|
+|16    |IBUF             |     3|
+|17    |OBUF             |    29|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-----------------------+--------------------+------+
+|      |Instance               |Module              |Cells |
++------+-----------------------+--------------------+------+
+|1     |top                    |                    |   553|
+|2     |  Driver_Bayer_To_RGB0 |Driver_Bayer_To_RGB |   316|
+|3     |  Driver_Csi_To_Dvp0   |Driver_Csi_To_Dvp   |   134|
++------+-----------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 824.742 ; gain = 185.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 824.742 ; gain = 473.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 824.742 ; gain = 485.832
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.runs/synth_1/Driver_MIPI.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Driver_MIPI_utilization_synth.rpt -pb Driver_MIPI_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 824.742 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 15 16:12:31 2019...

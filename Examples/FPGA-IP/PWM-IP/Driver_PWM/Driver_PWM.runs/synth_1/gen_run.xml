@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7s15ftgb196-1" LaunchTime="1573203762">
+  <File Type="PA-TCL" Name="Driver_PWM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Driver_PWM_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Driver_PWM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Driver_PWM.vds"/>
+  <File Type="RDS-UTIL" Name="Driver_PWM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Driver_PWM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Driver_PWM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Driver_PWM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Driver_PWM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Driver_PWM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Driver_PWM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

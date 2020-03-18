@@ -1,0 +1,5 @@
+csi2_parser.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/csi2_parser.vhd,
+lane_align.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/lane_align.vhd,
+lane_merge.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/lane_merge.vhd,
+csi_to_axis_v1_0.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/csi_to_axis_v1_0.vhd,
+csi_to_axis_0.vhd,vhdl,xil_defaultlib,../../../../Driver_MIPI.srcs/sources_1/ip/csi_to_axis_0/sim/csi_to_axis_0.vhd,

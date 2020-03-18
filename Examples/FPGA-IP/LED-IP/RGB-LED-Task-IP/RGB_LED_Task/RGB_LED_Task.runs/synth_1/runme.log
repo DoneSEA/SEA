@@ -1,0 +1,354 @@
+
+*** Running vivado
+    with args -log RGB_LED_Task.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGB_LED_Task.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RGB_LED_Task.tcl -notrace
+Command: synth_design -top RGB_LED_Task -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14672 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.824 ; gain = 96.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RGB_LED_Task' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/RGB_LED_Task.v:26]
+	Parameter PWM_PERCENT_Max bound to: 500 - type: integer 
+	Parameter PWM_PERCENT_Min bound to: 0 - type: integer 
+	Parameter Delta_Min bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Driver_SK6805' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/Driver_SK6805.v:34]
+	Parameter Period_Send bound to: 12 - type: integer 
+	Parameter Division_Factor bound to: 1000 - type: integer 
+	Parameter RGB_All_Bit bound to: 48 - type: integer 
+	Parameter CODE_High_0 bound to: 3 - type: integer 
+	Parameter CODE_High_1 bound to: 9 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/Driver_SK6805.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_SK6805' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/Driver_SK6805.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_Task' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.srcs/sources_1/new/RGB_LED_Task.v:26]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 150.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 150.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 150.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Synth 8-5546] ROM "Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Send_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Send_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Send_Cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RGB_State" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 471.336 ; gain = 150.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RGB_LED_Task 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 3     
+Module Driver_SK6805 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Driver_SK6805_0/Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_SK6805_0/LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB_State" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Clk_Divide_2_reg, operation Mode is: (A*(B:0x1f4))'.
+DSP Report: register Clk_Divide_2_reg is absorbed into DSP Clk_Divide_2_reg.
+DSP Report: operator Clk_Divide_20 is absorbed into DSP Clk_Divide_2_reg.
+DSP Report: Generating DSP Clk_Division1/Count1, operation Mode is: (C:0xffffffffffff)+(A*(B:0x1f4))'.
+DSP Report: register Clk_Divide_2_reg is absorbed into DSP Clk_Division1/Count1.
+DSP Report: operator Clk_Division1/Count1 is absorbed into DSP Clk_Division1/Count1.
+DSP Report: operator Clk_Divide_20 is absorbed into DSP Clk_Division1/Count1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clk_Divide_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Cnt_1_reg[9]' (FDC) to 'Cnt_1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Cnt_2_reg[9]' (FDC_1) to 'Cnt_2_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Cnt_1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Cnt_2_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clk_Division0/Is_Odd_reg )
+WARNING: [Synth 8-3332] Sequential element (Clk_Divide_1_reg[0]) is unused and will be removed from module RGB_LED_Task.
+WARNING: [Synth 8-3332] Sequential element (Clk_Division0/Is_Odd_reg) is unused and will be removed from module RGB_LED_Task.
+WARNING: [Synth 8-3332] Sequential element (Clk_Division0/flag_reg) is unused and will be removed from module RGB_LED_Task.
+WARNING: [Synth 8-3332] Sequential element (Cnt_2_reg[10]) is unused and will be removed from module RGB_LED_Task.
+WARNING: [Synth 8-3332] Sequential element (Cnt_1_reg[10]) is unused and will be removed from module RGB_LED_Task.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 582.980 ; gain = 262.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_LED_Task | (A*(B:0x1f4))'                    | 13     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|RGB_LED_Task | (C:0xffffffffffff)+(A*(B:0x1f4))' | 13     | 9      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 582.980 ; gain = 262.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     3|
+|2     |CARRY4  |    45|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |    35|
+|5     |LUT2    |    30|
+|6     |LUT3    |    45|
+|7     |LUT4    |    42|
+|8     |LUT5    |    22|
+|9     |LUT6    |    80|
+|10    |FDCE    |    88|
+|11    |FDRE    |    80|
+|12    |IBUF    |    44|
+|13    |OBUF    |     2|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |   518|
+|2     |  Clk_Division0   |Clk_Division   |    71|
+|3     |  Clk_Division1   |Clk_Division_0 |   132|
+|4     |  Driver_SK6805_0 |Driver_SK6805  |    88|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 587.582 ; gain = 266.879
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 680.922 ; gain = 373.047
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/RGB-LED-Task-IP/RGB_LED_Task/RGB_LED_Task.runs/synth_1/RGB_LED_Task.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGB_LED_Task_utilization_synth.rpt -pb RGB_LED_Task_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 680.922 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 16:50:07 2019...

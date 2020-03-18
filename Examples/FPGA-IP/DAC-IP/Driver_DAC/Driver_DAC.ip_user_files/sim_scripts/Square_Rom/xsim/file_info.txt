@@ -1,0 +1,2 @@
+Square_Rom.v,verilog,xil_defaultlib,../../../../Driver_DAC.srcs/sources_1/ip/Square_Rom/sim/Square_Rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

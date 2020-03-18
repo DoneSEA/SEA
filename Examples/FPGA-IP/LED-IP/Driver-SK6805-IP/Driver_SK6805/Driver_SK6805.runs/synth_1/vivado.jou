@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov  8 16:44:42 2019
+# Process ID: 26652
+# Current directory: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/Driver-SK6805-IP/Driver_SK6805/Driver_SK6805.runs/synth_1
+# Command line: vivado.exe -log Driver_SK6805.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Driver_SK6805.tcl
+# Log file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/Driver-SK6805-IP/Driver_SK6805/Driver_SK6805.runs/synth_1/Driver_SK6805.vds
+# Journal file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/LED-IP/Driver-SK6805-IP/Driver_SK6805/Driver_SK6805.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Driver_SK6805.tcl -notrace

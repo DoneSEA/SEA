@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L secureip -L xpm --snapshot csi2_d_phy_rx_0 xil_defaultlib.csi2_d_phy_rx_0 -log elaborate.log

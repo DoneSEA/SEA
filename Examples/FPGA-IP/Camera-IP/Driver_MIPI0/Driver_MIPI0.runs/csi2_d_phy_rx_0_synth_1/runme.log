@@ -1,0 +1,567 @@
+
+*** Running vivado
+    with args -log csi2_d_phy_rx_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source csi2_d_phy_rx_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source csi2_d_phy_rx_0.tcl -notrace
+Command: synth_design -top csi2_d_phy_rx_0 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 449.871 ; gain = 99.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'csi2_d_phy_rx_0' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/synth/csi2_d_phy_rx_0.vhd:94]
+	Parameter C_NUM_LANES bound to: 2 - type: integer 
+	Parameter C_NUM_LP_LANES bound to: 1 - type: integer 
+	Parameter C_D0_SWAP bound to: 0 - type: bool 
+	Parameter C_D1_SWAP bound to: 0 - type: bool 
+	Parameter C_D2_SWAP bound to: 0 - type: bool 
+	Parameter C_D3_SWAP bound to: 0 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_ADD_IDELAYCTRL bound to: 1 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'csi2_d_phy_rx' declared at 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:11' bound to instance 'U0' of component 'csi2_d_phy_rx' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/synth/csi2_d_phy_rx_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'csi2_d_phy_rx' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:67]
+	Parameter C_NUM_LANES bound to: 2 - type: integer 
+	Parameter C_NUM_LP_LANES bound to: 1 - type: integer 
+	Parameter C_D0_SWAP bound to: 0 - type: bool 
+	Parameter C_D1_SWAP bound to: 0 - type: bool 
+	Parameter C_D2_SWAP bound to: 0 - type: bool 
+	Parameter C_D3_SWAP bound to: 0 - type: bool 
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_ADD_IDELAYCTRL bound to: 1 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'IdlyCtrl_inst_0' to cell 'IDELAYCTRL' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:131]
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+	Parameter C_ACC_LIMIT bound to: 1000000 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'phy_clock_system' declared at 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:11' bound to instance 'clock_system_inst' of component 'phy_clock_system' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'phy_clock_system' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:37]
+	Parameter C_USE_DELAY bound to: 1 - type: bool 
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter C_IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter C_IODELAY_GROUP bound to: csi_dly_grp - type: string 
+	Parameter C_ACC_LIMIT bound to: 1000000 - type: integer 
+	Parameter C_RATE_LIMIT bound to: 50 - type: integer 
+	Parameter C_CALIB_WAIT bound to: 8191 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:63]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:66]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:67]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'clk_ibufgds_inst' to cell 'IBUFGDS' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:84]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
+	Parameter IDELAY_TYPE bound to: VAR_LOAD - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: CLOCK - type: string 
+INFO: [Synth 8-113] binding component instance 'IDELAYE2_inst' to cell 'IDELAYE2' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:108]
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE0_INVERTED bound to: 1'b0 
+	Parameter IS_CE1_INVERTED bound to: 1'b0 
+	Parameter IS_I0_INVERTED bound to: 1'b0 
+	Parameter IS_I1_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE0_INVERTED bound to: 1'b0 
+	Parameter IS_IGNORE1_INVERTED bound to: 1'b0 
+	Parameter IS_S0_INVERTED bound to: 1'b0 
+	Parameter IS_S1_INVERTED bound to: 1'b0 
+	Parameter PRESELECT_I0 bound to: 0 - type: bool 
+	Parameter PRESELECT_I1 bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'BUFGCTRL_inst' to cell 'BUFGCTRL' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:136]
+	Parameter CE_TYPE bound to: ASYNC - type: string 
+	Parameter INIT_OUT bound to: 0 - type: integer 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'BUFMRCE_inst' to cell 'BUFMRCE' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:278]
+INFO: [Synth 8-113] binding component instance 'BUFIO_inst' to cell 'BUFIO' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:289]
+	Parameter BUFR_DIVIDE bound to: 4 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'BUFR_inst' to cell 'BUFR' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:297]
+INFO: [Synth 8-113] binding component instance 'usr_BUFG_inst' to cell 'BUFG' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:310]
+INFO: [Synth 8-256] done synthesizing module 'phy_clock_system' (1#1) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:37]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'line_if' declared at 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:11' bound to instance 'line_if_inst' of component 'line_if' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'line_if' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:25]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: 0 - type: bool 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'd_ibufds_inst' to cell 'IBUFDS' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:33]
+	Parameter DATA_RATE bound to: DDR - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter IS_CLKB_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIVP_INVERTED bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_OCLKB_INVERTED bound to: 1'b0 
+	Parameter IS_OCLK_INVERTED bound to: 1'b0 
+	Parameter NUM_CE bound to: 2 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_inst' to cell 'ISERDESE2' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'line_if' (2#1) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:25]
+	Parameter C_DIFF_TERM bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'line_if' declared at 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/line_if.vhd:11' bound to instance 'line_if_inst' of component 'line_if' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:169]
+INFO: [Synth 8-4471] merging register 'dl0_rxactivehs_reg' into 'dl0_rxvalidhs_reg' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:243]
+INFO: [Synth 8-4471] merging register 'lane_1_gen.dl1_rxactivehs_reg' into 'lane_1_gen.dl1_rxvalidhs_reg' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:255]
+WARNING: [Synth 8-6014] Unused sequential element dl0_rxactivehs_reg was removed.  [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:243]
+WARNING: [Synth 8-6014] Unused sequential element lane_1_gen.dl1_rxactivehs_reg was removed.  [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:255]
+WARNING: [Synth 8-3848] Net trig_ack in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:38]
+WARNING: [Synth 8-3848] Net dl2_rxactivehs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:55]
+WARNING: [Synth 8-3848] Net dl2_rxvalidhs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:56]
+WARNING: [Synth 8-3848] Net dl2_rxsynchs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:57]
+WARNING: [Synth 8-3848] Net dl2_datahs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:58]
+WARNING: [Synth 8-3848] Net dl3_rxactivehs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:60]
+WARNING: [Synth 8-3848] Net dl3_rxvalidhs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:61]
+WARNING: [Synth 8-3848] Net dl3_rxsynchs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:62]
+WARNING: [Synth 8-3848] Net dl3_datahs in module/entity csi2_d_phy_rx does not have driver. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'csi2_d_phy_rx' (3#1) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'csi2_d_phy_rx_0' (4#1) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/synth/csi2_d_phy_rx_0.vhd:94]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port trig_ack
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxactivehs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxvalidhs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxsynchs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[7]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[6]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[5]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[4]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[3]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[2]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[1]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[0]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxactivehs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxvalidhs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxsynchs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[7]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[6]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[5]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[4]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[3]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[2]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[1]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[0]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port cl_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl0_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl1_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 504.484 ; gain = 154.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 504.484 ; gain = 154.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 504.484 ; gain = 154.082
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.runs/csi2_d_phy_rx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.runs/csi2_d_phy_rx_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 791.805 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.runs/csi2_d_phy_rx_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'dly_gen.sm_state_reg' in module 'phy_clock_system'
+INFO: [Synth 8-5546] ROM "err_rate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "acc_val" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sm_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sum_dly" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'with_lp_gen.ext_lp_gen.raw_valid_reg[1:1]' into 'with_lp_gen.raw_valid_reg[0:0]' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:212]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st_check |                              000 |                              000
+            st_good_wait |                              001 |                              010
+            st_find_good |                              010 |                              001
+             st_find_bad |                              011 |                              011
+             st_calk_dly |                              100 |                              101
+              st_set_dly |                              101 |                              110
+             st_set_wait |                              110 |                              111
+             st_bad_wait |                              111 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dly_gen.sm_state_reg' using encoding 'sequential' in module 'phy_clock_system'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module phy_clock_system 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 9     
+Module csi2_d_phy_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'with_lp_gen.ext_lp_gen.prev_raw_valid_reg[1:1]' into 'with_lp_gen.prev_raw_valid_reg[0:0]' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:213]
+INFO: [Synth 8-4471] merging register 'lane_1_gen.dl1_rxvalidhs_reg' into 'dl0_rxvalidhs_reg' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:254]
+WARNING: [Synth 8-6014] Unused sequential element clock_system_inst/dly_gen.clock_upd_ack_reg was removed.  [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/phy_clock_system.vhd:158]
+WARNING: [Synth 8-6014] Unused sequential element lane_1_gen.dl1_rxvalidhs_reg was removed.  [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.vhd:254]
+INFO: [Synth 8-5546] ROM "clock_system_inst/err_rate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clock_system_inst/wait_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clock_system_inst/sm_state" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port trig_ack
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxactivehs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxvalidhs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_rxsynchs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[7]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[6]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[5]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[4]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[3]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[2]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[1]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_datahs[0]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxactivehs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxvalidhs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_rxsynchs
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[7]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[6]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[5]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[4]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[3]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[2]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[1]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_datahs[0]
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port cl_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl0_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl1_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl2_enable
+WARNING: [Synth 8-3331] design csi2_d_phy_rx has unconnected port dl3_enable
+WARNING: [Synth 8-3332] Sequential element (clock_system_inst/dly_gen.sum_dly_reg[0]) is unused and will be removed from module csi2_d_phy_rx.
+INFO: [Synth 8-3886] merging instance 'U0/with_lp_gen.ext_lp_gen.line_raw_sync_reg[1]' (FD) to 'U0/with_lp_gen.line_raw_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/lane_1_gen.dl1_rxsynchs_reg' (FD) to 'U0/dl0_rxsynchs_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 791.805 ; gain = 441.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     1|
+|2     |BUFGCTRL   |     1|
+|3     |BUFIO      |     1|
+|4     |BUFMRCE    |     1|
+|5     |BUFR       |     1|
+|6     |CARRY4     |    16|
+|7     |IDELAYCTRL |     1|
+|8     |IDELAYE2   |     1|
+|9     |ISERDESE2  |     2|
+|10    |LUT1       |    17|
+|11    |LUT2       |    23|
+|12    |LUT3       |    17|
+|13    |LUT4       |     7|
+|14    |LUT5       |     9|
+|15    |LUT6       |    18|
+|16    |FDRE       |   131|
+|17    |FDSE       |    13|
+|18    |IBUFDS     |     2|
+|19    |IBUFGDS    |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-----------------+------+
+|      |Instance                       |Module           |Cells |
++------+-------------------------------+-----------------+------+
+|1     |top                            |                 |   263|
+|2     |  U0                           |csi2_d_phy_rx    |   263|
+|3     |    \bits_gen[0].line_if_inst  |line_if          |     2|
+|4     |    \bits_gen[1].line_if_inst  |line_if_0        |     2|
+|5     |    clock_system_inst          |phy_clock_system |   216|
++------+-------------------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 811.023 ; gain = 173.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 811.023 ; gain = 460.621
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 814.766 ; gain = 476.023
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.runs/csi2_d_phy_rx_0_synth_1/csi2_d_phy_rx_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI0/Driver_MIPI0.runs/csi2_d_phy_rx_0_synth_1/csi2_d_phy_rx_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file csi2_d_phy_rx_0_utilization_synth.rpt -pb csi2_d_phy_rx_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 814.766 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 16:08:39 2019...

@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 28 18:01:42 2019
+# Process ID: 2192
+# Current directory: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23820 C:\Users\Siudya\Desktop\SEA-Tutorial\Experiment-of-SEA\IP_Core\Camera-IP\Driver_MIPI\Driver_MIPI.xpr
+# Log file: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/vivado.log
+# Journal file: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Siudya/Rubiks_Cube_FPGA/Rubiks_Cube_FPGA.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project C:/Users/Siudya/Documents/XilinxProjects/CFOP/CFOP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-344] 'open_project' was cancelled
+open_project C:/Users/Siudya/Documents/XilinxProjects/stream2rgb/stream2rgb.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/stream2rgb'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 714.609 ; gain = 55.918
+update_compile_order -fileset sources_1
+close_project
+open_project C:/Users/Siudya/Documents/XilinxProjects/rgb2stream/rgb2stream.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 731.113 ; gain = 9.125
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property on PARAM_VALUE.C_CAL_MODE is not allowed in procedure update_gui_for_PARAM_VALUE.DPY_LINE_RATE
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property on PARAM_VALUE.C_CAL_MODE is not allowed in procedure update_gui_for_PARAM_VALUE.C_HS_LINE_RATE
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting range property on PARAM_VALUE.C_CAL_MODE is not allowed in procedure update_gui_for_PARAM_VALUE.C_HS_LINE_RATE
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 28 18:16:24 2019...

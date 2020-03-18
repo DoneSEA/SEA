@@ -1,0 +1,4 @@
+phy_clock_system.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/phy_clock_system.vhd,
+line_if.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/line_if.vhd,
+csi2_d_phy_rx.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/csi2_d_phy_rx.vhd,
+csi2_d_phy_rx_0.vhd,vhdl,xil_defaultlib,../../../../Driver_MIPI.srcs/sources_1/ip/csi2_d_phy_rx_0/sim/csi2_d_phy_rx_0.vhd,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 11 16:20:39 2019
+# Process ID: 29748
+# Current directory: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1
+# Command line: vivado.exe -log OV5647_Init.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV5647_Init.tcl
+# Log file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1/OV5647_Init.vds
+# Journal file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OV5647_Init.tcl -notrace

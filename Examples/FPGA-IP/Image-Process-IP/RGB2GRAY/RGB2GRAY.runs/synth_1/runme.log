@@ -1,0 +1,400 @@
+
+*** Running vivado
+    with args -log RGB_To_Gray.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RGB_To_Gray.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RGB_To_Gray.tcl -notrace
+Command: synth_design -top RGB_To_Gray -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 69908 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 415.824 ; gain = 96.102
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RGB_To_Gray' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Image-Process-IP/RGB2GRAY/RGB2GRAY.srcs/sources_1/new/RGB_To_Gray.v:23]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Out_Data_reg' and it is trimmed from '33' to '8' bits. [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Image-Process-IP/RGB2GRAY/RGB2GRAY.srcs/sources_1/new/RGB_To_Gray.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_To_Gray' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Image-Process-IP/RGB2GRAY/RGB2GRAY.srcs/sources_1/new/RGB_To_Gray.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 471.082 ; gain = 151.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 471.082 ; gain = 151.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 471.082 ; gain = 151.359
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 477.988 ; gain = 158.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x259)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b2)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x264)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x965)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x12c9)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x991)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x3a6)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x2592)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1322)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x74c)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b23)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x2645)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0xe98)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x9645)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8b)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1d30)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x12c8b)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x9916)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x3a5f)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x25916)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1322d)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x74bd)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x4b22d)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x2645a)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0xe979)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is: (A:0x9645a)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x4c8b4)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is: PCIN+(A:0x1d2f2)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 29, Available = 20. Use report_utilization command for details.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x2592)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x1322)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x4b23)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x2645)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0xe98)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x9645)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x4c8b)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x1d30)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x12c8b)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x9916)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x3a5f)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x25916)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x1322d)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x74bd)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x4b22d)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x2645a)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0xe979)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data2, operation Mode is (post resource management): (A:0x9645a)*B.
+DSP Report: operator Out_Data2 is absorbed into DSP Out_Data2.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x4c8b4)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+DSP Report: Generating DSP Out_Data1, operation Mode is (post resource management): PCIN+(A:0x1d2f2)*B.
+DSP Report: operator Out_Data1 is absorbed into DSP Out_Data1.
+DSP Report: operator Out_Data3 is absorbed into DSP Out_Data1.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_To_Gray | (A:0x259)*B        | 8      | 10     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b2)*B        | 8      | 11     | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x264)*B   | 10     | 8      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x965)*B        | 8      | 12     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8)*B   | 11     | 8      | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x12c9)*B       | 8      | 13     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x991)*B   | 12     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x3a6)*B   | 10     | 8      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x2592)*B       | 8      | 14     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1322)*B  | 13     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x74c)*B   | 11     | 8      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b23)*B       | 8      | 15     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x2645)*B  | 14     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0xe98)*B   | 12     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x9645)*B       | 8      | 16     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8b)*B  | 15     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1d30)*B  | 13     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x12c8b)*B      | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x9916)*B  | 16     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x3a5f)*B  | 14     | 8      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x25916)*B      | 18     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1322d)*B | 17     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x74bd)*B  | 15     | 8      | -      | -      | 26     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x4b22d)*B      | 19     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x2645a)*B | 18     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0xe979)*B  | 16     | 8      | -      | -      | 27     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | (A:0x9645a)*B      | 20     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x4c8b4)*B | 19     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|RGB_To_Gray | PCIN+(A:0x1d2f2)*B | 17     | 8      | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   361|
+|2     |DSP48E1 |    20|
+|3     |LUT1    |   115|
+|4     |LUT2    |   734|
+|5     |LUT3    |   194|
+|6     |LUT4    |   188|
+|7     |LUT5    |    66|
+|8     |LUT6    |    75|
+|9     |MUXF7   |    11|
+|10    |IBUF    |    29|
+|11    |OBUF    |     8|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1801|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 606.492 ; gain = 286.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 421 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'RGB_To_Gray' is not ideal for floorplanning, since the cellview 'RGB_To_Gray' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 689.930 ; gain = 383.219
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Image-Process-IP/RGB2GRAY/RGB2GRAY.runs/synth_1/RGB_To_Gray.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RGB_To_Gray_utilization_synth.rpt -pb RGB_To_Gray_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 689.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 13 14:50:14 2019...

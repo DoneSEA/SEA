@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov 11 16:20:39 2019
+# Process ID: 29748
+# Current directory: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1
+# Command line: vivado.exe -log OV5647_Init.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV5647_Init.tcl
+# Log file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1/OV5647_Init.vds
+# Journal file: C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OV5647_Init.tcl -notrace
+Command: synth_design -top OV5647_Init -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28824 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 416.457 ; gain = 96.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:23]
+WARNING: [Synth 8-6090] variable 'Write_Flag' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:69]
+WARNING: [Synth 8-6014] Unused sequential element Write_Req_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:23]
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[5] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[3] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Reg2Addr driven by constant 1
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 151.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 151.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.336 ; gain = 151.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Synth 8-4471] merging register 'Ctrl_IIC_reg' into 'Enable_reg' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:168]
+WARNING: [Synth 8-6014] Unused sequential element Ctrl_IIC_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:168]
+INFO: [Synth 8-802] inferred FSM for state register 'Write_State_reg' in module 'OV5647_Init'
+INFO: [Synth 8-5546] ROM "Reg_Addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Enable" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                iSTATE59 |                          0000000 |                        000000000
+                iSTATE58 |                          0000001 |                        000000001
+                iSTATE54 |                          0000010 |                        000000010
+                iSTATE52 |                          0000011 |                        000000011
+                iSTATE43 |                          0000100 |                        000000100
+                iSTATE42 |                          0000101 |                        000000101
+                iSTATE39 |                          0000110 |                        000000110
+                iSTATE37 |                          0000111 |                        000000111
+                 iSTATE0 |                          0001000 |                        000001000
+                  iSTATE |                          0001001 |                        000001001
+                iSTATE85 |                          0001010 |                        000001010
+                iSTATE84 |                          0001011 |                        000001011
+                iSTATE77 |                          0001100 |                        000001100
+                iSTATE76 |                          0001101 |                        000001101
+                iSTATE72 |                          0001110 |                        000001110
+                iSTATE69 |                          0001111 |                        000001111
+                 iSTATE2 |                          0010000 |                        000010000
+                 iSTATE1 |                          0010001 |                        000010001
+                iSTATE87 |                          0010010 |                        000010010
+                iSTATE86 |                          0010011 |                        000010011
+                iSTATE79 |                          0010100 |                        000010100
+                iSTATE78 |                          0010101 |                        000010101
+                iSTATE75 |                          0010110 |                        000010110
+                iSTATE74 |                          0010111 |                        000010111
+                iSTATE27 |                          0011000 |                        000011000
+                iSTATE26 |                          0011001 |                        000011001
+                iSTATE25 |                          0011010 |                        000011010
+                iSTATE24 |                          0011011 |                        000011011
+                iSTATE11 |                          0011100 |                        000011100
+                iSTATE10 |                          0011101 |                        000011101
+                 iSTATE9 |                          0011110 |                        000011110
+                 iSTATE8 |                          0011111 |                        000011111
+                 iSTATE6 |                          0100000 |                        000100000
+                 iSTATE5 |                          0100001 |                        000100001
+                 iSTATE4 |                          0100010 |                        000100010
+                 iSTATE3 |                          0100011 |                        000100011
+                iSTATE83 |                          0100100 |                        000100100
+                iSTATE82 |                          0100101 |                        000100101
+                iSTATE81 |                          0100110 |                        000100110
+                iSTATE80 |                          0100111 |                        000100111
+                iSTATE38 |                          0101000 |                        000101000
+                iSTATE36 |                          0101001 |                        000101001
+                iSTATE31 |                          0101010 |                        000101010
+                iSTATE30 |                          0101011 |                        000101011
+                iSTATE21 |                          0101100 |                        000101100
+                iSTATE20 |                          0101101 |                        000101101
+                iSTATE15 |                          0101110 |                        000101110
+                iSTATE14 |                          0101111 |                        000101111
+                iSTATE41 |                          0110000 |                        000110000
+                iSTATE40 |                          0110001 |                        000110001
+                iSTATE34 |                          0110010 |                        000110010
+                iSTATE32 |                          0110011 |                        000110011
+                iSTATE23 |                          0110100 |                        000110100
+                iSTATE22 |                          0110101 |                        000110101
+                iSTATE18 |                          0110110 |                        000110110
+                iSTATE16 |                          0110111 |                        000110111
+                iSTATE73 |                          0111000 |                        000111000
+                iSTATE71 |                          0111001 |                        000111001
+                iSTATE66 |                          0111010 |                        000111010
+                iSTATE64 |                          0111011 |                        000111011
+                iSTATE57 |                          0111100 |                        000111100
+                iSTATE56 |                          0111101 |                        000111101
+                iSTATE50 |                          0111110 |                        000111110
+                iSTATE48 |                          0111111 |                        000111111
+                iSTATE35 |                          1000000 |                        001000000
+                iSTATE33 |                          1000001 |                        001000001
+                iSTATE29 |                          1000010 |                        001000010
+                iSTATE28 |                          1000011 |                        001000011
+                iSTATE19 |                          1000100 |                        001000100
+                iSTATE17 |                          1000101 |                        001000101
+                iSTATE13 |                          1000110 |                        001000110
+                iSTATE12 |                          1000111 |                        001000111
+                iSTATE67 |                          1001000 |                        001001000
+                iSTATE65 |                          1001001 |                        001001001
+                iSTATE61 |                          1001010 |                        001001010
+                iSTATE60 |                          1001011 |                        001001011
+                iSTATE51 |                          1001100 |                        001001100
+                iSTATE49 |                          1001101 |                        001001101
+                iSTATE45 |                          1001110 |                        001001110
+                iSTATE44 |                          1001111 |                        001001111
+                iSTATE70 |                          1010000 |                        001010000
+                iSTATE68 |                          1010001 |                        001010001
+                iSTATE63 |                          1010010 |                        001010010
+                iSTATE62 |                          1010011 |                        001010011
+                iSTATE55 |                          1010100 |                        001010100
+                iSTATE53 |                          1010101 |                        001010101
+                iSTATE47 |                          1010110 |                        001010110
+                iSTATE46 |                          1010111 |                        001010111
+                 iSTATE7 |                          1011000 |                        001011000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Write_State_reg' using encoding 'sequential' in module 'OV5647_Init'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 471.336 ; gain = 151.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  89 Input     16 Bit        Muxes := 1     
+	  89 Input      8 Bit        Muxes := 1     
+	  88 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  89 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module OV5647_Init 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  89 Input     16 Bit        Muxes := 1     
+	  89 Input      8 Bit        Muxes := 1     
+	  88 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  89 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element Reg_Addr_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:80]
+WARNING: [Synth 8-6014] Unused sequential element Reg_Data_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.srcs/sources_1/new/OV5647_Init.v:80]
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[7] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[6] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[5] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[4] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[3] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[2] driven by constant 1
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[1] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Addr[0] driven by constant 0
+WARNING: [Synth 8-3917] design OV5647_Init has port Reg2Addr driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 579.141 ; gain = 259.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|OV5647_Init | Reg_Addr_reg | 128x16        | Block RAM      | 
+|OV5647_Init | Reg_Data_reg | 128x8         | Block RAM      | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/Reg_Addr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_1/Reg_Data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 579.141 ; gain = 259.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance Reg_Addr_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Reg_Data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |LUT1     |     2|
+|3     |LUT2     |     1|
+|4     |LUT3     |     4|
+|5     |LUT4     |     5|
+|6     |LUT5     |     2|
+|7     |LUT6     |     4|
+|8     |RAMB18E1 |     2|
+|9     |FDE_1    |     7|
+|10    |FDRE     |     6|
+|11    |IBUF     |     2|
+|12    |OBUF     |    35|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    72|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.563 ; gain = 261.023
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 679.109 ; gain = 372.391
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/OV5647_Init/OV5647_Init.runs/synth_1/OV5647_Init.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OV5647_Init_utilization_synth.rpt -pb OV5647_Init_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 679.109 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 16:20:58 2019...

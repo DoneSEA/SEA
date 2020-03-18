@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Dec 28 18:17:23 2019
+# Process ID: 36760
+# Current directory: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43776 C:\Users\Siudya\Desktop\SEA-Tutorial\Experiment-of-SEA\IP_Core\Camera-IP\Driver_MIPI\Driver_MIPI.xpr
+# Log file: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/vivado.log
+# Journal file: C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI/Driver_MIPI.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/Driver_MIPI' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/IP/Driver_MIPI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/IP/CSI2AXIS_1.0_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Siudya/Desktop/SEA-Tutorial/Experiment-of-SEA/IP_Core/Camera-IP/IP/CSI2DPHY_RX_1.0_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_1' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'Driver_MIPI.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 837.398 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 28 19:50:54 2019...
