@@ -1,0 +1,491 @@
+19:28:31 **** Build of project Gyro_Demo_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+**** Build of configuration Debug for project Gyro_Demo ****
+
+Nothing to build for project Gyro_Demo
+19:29:28 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Gyro_Demo.elf] ´íÎó 1
+19:29:39 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:30:11 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:30:18 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:30:26 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:30:35 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:30:45 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+../src/Gyro.c:39:7: error: unknown type name 'u8'
+ const u8 Gyro_Initial_Values[10] = {0x70, 0x4C, 0x44, 0x0, 0x0,0x0, 0x50, 0x85, 0x38, 0x38};
+       ^~
+../src/Gyro.c:42:1: error: unknown type name 'u8'
+ u8 Init_Gyro(void){
+ ^~
+../src/Gyro.c: In function 'Init_Gyro':
+../src/Gyro.c:46:2: error: unknown type name 'u8'
+  u8 Connect_Flag=0;
+  ^~
+../src/Gyro.c:48:5: warning: implicit declaration of function 'IIC_Read_Data' [-Wimplicit-function-declaration]
+  if(IIC_Read_Data(Gyro_IIC_Base_Addr,Gyro_Slave_ADDR,Gyro_Flag_ADDR,0)==Gyro_Flag_Value)
+     ^~~~~~~~~~~~~
+../src/Gyro.c:54:3: warning: implicit declaration of function 'IIC_Write_Data' [-Wimplicit-function-declaration]
+   IIC_Write_Data(Gyro_IIC_Base_Addr,Gyro_Slave_ADDR,i+10,Gyro_Initial_Values[i],0);
+   ^~~~~~~~~~~~~~
+../src/Gyro.c: At top level:
+../src/Gyro.c:60:26: error: unknown type name 'u8'
+ void Gyro_Angle_Data_Get(u8 *Angle_Data_X,u8 *Angle_Data_Y,u8 *Angle_Data_Z){
+                          ^~
+../src/Gyro.c:60:43: error: unknown type name 'u8'
+ void Gyro_Angle_Data_Get(u8 *Angle_Data_X,u8 *Angle_Data_Y,u8 *Angle_Data_Z){
+                                           ^~
+../src/Gyro.c:60:60: error: unknown type name 'u8'
+ void Gyro_Angle_Data_Get(u8 *Angle_Data_X,u8 *Angle_Data_Y,u8 *Angle_Data_Z){
+                                                            ^~
+../src/Gyro.c:82:25: error: unknown type name 'u8'
+ void Gyro_Temp_Data_Get(u8 *Temp_Data){
+                         ^~
+../src/Gyro.c:91:24: error: unknown type name 'u8'
+ void Gyro_Mag_Data_Get(u8 *Mag_Data_X,u8 *Mag_Data_Y,u8 *Mag_Data_Z){
+                        ^~
+../src/Gyro.c:91:39: error: unknown type name 'u8'
+ void Gyro_Mag_Data_Get(u8 *Mag_Data_X,u8 *Mag_Data_Y,u8 *Mag_Data_Z){
+                                       ^~
+../src/Gyro.c:91:54: error: unknown type name 'u8'
+ void Gyro_Mag_Data_Get(u8 *Mag_Data_X,u8 *Mag_Data_Y,u8 *Mag_Data_Z){
+                                                      ^~
+make: *** [src/Gyro.o] ´íÎó 1
+19:30:57 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+../src/Gyro.c: In function 'Init_Gyro':
+../src/Gyro.c:48:5: warning: implicit declaration of function 'IIC_Read_Data' [-Wimplicit-function-declaration]
+  if(IIC_Read_Data(Gyro_IIC_Base_Addr,Gyro_Slave_ADDR,Gyro_Flag_ADDR,0)==Gyro_Flag_Value)
+     ^~~~~~~~~~~~~
+../src/Gyro.c:54:3: warning: implicit declaration of function 'IIC_Write_Data' [-Wimplicit-function-declaration]
+   IIC_Write_Data(Gyro_IIC_Base_Addr,Gyro_Slave_ADDR,i+10,Gyro_Initial_Values[i],0);
+   ^~~~~~~~~~~~~~
+'Finished building: ../src/Gyro.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:31:07 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+../src/IIC.c:11:1: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+ ^~
+../src/IIC.c:11:34: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                  ^~
+../src/IIC.c:11:48: error: unknown type name 'u16'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                ^~~
+../src/IIC.c:11:61: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                             ^~
+../src/IIC.c:11:73: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                                         ^~
+../src/IIC.c:30:1: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+ ^~
+../src/IIC.c:30:33: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                 ^~
+../src/IIC.c:30:47: error: unknown type name 'u16'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                               ^~~
+../src/IIC.c:30:60: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                                            ^~
+make: *** [src/IIC.o] ´íÎó 1
+19:31:15 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:10: fatal error: platform.h: No such file or directory
+ #include "platform.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:31:30 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:35:26 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:35:40 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:36:04 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:36:22 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:37:43 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:38:04 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:38:40 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:39:01 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:39:12 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:39:21 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:39:29 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:39:34 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+19:40:23 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '

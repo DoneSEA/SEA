@@ -1,0 +1,21 @@
+19:40:23 **** Auto Build of configuration Debug for project Gyro_Demo ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Gyro_Demo.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Gyro_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Gyro_Demo.elf"  ./src/Gyro.o ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Gyro_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4318	    268	   3110	   7696	   1e10	Gyro_Demo.elf
+'Finished building: Gyro_Demo.elf.size'
+' '
+
+19:40:24 Build Finished (took 1s.136ms)
+

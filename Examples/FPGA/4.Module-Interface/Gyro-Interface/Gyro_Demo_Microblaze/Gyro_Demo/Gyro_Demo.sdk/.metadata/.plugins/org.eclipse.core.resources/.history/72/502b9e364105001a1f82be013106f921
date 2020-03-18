@@ -1,0 +1,47 @@
+/*
+ * IIC.c
+ *
+ *  Created on: 2019/10/29
+ *      Author: Opex9020
+ */
+
+#include "IIC.h"
+
+//IIC写数据:IIC基址,从机地址,寄存器地址,寄存器数据,是否双地址
+u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+	u8 Buffer[3]={0};
+	//如果是双地址,则发送16位地址和8位数据
+	if(Dual_Addr){
+		Buffer[0] = (Reg_Addr>>8)& 0xff;
+		Buffer[1] = Reg_Addr&0xff;
+		Buffer[2] = Reg_Data;
+		return XIic_Send(Base_Addr, Slave_Addr, Buffer, 3, 0);
+	}
+	//否则只发送8位低位地址和8位数据
+	else{
+		Buffer[0] = Reg_Addr&0xff;
+		Buffer[1] = Reg_Data;
+		return XIic_Send(Base_Addr, Slave_Addr, Buffer, 2, 0);
+	}
+
+	return 0;
+}
+//IIC读数据:IIC基址,从机地址,寄存器地址,是否双地址
+u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+{
+	u8 Write_Buffer[2]={0};
+	u8 Read_Buffer=0;
+	//如果是双地址,则发送16位地址
+	if(Dual_Addr){
+		Write_Buffer[0]=(Reg_Addr>>8)& 0xff;
+		Write_Buffer[1] = Reg_Addr&0xff;
+		XIic_Send(Base_Addr, Slave_Addr, Write_Buffer, 2, 0);
+	}
+	else{
+		Write_Buffer[0] = Reg_Addr&0xff;
+		XIic_Send(Base_Addr, Slave_Addr, Write_Buffer, 1,0);
+	}
+	XIic_Recv(Base_Addr, Slave_Addr, &Read_Buffer, 1, 0);
+	return Read_Buffer;
+}
+

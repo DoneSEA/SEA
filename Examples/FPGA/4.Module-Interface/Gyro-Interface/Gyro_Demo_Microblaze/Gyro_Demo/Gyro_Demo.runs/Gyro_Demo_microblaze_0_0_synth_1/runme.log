@@ -1,0 +1,1776 @@
+
+*** Running vivado
+    with args -log Gyro_Demo_microblaze_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Gyro_Demo_microblaze_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Gyro_Demo_microblaze_0_0.tcl -notrace
+Command: synth_design -top Gyro_Demo_microblaze_0_0 -part xc7s15ftgb196-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 53812 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 456.324 ; gain = 100.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Gyro_Demo_microblaze_0_0' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/synth/Gyro_Demo_microblaze_0_0.vhd:116]
+	Parameter C_SCO bound to: 0 - type: integer 
+	Parameter C_FREQ bound to: 100000000 - type: integer 
+	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_IRQ bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_CLK_DEBUG bound to: 2 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_CLK bound to: 1 - type: integer 
+	Parameter C_NUM_SYNC_FF_DBG_TRACE_CLK bound to: 2 - type: integer 
+	Parameter C_FAULT_TOLERANT bound to: 0 - type: integer 
+	Parameter C_ECC_USE_CE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_SLAVE bound to: 0 - type: integer 
+	Parameter C_LOCKSTEP_MASTER bound to: 0 - type: integer 
+	Parameter C_ENDIANNESS bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_DATA_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTR_SIZE bound to: 32 - type: integer 
+	Parameter C_IADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_PIADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_DADDR_SIZE bound to: 32 - type: integer 
+	Parameter C_INSTANCE bound to: Gyro_Demo_microblaze_0_0 - type: string 
+	Parameter C_AVOID_PRIMITIVES bound to: 0 - type: integer 
+	Parameter C_AREA_OPTIMIZED bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_INTERCONNECT bound to: 2 - type: integer 
+	Parameter C_BASE_VECTORS bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_DP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DP_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_D_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_M_AXI_IP_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IP_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IP_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_I_BUS_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_D_LMB bound to: 1 - type: integer 
+	Parameter C_D_AXI bound to: 1 - type: integer 
+	Parameter C_I_LMB bound to: 1 - type: integer 
+	Parameter C_I_AXI bound to: 0 - type: integer 
+	Parameter C_USE_MSR_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_PCMP_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BARREL bound to: 0 - type: integer 
+	Parameter C_USE_DIV bound to: 0 - type: integer 
+	Parameter C_USE_HW_MUL bound to: 0 - type: integer 
+	Parameter C_USE_FPU bound to: 0 - type: integer 
+	Parameter C_USE_REORDER_INSTR bound to: 1 - type: integer 
+	Parameter C_UNALIGNED_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_ILL_OPCODE_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_DIV_ZERO_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FPU_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_FSL_LINKS bound to: 0 - type: integer 
+	Parameter C_USE_EXTENDED_FSL_INSTR bound to: 0 - type: integer 
+	Parameter C_FSL_EXCEPTION bound to: 0 - type: integer 
+	Parameter C_USE_STACK_PROTECTION bound to: 0 - type: integer 
+	Parameter C_IMPRECISE_EXCEPTIONS bound to: 0 - type: integer 
+	Parameter C_USE_INTERRUPT bound to: 0 - type: integer 
+	Parameter C_USE_EXT_BRK bound to: 0 - type: integer 
+	Parameter C_USE_EXT_NM_BRK bound to: 0 - type: integer 
+	Parameter C_USE_NON_SECURE bound to: 0 - type: integer 
+	Parameter C_USE_MMU bound to: 0 - type: integer 
+	Parameter C_MMU_DTLB_SIZE bound to: 4 - type: integer 
+	Parameter C_MMU_ITLB_SIZE bound to: 2 - type: integer 
+	Parameter C_MMU_TLB_ACCESS bound to: 3 - type: integer 
+	Parameter C_MMU_ZONES bound to: 16 - type: integer 
+	Parameter C_MMU_PRIVILEGED_INSTR bound to: 0 - type: integer 
+	Parameter C_USE_BRANCH_TARGET_CACHE bound to: 0 - type: integer 
+	Parameter C_BRANCH_TARGET_CACHE_SIZE bound to: 0 - type: integer 
+	Parameter C_PC_WIDTH bound to: 32 - type: integer 
+	Parameter C_PVR bound to: 0 - type: integer 
+	Parameter C_PVR_USER1 bound to: 8'b00000000 
+	Parameter C_PVR_USER2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_DYNAMIC_BUS_SIZING bound to: 0 - type: integer 
+	Parameter C_RESET_MSR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_OPCODE_0x0_ILLEGAL bound to: 0 - type: integer 
+	Parameter C_DEBUG_ENABLED bound to: 1 - type: integer 
+	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_PC_BRK bound to: 1 - type: integer 
+	Parameter C_NUMBER_OF_RD_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_NUMBER_OF_WR_ADDR_BRK bound to: 0 - type: integer 
+	Parameter C_DEBUG_EVENT_COUNTERS bound to: 5 - type: integer 
+	Parameter C_DEBUG_LATENCY_COUNTERS bound to: 1 - type: integer 
+	Parameter C_DEBUG_COUNTER_WIDTH bound to: 32 - type: integer 
+	Parameter C_DEBUG_TRACE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
+	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
+	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
+	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
+	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
+	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
+	Parameter C_M0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S0_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S1_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S2_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S3_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S4_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S5_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S6_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S7_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S8_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S9_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S10_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S11_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S12_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S13_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S14_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S15_AXIS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ICACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_ICACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_ICACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_ICACHE_WR bound to: 1 - type: integer 
+	Parameter C_ADDR_TAG_BITS bound to: 17 - type: integer 
+	Parameter C_CACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_ICACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_ICACHE_ALWAYS_USED bound to: 0 - type: integer 
+	Parameter C_ICACHE_STREAMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_ICACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_ICACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_IC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_IC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_IC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_IC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_IC_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DCACHE_BASEADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_DCACHE_HIGHADDR bound to: 64'b0000000000000000000000000000000000111111111111111111111111111111 
+	Parameter C_USE_DCACHE bound to: 0 - type: integer 
+	Parameter C_ALLOW_DCACHE_WR bound to: 1 - type: integer 
+	Parameter C_DCACHE_ADDR_TAG bound to: 17 - type: integer 
+	Parameter C_DCACHE_BYTE_SIZE bound to: 8192 - type: integer 
+	Parameter C_DCACHE_LINE_LEN bound to: 4 - type: integer 
+	Parameter C_DCACHE_ALWAYS_USED bound to: 0 - type: integer 
+	Parameter C_DCACHE_USE_WRITEBACK bound to: 0 - type: integer 
+	Parameter C_DCACHE_VICTIMS bound to: 0 - type: integer 
+	Parameter C_DCACHE_FORCE_TAG_LUTRAM bound to: 0 - type: integer 
+	Parameter C_DCACHE_DATA_WIDTH bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_THREAD_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DC_EXCLUSIVE_ACCESS bound to: 0 - type: integer 
+	Parameter C_M_AXI_DC_USER_VALUE bound to: 31 - type: integer 
+	Parameter C_M_AXI_DC_AWUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_ARUSER_WIDTH bound to: 5 - type: integer 
+	Parameter C_M_AXI_DC_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_DC_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'MicroBlaze' declared at 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ipshared/b649/hdl/microblaze_v10_0_vh_rfs.vhd:157121' bound to instance 'U0' of component 'MicroBlaze' [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/synth/Gyro_Demo_microblaze_0_0.vhd:806]
+INFO: [Synth 8-256] done synthesizing module 'Gyro_Demo_microblaze_0_0' (52#1) [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/synth/Gyro_Demo_microblaze_0_0.vhd:116]
+WARNING: [Synth 8-3331] design MB_SRLC16E has unconnected port Config_Reset
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[7]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[6]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[5]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[4]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[3]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[2]
+WARNING: [Synth 8-3331] design address_hit has unconnected port TDI[1]
+WARNING: [Synth 8-3331] design address_hit has unconnected port Trace_Sel
+WARNING: [Synth 8-3331] design mb_sync_bit has unconnected port Scan_Reset_Sel
+WARNING: [Synth 8-3331] design mb_sync_bit has unconnected port Scan_Reset
+WARNING: [Synth 8-3331] design mb_sync_bit has unconnected port Scan_En
+WARNING: [Synth 8-3331] design mb_sync_bit__parameterized4 has unconnected port Scan_Reset_Sel
+WARNING: [Synth 8-3331] design mb_sync_bit__parameterized4 has unconnected port Scan_Reset
+WARNING: [Synth 8-3331] design mb_sync_bit__parameterized4 has unconnected port Scan_En
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[255]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[254]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[253]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[252]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[251]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[250]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[249]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[248]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[247]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[246]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[245]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[244]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[243]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[242]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[241]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[240]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[239]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[238]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[237]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[236]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[235]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[234]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[233]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[232]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[231]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[230]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[229]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[228]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[227]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[226]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[225]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[224]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[223]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[222]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[221]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[220]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[219]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[218]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[217]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[216]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[215]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[214]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[213]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[212]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[211]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[210]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[209]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[208]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[207]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[206]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[205]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[204]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[203]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[202]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[201]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[200]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[199]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[198]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[197]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[196]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[195]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[194]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[193]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[192]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[191]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[190]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[189]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[188]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[187]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[186]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[185]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[184]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[183]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[182]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[181]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[180]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[179]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[178]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[177]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[176]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[175]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[174]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[173]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[172]
+WARNING: [Synth 8-3331] design Debug has unconnected port RAM_Debug_Trace_To[171]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 684.176 ; gain = 328.801
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 684.176 ; gain = 328.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 684.176 ; gain = 328.801
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 612 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0_ooc_debug.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Gyro_Demo_microblaze_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Gyro_Demo_microblaze_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.runs/Gyro_Demo_microblaze_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.runs/Gyro_Demo_microblaze_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 410 instances were transformed.
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 126 instances
+  FDS => FDSE: 1 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 96 instances
+  MULT_AND => LUT2: 1 instances
+  MUXCY_L => MUXCY: 138 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.093 . Memory (MB): peak = 909.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.runs/Gyro_Demo_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "EX_Pattern_Cmp_Sel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ex_gpr_write" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ex_move_to_MSR_instr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ex_move_to_FSR_instr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_mode_dbg_halt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_mode_sleep" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Data_Read_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Config_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Status_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Instr_Insert_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "which_pc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reset_mode_dbg_halt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_mode_sleep" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Data_Read_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Config_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Status_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Instr_Insert_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "which_pc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dbg_hit" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	             4096 Bit    Registers := 1     
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 28    
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 259   
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 14    
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input     15 Bit        Muxes := 10    
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 14    
+	   3 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 149   
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mb_sync_bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module PC_Module_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PreFetch_Buffer_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module jump_logic 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module Decode_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 134   
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 53    
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+Module Operand_Select_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 3     
+Module ALU_Bit__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Shift_Logic_Module_gti 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module Byte_Doublet_Handle_gti 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+Module Data_Flow_Logic 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module msr_reg_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     15 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module exception_registers_gti 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
+	               13 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Data_Flow_gti 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DAXI_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module mb_sync_bit__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module mb_sync_bit__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Debug 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 68    
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 52    
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module MicroBlaze_GTi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
+Module MicroBlaze_Core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module MicroBlaze 
+Detailed RTL Component Info : 
++---Registers : 
+	             4096 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "reset_mode_dbg_halt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "reset_mode_sleep" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Data_Read_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Config_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Instr_Insert_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Control_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Status_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Command_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/reset_mode_dbg_halt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/reset_mode_sleep" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Instr_Insert_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Status_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Command_Reg_En" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.ex_watchpoint_brk_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/of_set_MSR_IE_hold_reg )
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_which_branch_reg[9]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_set_MSR_IE_instr_reg' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Instr_Excep_combo_reg'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_is_bs_instr_reg' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_bt_hit_hold_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_bt_hit_hold_reg )
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[1]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[2]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[3]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[4]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[5]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[6]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[7]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[8]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[9]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[10]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[11]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[12]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[13]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[14]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.dbg_hit_reg[15] )
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_which_branch_reg[8]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Byte_Doublet_Handle_gti_I/mem_Byte_Access_reg' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_byte_access_reg'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Byte_Doublet_Handle_gti_I/mem_Doublet_Access_reg' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/mem_doublet_access_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.sync_stack_violation_occurence/Single_Synchronize.use_async_reset.sync_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_MSR_set_decode_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Use_DBUS.DAXI_Interface_I1/mem_access_failed_reg )
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_which_branch_reg[10]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/ex_gpr_write_addr_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Performance_Debug_Control.watchpoint_brk_hold_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[30].MEM_EX_Result_Inst/Using_FPGA.Native )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst/Using_FPGA.Native )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[29].MEM_EX_Result_Inst/Using_FPGA.Native )
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Byte_Doublet_Handle_gti_I/wb_read_lsb_1_sel_reg[1]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/Byte_Doublet_Handle_gti_I/wb_read_msb_doublet_sel_reg'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.status_reg_reg[21]' (FDCE) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.status_reg_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[31]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[30]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[29]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[28]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[27]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[26]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[25]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[24]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[23]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[22]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[21]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[20]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[19]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[18]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[17]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[16]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[15]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[14]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[13]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[12]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[11]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[10]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[9]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[8]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[7]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[6]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[5]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[4]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[3]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[2]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[1]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/mem_EAR_reg[0]' (FDRE) to 'U0/MicroBlaze_Core_I/Performance.Core/Decode_I/MEM_DataBus_Addr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Sel_SPR_EA_I_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Instr_Excep_combo_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Interrupt_Brk_combo_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\MicroBlaze_Core_I/Performance.Core/Decode_I/ex_Take_Intr_or_Exc_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4095] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4094] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4093] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4092] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4091] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4090] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4089] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4088] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4087] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4086] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4085] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4084] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4083] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4082] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4081] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4080] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4079] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4078] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4077] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4076] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4075] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4074] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4073] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4072] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4071] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4070] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4069] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4068] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4067] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4066] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4065] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4064] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4063] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4062] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4061] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4060] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4059] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4058] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4057] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4056] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4055] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4054] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4053] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4052] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4051] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4050] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4049] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4048] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4047] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4046] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4045] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4044] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4043] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4042] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4041] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4040] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4039] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4038] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4037] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4036] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4035] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4034] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4033] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4032] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4031] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4030] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4029] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4028] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4027] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4026] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4025] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4024] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4023] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4022] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4021] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4020] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4019] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4018] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4017] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4016] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4015] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4014] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4013] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4012] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\LOCKSTEP_Out_reg[4011] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[3228]' (FDR) to 'U0/LOCKSTEP_Out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[663]' (FDR) to 'U0/LOCKSTEP_Out_reg[497]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[662]' (FDR) to 'U0/LOCKSTEP_Out_reg[496]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[661]' (FDR) to 'U0/LOCKSTEP_Out_reg[495]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[660]' (FDR) to 'U0/LOCKSTEP_Out_reg[494]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[659]' (FDR) to 'U0/LOCKSTEP_Out_reg[493]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[658]' (FDR) to 'U0/LOCKSTEP_Out_reg[492]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[657]' (FDR) to 'U0/LOCKSTEP_Out_reg[491]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[656]' (FDR) to 'U0/LOCKSTEP_Out_reg[490]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[655]' (FDR) to 'U0/LOCKSTEP_Out_reg[489]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[654]' (FDR) to 'U0/LOCKSTEP_Out_reg[488]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[653]' (FDR) to 'U0/LOCKSTEP_Out_reg[487]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[652]' (FDR) to 'U0/LOCKSTEP_Out_reg[486]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[651]' (FDR) to 'U0/LOCKSTEP_Out_reg[485]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[650]' (FDR) to 'U0/LOCKSTEP_Out_reg[484]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[649]' (FDR) to 'U0/LOCKSTEP_Out_reg[483]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[648]' (FDR) to 'U0/LOCKSTEP_Out_reg[482]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[647]' (FDR) to 'U0/LOCKSTEP_Out_reg[481]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[646]' (FDR) to 'U0/LOCKSTEP_Out_reg[480]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[645]' (FDR) to 'U0/LOCKSTEP_Out_reg[479]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[644]' (FDR) to 'U0/LOCKSTEP_Out_reg[478]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[643]' (FDR) to 'U0/LOCKSTEP_Out_reg[477]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[642]' (FDR) to 'U0/LOCKSTEP_Out_reg[476]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[641]' (FDR) to 'U0/LOCKSTEP_Out_reg[475]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[640]' (FDR) to 'U0/LOCKSTEP_Out_reg[474]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[639]' (FDR) to 'U0/LOCKSTEP_Out_reg[473]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[638]' (FDR) to 'U0/LOCKSTEP_Out_reg[472]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[637]' (FDR) to 'U0/LOCKSTEP_Out_reg[471]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[636]' (FDR) to 'U0/LOCKSTEP_Out_reg[470]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[635]' (FDR) to 'U0/LOCKSTEP_Out_reg[469]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[634]' (FDR) to 'U0/LOCKSTEP_Out_reg[468]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[633]' (FDR) to 'U0/LOCKSTEP_Out_reg[467]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[632]' (FDR) to 'U0/LOCKSTEP_Out_reg[466]'
+INFO: [Synth 8-3886] merging instance 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.sample_synced_1_reg[9]' (FDR) to 'U0/MicroBlaze_Core_I/Performance.Core/Use_Debug_Logic.Master_Core.Debug_Perf/Serial_Dbg_Intf.dbg_disable_interrupt_i_reg'
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[29].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Decode_I/Using_FPGA.Gen_Bits[30].MEM_EX_Result_Inst/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[17].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[18].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[19].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[20].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[21].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[22].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[23].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[24].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[25].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[26].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[27].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/MEM_MSR_Bits[31].Using_FDR.MSR_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[17].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[17].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[18].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[18].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[19].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[19].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[20].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[20].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[21].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[21].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[22].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[22].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[23].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[23].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[24].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[24].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[25].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[25].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[26].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[26].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[27].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[27].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[28].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[29].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[30].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[17]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[18]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[19]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[20]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[21]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[22]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[23]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[24]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[25]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[26]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[27]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/msr_reg_i/wb_MSR_i_reg[31]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[0]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[1]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[2]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[3]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[4]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[5]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[6]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[7]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[8]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[9]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[10]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[11]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[12]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[13]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[14]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[15]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[16]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[17]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[18]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[19]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[20]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[21]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[22]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[23]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[24]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[25]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[26]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[27]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[28]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[29]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[30]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/Use_LUT6.mem_BTR_reg[31]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[0]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[1]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[2]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[3]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[4]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[5]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[6]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[7]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[8]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[9]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[10]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[11]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[12]) is unused and will be removed from module MicroBlaze.
+INFO: [Synth 8-3332] Sequential element (MicroBlaze_Core_I/Performance.Core/Data_Flow_I/exception_registers_I1/WB_BTR_reg[13]) is unused and will be removed from module MicroBlaze.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[722]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[717]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[713]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[712]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[708]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[705]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[630]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[628]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[551]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[547]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'U0/LOCKSTEP_Out_reg[546]' (FDR) to 'U0/LOCKSTEP_Out_reg[539]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:09 . Memory (MB): peak = 909.332 ; gain = 553.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 965.082 ; gain = 609.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name         | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | PC_Buffer_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | ibuffer_reg[3]   | 43     | 43         | 43     | 0       | 0      | 0      | 0      | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |AND2B1L  |     1|
+|2     |LUT1     |    17|
+|3     |LUT2     |    76|
+|4     |LUT3     |   305|
+|5     |LUT4     |   177|
+|6     |LUT5     |   234|
+|7     |LUT6     |   310|
+|8     |LUT6_2   |    80|
+|9     |MULT_AND |     1|
+|10    |MUXCY_L  |   136|
+|11    |MUXF7    |   110|
+|12    |RAM32M   |    16|
+|13    |SRL16E   |    89|
+|14    |SRLC16E  |     8|
+|15    |XORCY    |    94|
+|16    |FDCE     |   143|
+|17    |FDE      |    32|
+|18    |FDR      |    87|
+|19    |FDRE     |  1209|
+|20    |FDS      |     1|
+|21    |FDSE     |    36|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------------------------------+-------------------------------+------+
+|      |Instance                                                                         |Module                         |Cells |
++------+---------------------------------------------------------------------------------+-------------------------------+------+
+|1     |top                                                                              |                               |  3162|
+|2     |  U0                                                                             |MicroBlaze                     |  3162|
+|3     |    MicroBlaze_Core_I                                                            |MicroBlaze_Core                |  2797|
+|4     |      \Performance.Core                                                          |MicroBlaze_GTi                 |  2788|
+|5     |        Data_Flow_I                                                              |Data_Flow_gti                  |   735|
+|6     |          ALU_I                                                                  |ALU                            |   119|
+|7     |            \Use_Carry_Decoding.CarryIn_MUXCY                                    |MB_MUXCY_490                   |     1|
+|8     |            \Using_FPGA.ALL_Bits[0].ALU_Bit_I1                                   |ALU_Bit__parameterized2        |     6|
+|9     |              \Last_Bit.I_ALU_LUT_2                                              |MB_LUT4                        |     1|
+|10    |              \Last_Bit.I_ALU_LUT_V5                                             |MB_LUT6__parameterized12       |     1|
+|11    |              \Last_Bit.MULT_AND_I                                               |MB_MULT_AND                    |     1|
+|12    |              \Last_Bit.MUXCY_XOR_I                                              |MB_MUXCY_XORCY_582             |     2|
+|13    |              \Last_Bit.Pre_MUXCY_I                                              |MB_MUXCY_583                   |     1|
+|14    |            \Using_FPGA.ALL_Bits[10].ALU_Bit_I1                                  |ALU_Bit                        |     3|
+|15    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_580                  |     1|
+|16    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_581             |     2|
+|17    |            \Using_FPGA.ALL_Bits[11].ALU_Bit_I1                                  |ALU_Bit_491                    |     3|
+|18    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_578                  |     1|
+|19    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_579             |     2|
+|20    |            \Using_FPGA.ALL_Bits[12].ALU_Bit_I1                                  |ALU_Bit_492                    |     3|
+|21    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_576                  |     1|
+|22    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_577             |     2|
+|23    |            \Using_FPGA.ALL_Bits[13].ALU_Bit_I1                                  |ALU_Bit_493                    |     3|
+|24    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_574                  |     1|
+|25    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_575             |     2|
+|26    |            \Using_FPGA.ALL_Bits[14].ALU_Bit_I1                                  |ALU_Bit_494                    |     3|
+|27    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_572                  |     1|
+|28    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_573             |     2|
+|29    |            \Using_FPGA.ALL_Bits[15].ALU_Bit_I1                                  |ALU_Bit_495                    |     3|
+|30    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_570                  |     1|
+|31    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_571             |     2|
+|32    |            \Using_FPGA.ALL_Bits[16].ALU_Bit_I1                                  |ALU_Bit_496                    |     3|
+|33    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_568                  |     1|
+|34    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_569             |     2|
+|35    |            \Using_FPGA.ALL_Bits[17].ALU_Bit_I1                                  |ALU_Bit_497                    |     3|
+|36    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_566                  |     1|
+|37    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_567             |     2|
+|38    |            \Using_FPGA.ALL_Bits[18].ALU_Bit_I1                                  |ALU_Bit_498                    |     3|
+|39    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_564                  |     1|
+|40    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_565             |     2|
+|41    |            \Using_FPGA.ALL_Bits[19].ALU_Bit_I1                                  |ALU_Bit_499                    |     3|
+|42    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_562                  |     1|
+|43    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_563             |     2|
+|44    |            \Using_FPGA.ALL_Bits[1].ALU_Bit_I1                                   |ALU_Bit_500                    |     3|
+|45    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_560                  |     1|
+|46    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_561             |     2|
+|47    |            \Using_FPGA.ALL_Bits[20].ALU_Bit_I1                                  |ALU_Bit_501                    |     3|
+|48    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_558                  |     1|
+|49    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_559             |     2|
+|50    |            \Using_FPGA.ALL_Bits[21].ALU_Bit_I1                                  |ALU_Bit_502                    |     3|
+|51    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_556                  |     1|
+|52    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_557             |     2|
+|53    |            \Using_FPGA.ALL_Bits[22].ALU_Bit_I1                                  |ALU_Bit_503                    |     3|
+|54    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_554                  |     1|
+|55    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_555             |     2|
+|56    |            \Using_FPGA.ALL_Bits[23].ALU_Bit_I1                                  |ALU_Bit_504                    |     3|
+|57    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_552                  |     1|
+|58    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_553             |     2|
+|59    |            \Using_FPGA.ALL_Bits[24].ALU_Bit_I1                                  |ALU_Bit_505                    |     6|
+|60    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_550                  |     1|
+|61    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_551             |     5|
+|62    |            \Using_FPGA.ALL_Bits[25].ALU_Bit_I1                                  |ALU_Bit_506                    |     5|
+|63    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_548                  |     1|
+|64    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_549             |     4|
+|65    |            \Using_FPGA.ALL_Bits[26].ALU_Bit_I1                                  |ALU_Bit_507                    |     5|
+|66    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_546                  |     1|
+|67    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_547             |     4|
+|68    |            \Using_FPGA.ALL_Bits[27].ALU_Bit_I1                                  |ALU_Bit_508                    |     5|
+|69    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_544                  |     1|
+|70    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_545             |     4|
+|71    |            \Using_FPGA.ALL_Bits[28].ALU_Bit_I1                                  |ALU_Bit_509                    |     4|
+|72    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_542                  |     1|
+|73    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_543             |     3|
+|74    |            \Using_FPGA.ALL_Bits[29].ALU_Bit_I1                                  |ALU_Bit_510                    |     5|
+|75    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_540                  |     1|
+|76    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_541             |     4|
+|77    |            \Using_FPGA.ALL_Bits[2].ALU_Bit_I1                                   |ALU_Bit_511                    |     3|
+|78    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_538                  |     1|
+|79    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_539             |     2|
+|80    |            \Using_FPGA.ALL_Bits[30].ALU_Bit_I1                                  |ALU_Bit_512                    |     6|
+|81    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_536                  |     1|
+|82    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_537             |     5|
+|83    |            \Using_FPGA.ALL_Bits[31].ALU_Bit_I1                                  |ALU_Bit_513                    |     6|
+|84    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_534                  |     1|
+|85    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_535             |     5|
+|86    |            \Using_FPGA.ALL_Bits[3].ALU_Bit_I1                                   |ALU_Bit_514                    |     3|
+|87    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_532                  |     1|
+|88    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_533             |     2|
+|89    |            \Using_FPGA.ALL_Bits[4].ALU_Bit_I1                                   |ALU_Bit_515                    |     3|
+|90    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_530                  |     1|
+|91    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_531             |     2|
+|92    |            \Using_FPGA.ALL_Bits[5].ALU_Bit_I1                                   |ALU_Bit_516                    |     3|
+|93    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_528                  |     1|
+|94    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_529             |     2|
+|95    |            \Using_FPGA.ALL_Bits[6].ALU_Bit_I1                                   |ALU_Bit_517                    |     3|
+|96    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_526                  |     1|
+|97    |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_527             |     2|
+|98    |            \Using_FPGA.ALL_Bits[7].ALU_Bit_I1                                   |ALU_Bit_518                    |     3|
+|99    |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_524                  |     1|
+|100   |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_525             |     2|
+|101   |            \Using_FPGA.ALL_Bits[8].ALU_Bit_I1                                   |ALU_Bit_519                    |     3|
+|102   |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2_522                  |     1|
+|103   |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_523             |     2|
+|104   |            \Using_FPGA.ALL_Bits[9].ALU_Bit_I1                                   |ALU_Bit_520                    |     3|
+|105   |              \Not_Last_Bit.I_ALU_LUT_V5                                         |MB_LUT6_2                      |     1|
+|106   |              \Not_Last_Bit.MUXCY_XOR_I                                          |MB_MUXCY_XORCY_521             |     2|
+|107   |          Byte_Doublet_Handle_gti_I                                              |Byte_Doublet_Handle_gti        |    46|
+|108   |          Data_Flow_Logic_I                                                      |Data_Flow_Logic                |    64|
+|109   |            \Gen_Bits[0].MEM_EX_Result_Inst                                      |MB_FDRE_458                    |     1|
+|110   |            \Gen_Bits[10].MEM_EX_Result_Inst                                     |MB_FDRE_459                    |     1|
+|111   |            \Gen_Bits[11].MEM_EX_Result_Inst                                     |MB_FDRE_460                    |     1|
+|112   |            \Gen_Bits[12].MEM_EX_Result_Inst                                     |MB_FDRE_461                    |     1|
+|113   |            \Gen_Bits[13].MEM_EX_Result_Inst                                     |MB_FDRE_462                    |     1|
+|114   |            \Gen_Bits[14].MEM_EX_Result_Inst                                     |MB_FDRE_463                    |     1|
+|115   |            \Gen_Bits[15].MEM_EX_Result_Inst                                     |MB_FDRE_464                    |     1|
+|116   |            \Gen_Bits[16].MEM_EX_Result_Inst                                     |MB_FDRE_465                    |     1|
+|117   |            \Gen_Bits[17].MEM_EX_Result_Inst                                     |MB_FDRE_466                    |     1|
+|118   |            \Gen_Bits[18].MEM_EX_Result_Inst                                     |MB_FDRE_467                    |     1|
+|119   |            \Gen_Bits[19].MEM_EX_Result_Inst                                     |MB_FDRE_468                    |     1|
+|120   |            \Gen_Bits[1].MEM_EX_Result_Inst                                      |MB_FDRE_469                    |     1|
+|121   |            \Gen_Bits[20].MEM_EX_Result_Inst                                     |MB_FDRE_470                    |     1|
+|122   |            \Gen_Bits[21].MEM_EX_Result_Inst                                     |MB_FDRE_471                    |     1|
+|123   |            \Gen_Bits[22].MEM_EX_Result_Inst                                     |MB_FDRE_472                    |     1|
+|124   |            \Gen_Bits[23].MEM_EX_Result_Inst                                     |MB_FDRE_473                    |     1|
+|125   |            \Gen_Bits[24].MEM_EX_Result_Inst                                     |MB_FDRE_474                    |     1|
+|126   |            \Gen_Bits[25].MEM_EX_Result_Inst                                     |MB_FDRE_475                    |     1|
+|127   |            \Gen_Bits[26].MEM_EX_Result_Inst                                     |MB_FDRE_476                    |     1|
+|128   |            \Gen_Bits[27].MEM_EX_Result_Inst                                     |MB_FDRE_477                    |     1|
+|129   |            \Gen_Bits[28].MEM_EX_Result_Inst                                     |MB_FDRE_478                    |     1|
+|130   |            \Gen_Bits[29].MEM_EX_Result_Inst                                     |MB_FDRE_479                    |     1|
+|131   |            \Gen_Bits[2].MEM_EX_Result_Inst                                      |MB_FDRE_480                    |     1|
+|132   |            \Gen_Bits[30].MEM_EX_Result_Inst                                     |MB_FDRE_481                    |     1|
+|133   |            \Gen_Bits[31].MEM_EX_Result_Inst                                     |MB_FDRE_482                    |     1|
+|134   |            \Gen_Bits[3].MEM_EX_Result_Inst                                      |MB_FDRE_483                    |     1|
+|135   |            \Gen_Bits[4].MEM_EX_Result_Inst                                      |MB_FDRE_484                    |     1|
+|136   |            \Gen_Bits[5].MEM_EX_Result_Inst                                      |MB_FDRE_485                    |     1|
+|137   |            \Gen_Bits[6].MEM_EX_Result_Inst                                      |MB_FDRE_486                    |     1|
+|138   |            \Gen_Bits[7].MEM_EX_Result_Inst                                      |MB_FDRE_487                    |     1|
+|139   |            \Gen_Bits[8].MEM_EX_Result_Inst                                      |MB_FDRE_488                    |     1|
+|140   |            \Gen_Bits[9].MEM_EX_Result_Inst                                      |MB_FDRE_489                    |     1|
+|141   |          Operand_Select_I                                                       |Operand_Select_gti             |   300|
+|142   |            \Gen_Bit[0].MUXF7_I1                                                 |MB_MUXF7_426                   |     2|
+|143   |            \Gen_Bit[10].MUXF7_I1                                                |MB_MUXF7_427                   |     3|
+|144   |            \Gen_Bit[11].MUXF7_I1                                                |MB_MUXF7_428                   |     4|
+|145   |            \Gen_Bit[12].MUXF7_I1                                                |MB_MUXF7_429                   |     3|
+|146   |            \Gen_Bit[13].MUXF7_I1                                                |MB_MUXF7_430                   |     3|
+|147   |            \Gen_Bit[14].MUXF7_I1                                                |MB_MUXF7_431                   |     3|
+|148   |            \Gen_Bit[15].MUXF7_I1                                                |MB_MUXF7_432                   |     3|
+|149   |            \Gen_Bit[16].MUXF7_I1                                                |MB_MUXF7_433                   |     4|
+|150   |            \Gen_Bit[17].MUXF7_I1                                                |MB_MUXF7_434                   |     5|
+|151   |            \Gen_Bit[18].MUXF7_I1                                                |MB_MUXF7_435                   |     4|
+|152   |            \Gen_Bit[19].MUXF7_I1                                                |MB_MUXF7_436                   |     4|
+|153   |            \Gen_Bit[1].MUXF7_I1                                                 |MB_MUXF7_437                   |     3|
+|154   |            \Gen_Bit[20].MUXF7_I1                                                |MB_MUXF7_438                   |     4|
+|155   |            \Gen_Bit[21].MUXF7_I1                                                |MB_MUXF7_439                   |     4|
+|156   |            \Gen_Bit[22].MUXF7_I1                                                |MB_MUXF7_440                   |     4|
+|157   |            \Gen_Bit[23].MUXF7_I1                                                |MB_MUXF7_441                   |     4|
+|158   |            \Gen_Bit[24].MUXF7_I1                                                |MB_MUXF7_442                   |     2|
+|159   |            \Gen_Bit[25].MUXF7_I1                                                |MB_MUXF7_443                   |     2|
+|160   |            \Gen_Bit[26].MUXF7_I1                                                |MB_MUXF7_444                   |     2|
+|161   |            \Gen_Bit[27].MUXF7_I1                                                |MB_MUXF7_445                   |     2|
+|162   |            \Gen_Bit[28].MUXF7_I1                                                |MB_MUXF7_446                   |     2|
+|163   |            \Gen_Bit[29].MUXF7_I1                                                |MB_MUXF7_447                   |     2|
+|164   |            \Gen_Bit[2].MUXF7_I1                                                 |MB_MUXF7_448                   |     3|
+|165   |            \Gen_Bit[30].MUXF7_I1                                                |MB_MUXF7_449                   |     2|
+|166   |            \Gen_Bit[31].MUXF7_I1                                                |MB_MUXF7_450                   |     2|
+|167   |            \Gen_Bit[3].MUXF7_I1                                                 |MB_MUXF7_451                   |     4|
+|168   |            \Gen_Bit[4].MUXF7_I1                                                 |MB_MUXF7_452                   |     3|
+|169   |            \Gen_Bit[5].MUXF7_I1                                                 |MB_MUXF7_453                   |     3|
+|170   |            \Gen_Bit[6].MUXF7_I1                                                 |MB_MUXF7_454                   |     3|
+|171   |            \Gen_Bit[7].MUXF7_I1                                                 |MB_MUXF7_455                   |     4|
+|172   |            \Gen_Bit[8].MUXF7_I1                                                 |MB_MUXF7_456                   |     3|
+|173   |            \Gen_Bit[9].MUXF7_I1                                                 |MB_MUXF7_457                   |     3|
+|174   |          Register_File_I                                                        |Register_File_gti              |    20|
+|175   |            \Using_LUT6.All_RAM32M[0].ram32m_i                                   |MB_RAM32M                      |     1|
+|176   |            \Using_LUT6.All_RAM32M[10].ram32m_i                                  |MB_RAM32M_411                  |     2|
+|177   |            \Using_LUT6.All_RAM32M[11].ram32m_i                                  |MB_RAM32M_412                  |     3|
+|178   |            \Using_LUT6.All_RAM32M[12].ram32m_i                                  |MB_RAM32M_413                  |     1|
+|179   |            \Using_LUT6.All_RAM32M[13].ram32m_i                                  |MB_RAM32M_414                  |     1|
+|180   |            \Using_LUT6.All_RAM32M[14].ram32m_i                                  |MB_RAM32M_415                  |     1|
+|181   |            \Using_LUT6.All_RAM32M[15].ram32m_i                                  |MB_RAM32M_416                  |     1|
+|182   |            \Using_LUT6.All_RAM32M[1].ram32m_i                                   |MB_RAM32M_417                  |     1|
+|183   |            \Using_LUT6.All_RAM32M[2].ram32m_i                                   |MB_RAM32M_418                  |     1|
+|184   |            \Using_LUT6.All_RAM32M[3].ram32m_i                                   |MB_RAM32M_419                  |     1|
+|185   |            \Using_LUT6.All_RAM32M[4].ram32m_i                                   |MB_RAM32M_420                  |     1|
+|186   |            \Using_LUT6.All_RAM32M[5].ram32m_i                                   |MB_RAM32M_421                  |     1|
+|187   |            \Using_LUT6.All_RAM32M[6].ram32m_i                                   |MB_RAM32M_422                  |     1|
+|188   |            \Using_LUT6.All_RAM32M[7].ram32m_i                                   |MB_RAM32M_423                  |     1|
+|189   |            \Using_LUT6.All_RAM32M[8].ram32m_i                                   |MB_RAM32M_424                  |     1|
+|190   |            \Using_LUT6.All_RAM32M[9].ram32m_i                                   |MB_RAM32M_425                  |     2|
+|191   |          Shift_Logic_Module_I                                                   |Shift_Logic_Module_gti         |     0|
+|192   |          \Using_DAXI_ALU_Carry.Direct_MUXCY_I                                   |MB_MUXCY_301                   |     1|
+|193   |          \Using_DAXI_ALU_Carry.Post_MUXCY_I                                     |MB_MUXCY_302                   |     1|
+|194   |          \Using_DAXI_ALU_Carry.direct_lut_INST                                  |MB_LUT6_2__parameterized1      |     1|
+|195   |          Zero_Detect_I                                                          |Zero_Detect_gti                |    12|
+|196   |            Part_Of_Zero_Carry_Start                                             |MB_MUXCY_404                   |     1|
+|197   |            \Zero_Detecting[0].I_Part_Of_Zero_Detect                             |MB_MUXCY_405                   |     1|
+|198   |            \Zero_Detecting[1].I_Part_Of_Zero_Detect                             |MB_MUXCY_406                   |     1|
+|199   |            \Zero_Detecting[2].I_Part_Of_Zero_Detect                             |MB_MUXCY_407                   |     1|
+|200   |            \Zero_Detecting[3].I_Part_Of_Zero_Detect                             |MB_MUXCY_408                   |     1|
+|201   |            \Zero_Detecting[4].I_Part_Of_Zero_Detect                             |MB_MUXCY_409                   |     1|
+|202   |            \Zero_Detecting[5].I_Part_Of_Zero_Detect                             |MB_MUXCY_410                   |     1|
+|203   |          exception_registers_I1                                                 |exception_registers_gti        |   150|
+|204   |            CarryIn_MUXCY                                                        |MB_MUXCY_309                   |     1|
+|205   |            \Using_FPGA_LUT6.Gen_Ret_Addr[0].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5      |     1|
+|206   |            \Using_FPGA_LUT6.Gen_Ret_Addr[0].MUXCY_XOR_I                         |MB_MUXCY_XORCY_310             |     1|
+|207   |            \Using_FPGA_LUT6.Gen_Ret_Addr[0].WB_PC_FDE                           |MB_FDE                         |     1|
+|208   |            \Using_FPGA_LUT6.Gen_Ret_Addr[10].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_311  |     1|
+|209   |            \Using_FPGA_LUT6.Gen_Ret_Addr[10].MUXCY_XOR_I                        |MB_MUXCY_XORCY_312             |     2|
+|210   |            \Using_FPGA_LUT6.Gen_Ret_Addr[10].WB_PC_FDE                          |MB_FDE_313                     |     1|
+|211   |            \Using_FPGA_LUT6.Gen_Ret_Addr[11].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_314  |     1|
+|212   |            \Using_FPGA_LUT6.Gen_Ret_Addr[11].MUXCY_XOR_I                        |MB_MUXCY_XORCY_315             |     2|
+|213   |            \Using_FPGA_LUT6.Gen_Ret_Addr[11].WB_PC_FDE                          |MB_FDE_316                     |     1|
+|214   |            \Using_FPGA_LUT6.Gen_Ret_Addr[12].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_317  |     1|
+|215   |            \Using_FPGA_LUT6.Gen_Ret_Addr[12].MUXCY_XOR_I                        |MB_MUXCY_XORCY_318             |     2|
+|216   |            \Using_FPGA_LUT6.Gen_Ret_Addr[12].WB_PC_FDE                          |MB_FDE_319                     |     1|
+|217   |            \Using_FPGA_LUT6.Gen_Ret_Addr[13].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_320  |     1|
+|218   |            \Using_FPGA_LUT6.Gen_Ret_Addr[13].MUXCY_XOR_I                        |MB_MUXCY_XORCY_321             |     2|
+|219   |            \Using_FPGA_LUT6.Gen_Ret_Addr[13].WB_PC_FDE                          |MB_FDE_322                     |     1|
+|220   |            \Using_FPGA_LUT6.Gen_Ret_Addr[14].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_323  |     1|
+|221   |            \Using_FPGA_LUT6.Gen_Ret_Addr[14].MUXCY_XOR_I                        |MB_MUXCY_XORCY_324             |     2|
+|222   |            \Using_FPGA_LUT6.Gen_Ret_Addr[14].WB_PC_FDE                          |MB_FDE_325                     |     1|
+|223   |            \Using_FPGA_LUT6.Gen_Ret_Addr[15].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_326  |     1|
+|224   |            \Using_FPGA_LUT6.Gen_Ret_Addr[15].MUXCY_XOR_I                        |MB_MUXCY_XORCY_327             |     2|
+|225   |            \Using_FPGA_LUT6.Gen_Ret_Addr[15].WB_PC_FDE                          |MB_FDE_328                     |     1|
+|226   |            \Using_FPGA_LUT6.Gen_Ret_Addr[16].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_329  |     1|
+|227   |            \Using_FPGA_LUT6.Gen_Ret_Addr[16].MUXCY_XOR_I                        |MB_MUXCY_XORCY_330             |     4|
+|228   |            \Using_FPGA_LUT6.Gen_Ret_Addr[16].WB_PC_FDE                          |MB_FDE_331                     |     1|
+|229   |            \Using_FPGA_LUT6.Gen_Ret_Addr[17].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_332  |     1|
+|230   |            \Using_FPGA_LUT6.Gen_Ret_Addr[17].MUXCY_XOR_I                        |MB_MUXCY_XORCY_333             |     6|
+|231   |            \Using_FPGA_LUT6.Gen_Ret_Addr[17].WB_PC_FDE                          |MB_FDE_334                     |     1|
+|232   |            \Using_FPGA_LUT6.Gen_Ret_Addr[18].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_335  |     1|
+|233   |            \Using_FPGA_LUT6.Gen_Ret_Addr[18].MUXCY_XOR_I                        |MB_MUXCY_XORCY_336             |     4|
+|234   |            \Using_FPGA_LUT6.Gen_Ret_Addr[18].WB_PC_FDE                          |MB_FDE_337                     |     1|
+|235   |            \Using_FPGA_LUT6.Gen_Ret_Addr[19].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_338  |     1|
+|236   |            \Using_FPGA_LUT6.Gen_Ret_Addr[19].MUXCY_XOR_I                        |MB_MUXCY_XORCY_339             |     4|
+|237   |            \Using_FPGA_LUT6.Gen_Ret_Addr[19].WB_PC_FDE                          |MB_FDE_340                     |     1|
+|238   |            \Using_FPGA_LUT6.Gen_Ret_Addr[1].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_341  |     1|
+|239   |            \Using_FPGA_LUT6.Gen_Ret_Addr[1].MUXCY_XOR_I                         |MB_MUXCY_XORCY_342             |     2|
+|240   |            \Using_FPGA_LUT6.Gen_Ret_Addr[1].WB_PC_FDE                           |MB_FDE_343                     |     1|
+|241   |            \Using_FPGA_LUT6.Gen_Ret_Addr[20].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_344  |     1|
+|242   |            \Using_FPGA_LUT6.Gen_Ret_Addr[20].MUXCY_XOR_I                        |MB_MUXCY_XORCY_345             |     4|
+|243   |            \Using_FPGA_LUT6.Gen_Ret_Addr[20].WB_PC_FDE                          |MB_FDE_346                     |     1|
+|244   |            \Using_FPGA_LUT6.Gen_Ret_Addr[21].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_347  |     1|
+|245   |            \Using_FPGA_LUT6.Gen_Ret_Addr[21].MUXCY_XOR_I                        |MB_MUXCY_XORCY_348             |     4|
+|246   |            \Using_FPGA_LUT6.Gen_Ret_Addr[21].WB_PC_FDE                          |MB_FDE_349                     |     1|
+|247   |            \Using_FPGA_LUT6.Gen_Ret_Addr[22].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_350  |     1|
+|248   |            \Using_FPGA_LUT6.Gen_Ret_Addr[22].MUXCY_XOR_I                        |MB_MUXCY_XORCY_351             |     4|
+|249   |            \Using_FPGA_LUT6.Gen_Ret_Addr[22].WB_PC_FDE                          |MB_FDE_352                     |     1|
+|250   |            \Using_FPGA_LUT6.Gen_Ret_Addr[23].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_353  |     1|
+|251   |            \Using_FPGA_LUT6.Gen_Ret_Addr[23].MUXCY_XOR_I                        |MB_MUXCY_XORCY_354             |     4|
+|252   |            \Using_FPGA_LUT6.Gen_Ret_Addr[23].WB_PC_FDE                          |MB_FDE_355                     |     1|
+|253   |            \Using_FPGA_LUT6.Gen_Ret_Addr[24].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_356  |     1|
+|254   |            \Using_FPGA_LUT6.Gen_Ret_Addr[24].MUXCY_XOR_I                        |MB_MUXCY_XORCY_357             |     2|
+|255   |            \Using_FPGA_LUT6.Gen_Ret_Addr[24].WB_PC_FDE                          |MB_FDE_358                     |     1|
+|256   |            \Using_FPGA_LUT6.Gen_Ret_Addr[25].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_359  |     1|
+|257   |            \Using_FPGA_LUT6.Gen_Ret_Addr[25].MUXCY_XOR_I                        |MB_MUXCY_XORCY_360             |     2|
+|258   |            \Using_FPGA_LUT6.Gen_Ret_Addr[25].WB_PC_FDE                          |MB_FDE_361                     |     1|
+|259   |            \Using_FPGA_LUT6.Gen_Ret_Addr[26].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_362  |     1|
+|260   |            \Using_FPGA_LUT6.Gen_Ret_Addr[26].MUXCY_XOR_I                        |MB_MUXCY_XORCY_363             |     2|
+|261   |            \Using_FPGA_LUT6.Gen_Ret_Addr[26].WB_PC_FDE                          |MB_FDE_364                     |     1|
+|262   |            \Using_FPGA_LUT6.Gen_Ret_Addr[27].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_365  |     1|
+|263   |            \Using_FPGA_LUT6.Gen_Ret_Addr[27].MUXCY_XOR_I                        |MB_MUXCY_XORCY_366             |     2|
+|264   |            \Using_FPGA_LUT6.Gen_Ret_Addr[27].WB_PC_FDE                          |MB_FDE_367                     |     1|
+|265   |            \Using_FPGA_LUT6.Gen_Ret_Addr[28].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_368  |     1|
+|266   |            \Using_FPGA_LUT6.Gen_Ret_Addr[28].MUXCY_XOR_I                        |MB_MUXCY_XORCY_369             |     2|
+|267   |            \Using_FPGA_LUT6.Gen_Ret_Addr[28].WB_PC_FDE                          |MB_FDE_370                     |     1|
+|268   |            \Using_FPGA_LUT6.Gen_Ret_Addr[29].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_371  |     1|
+|269   |            \Using_FPGA_LUT6.Gen_Ret_Addr[29].MUXCY_XOR_I                        |MB_MUXCY_XORCY_372             |     2|
+|270   |            \Using_FPGA_LUT6.Gen_Ret_Addr[29].WB_PC_FDE                          |MB_FDE_373                     |     1|
+|271   |            \Using_FPGA_LUT6.Gen_Ret_Addr[2].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_374  |     1|
+|272   |            \Using_FPGA_LUT6.Gen_Ret_Addr[2].MUXCY_XOR_I                         |MB_MUXCY_XORCY_375             |     2|
+|273   |            \Using_FPGA_LUT6.Gen_Ret_Addr[2].WB_PC_FDE                           |MB_FDE_376                     |     1|
+|274   |            \Using_FPGA_LUT6.Gen_Ret_Addr[30].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_377  |     1|
+|275   |            \Using_FPGA_LUT6.Gen_Ret_Addr[30].MUXCY_XOR_I                        |MB_MUXCY_XORCY_378             |     2|
+|276   |            \Using_FPGA_LUT6.Gen_Ret_Addr[30].WB_PC_FDE                          |MB_FDE_379                     |     1|
+|277   |            \Using_FPGA_LUT6.Gen_Ret_Addr[31].I_RET_ADDR_WB                      |MB_LUT6_2__parameterized5_380  |     1|
+|278   |            \Using_FPGA_LUT6.Gen_Ret_Addr[31].MUXCY_XOR_I                        |MB_MUXCY_XORCY_381             |     2|
+|279   |            \Using_FPGA_LUT6.Gen_Ret_Addr[31].WB_PC_FDE                          |MB_FDE_382                     |     1|
+|280   |            \Using_FPGA_LUT6.Gen_Ret_Addr[3].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_383  |     1|
+|281   |            \Using_FPGA_LUT6.Gen_Ret_Addr[3].MUXCY_XOR_I                         |MB_MUXCY_XORCY_384             |     6|
+|282   |            \Using_FPGA_LUT6.Gen_Ret_Addr[3].WB_PC_FDE                           |MB_FDE_385                     |     1|
+|283   |            \Using_FPGA_LUT6.Gen_Ret_Addr[4].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_386  |     1|
+|284   |            \Using_FPGA_LUT6.Gen_Ret_Addr[4].MUXCY_XOR_I                         |MB_MUXCY_XORCY_387             |     2|
+|285   |            \Using_FPGA_LUT6.Gen_Ret_Addr[4].WB_PC_FDE                           |MB_FDE_388                     |     1|
+|286   |            \Using_FPGA_LUT6.Gen_Ret_Addr[5].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_389  |     1|
+|287   |            \Using_FPGA_LUT6.Gen_Ret_Addr[5].MUXCY_XOR_I                         |MB_MUXCY_XORCY_390             |     2|
+|288   |            \Using_FPGA_LUT6.Gen_Ret_Addr[5].WB_PC_FDE                           |MB_FDE_391                     |     1|
+|289   |            \Using_FPGA_LUT6.Gen_Ret_Addr[6].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_392  |     1|
+|290   |            \Using_FPGA_LUT6.Gen_Ret_Addr[6].MUXCY_XOR_I                         |MB_MUXCY_XORCY_393             |     2|
+|291   |            \Using_FPGA_LUT6.Gen_Ret_Addr[6].WB_PC_FDE                           |MB_FDE_394                     |     1|
+|292   |            \Using_FPGA_LUT6.Gen_Ret_Addr[7].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_395  |     1|
+|293   |            \Using_FPGA_LUT6.Gen_Ret_Addr[7].MUXCY_XOR_I                         |MB_MUXCY_XORCY_396             |     2|
+|294   |            \Using_FPGA_LUT6.Gen_Ret_Addr[7].WB_PC_FDE                           |MB_FDE_397                     |     1|
+|295   |            \Using_FPGA_LUT6.Gen_Ret_Addr[8].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_398  |     1|
+|296   |            \Using_FPGA_LUT6.Gen_Ret_Addr[8].MUXCY_XOR_I                         |MB_MUXCY_XORCY_399             |     2|
+|297   |            \Using_FPGA_LUT6.Gen_Ret_Addr[8].WB_PC_FDE                           |MB_FDE_400                     |     1|
+|298   |            \Using_FPGA_LUT6.Gen_Ret_Addr[9].I_RET_ADDR_WB                       |MB_LUT6_2__parameterized5_401  |     1|
+|299   |            \Using_FPGA_LUT6.Gen_Ret_Addr[9].MUXCY_XOR_I                         |MB_MUXCY_XORCY_402             |     2|
+|300   |            \Using_FPGA_LUT6.Gen_Ret_Addr[9].WB_PC_FDE                           |MB_FDE_403                     |     1|
+|301   |          msr_reg_i                                                              |msr_reg_gti                    |    21|
+|302   |            \MEM_MSR_Bits[28].Using_FDR.MSR_I                                    |MB_FDR_303                     |     3|
+|303   |            \MEM_MSR_Bits[29].Using_FDR.MSR_I                                    |MB_FDR_304                     |     4|
+|304   |            \MEM_MSR_Bits[30].Using_FDR.MSR_I                                    |MB_FDR_305                     |     3|
+|305   |            \OF_EX_MSR_Bits[28].Using_FDR.MSR_ex_I                               |MB_FDR_306                     |     3|
+|306   |            \OF_EX_MSR_Bits[29].Using_FDR.MSR_ex_I                               |MB_FDR_307                     |     3|
+|307   |            \OF_EX_MSR_Bits[30].Using_FDR.MSR_ex_I                               |MB_FDR_308                     |     2|
+|308   |        Decode_I                                                                 |Decode_gti                     |  1402|
+|309   |          PC_Module_I                                                            |PC_Module_gti                  |   344|
+|310   |            \Instruction_Prefetch_Mux[0].Gen_Instr_DFF                           |MB_FDR_208                     |     2|
+|311   |            \Instruction_Prefetch_Mux[0].PC_Mux_MUXF7                            |MB_MUXF7_209                   |     2|
+|312   |            \Instruction_Prefetch_Mux[10].Gen_Instr_DFF                          |MB_FDR_210                     |     3|
+|313   |            \Instruction_Prefetch_Mux[10].PC_Mux_MUXF7                           |MB_MUXF7_211                   |     2|
+|314   |            \Instruction_Prefetch_Mux[11].Gen_Instr_DFF                          |MB_FDR_212                     |     3|
+|315   |            \Instruction_Prefetch_Mux[11].PC_Mux_MUXF7                           |MB_MUXF7_213                   |     2|
+|316   |            \Instruction_Prefetch_Mux[12].Gen_Instr_DFF                          |MB_FDR_214                     |     3|
+|317   |            \Instruction_Prefetch_Mux[12].PC_Mux_MUXF7                           |MB_MUXF7_215                   |     2|
+|318   |            \Instruction_Prefetch_Mux[13].Gen_Instr_DFF                          |MB_FDR_216                     |     3|
+|319   |            \Instruction_Prefetch_Mux[13].PC_Mux_MUXF7                           |MB_MUXF7_217                   |     2|
+|320   |            \Instruction_Prefetch_Mux[14].Gen_Instr_DFF                          |MB_FDR_218                     |     3|
+|321   |            \Instruction_Prefetch_Mux[14].PC_Mux_MUXF7                           |MB_MUXF7_219                   |     2|
+|322   |            \Instruction_Prefetch_Mux[15].Gen_Instr_DFF                          |MB_FDR_220                     |     3|
+|323   |            \Instruction_Prefetch_Mux[15].PC_Mux_MUXF7                           |MB_MUXF7_221                   |     2|
+|324   |            \Instruction_Prefetch_Mux[16].Gen_Instr_DFF                          |MB_FDR_222                     |     3|
+|325   |            \Instruction_Prefetch_Mux[16].PC_Mux_MUXF7                           |MB_MUXF7_223                   |     2|
+|326   |            \Instruction_Prefetch_Mux[17].Gen_Instr_DFF                          |MB_FDR_224                     |     3|
+|327   |            \Instruction_Prefetch_Mux[17].PC_Mux_MUXF7                           |MB_MUXF7_225                   |     2|
+|328   |            \Instruction_Prefetch_Mux[18].Gen_Instr_DFF                          |MB_FDR_226                     |     3|
+|329   |            \Instruction_Prefetch_Mux[18].PC_Mux_MUXF7                           |MB_MUXF7_227                   |     2|
+|330   |            \Instruction_Prefetch_Mux[19].Gen_Instr_DFF                          |MB_FDR_228                     |     3|
+|331   |            \Instruction_Prefetch_Mux[19].PC_Mux_MUXF7                           |MB_MUXF7_229                   |     2|
+|332   |            \Instruction_Prefetch_Mux[1].Gen_Instr_DFF                           |MB_FDR_230                     |     3|
+|333   |            \Instruction_Prefetch_Mux[1].PC_Mux_MUXF7                            |MB_MUXF7_231                   |     2|
+|334   |            \Instruction_Prefetch_Mux[20].Gen_Instr_DFF                          |MB_FDR_232                     |     3|
+|335   |            \Instruction_Prefetch_Mux[20].PC_Mux_MUXF7                           |MB_MUXF7_233                   |     2|
+|336   |            \Instruction_Prefetch_Mux[21].Gen_Instr_DFF                          |MB_FDR_234                     |     3|
+|337   |            \Instruction_Prefetch_Mux[21].PC_Mux_MUXF7                           |MB_MUXF7_235                   |     2|
+|338   |            \Instruction_Prefetch_Mux[22].Gen_Instr_DFF                          |MB_FDR_236                     |     3|
+|339   |            \Instruction_Prefetch_Mux[22].PC_Mux_MUXF7                           |MB_MUXF7_237                   |     2|
+|340   |            \Instruction_Prefetch_Mux[23].Gen_Instr_DFF                          |MB_FDR_238                     |     3|
+|341   |            \Instruction_Prefetch_Mux[23].PC_Mux_MUXF7                           |MB_MUXF7_239                   |     2|
+|342   |            \Instruction_Prefetch_Mux[24].Gen_Instr_DFF                          |MB_FDR_240                     |     3|
+|343   |            \Instruction_Prefetch_Mux[24].PC_Mux_MUXF7                           |MB_MUXF7_241                   |     2|
+|344   |            \Instruction_Prefetch_Mux[25].Gen_Instr_DFF                          |MB_FDR_242                     |     3|
+|345   |            \Instruction_Prefetch_Mux[25].PC_Mux_MUXF7                           |MB_MUXF7_243                   |     2|
+|346   |            \Instruction_Prefetch_Mux[26].Gen_Instr_DFF                          |MB_FDR_244                     |     3|
+|347   |            \Instruction_Prefetch_Mux[26].PC_Mux_MUXF7                           |MB_MUXF7_245                   |     2|
+|348   |            \Instruction_Prefetch_Mux[27].Gen_Instr_DFF                          |MB_FDR_246                     |     3|
+|349   |            \Instruction_Prefetch_Mux[27].PC_Mux_MUXF7                           |MB_MUXF7_247                   |     2|
+|350   |            \Instruction_Prefetch_Mux[28].Gen_Instr_DFF                          |MB_FDR_248                     |     2|
+|351   |            \Instruction_Prefetch_Mux[28].PC_Mux_MUXF7                           |MB_MUXF7_249                   |     2|
+|352   |            \Instruction_Prefetch_Mux[29].Gen_Instr_DFF                          |MB_FDR_250                     |     2|
+|353   |            \Instruction_Prefetch_Mux[29].PC_Mux_MUXF7                           |MB_MUXF7_251                   |     2|
+|354   |            \Instruction_Prefetch_Mux[2].Gen_Instr_DFF                           |MB_FDR_252                     |     3|
+|355   |            \Instruction_Prefetch_Mux[2].PC_Mux_MUXF7                            |MB_MUXF7_253                   |     2|
+|356   |            \Instruction_Prefetch_Mux[30].Gen_Instr_DFF                          |MB_FDR_254                     |     2|
+|357   |            \Instruction_Prefetch_Mux[30].PC_Mux_MUXF7                           |MB_MUXF7_255                   |     2|
+|358   |            \Instruction_Prefetch_Mux[31].Gen_Instr_DFF                          |MB_FDR_256                     |     3|
+|359   |            \Instruction_Prefetch_Mux[31].PC_Mux_MUXF7                           |MB_MUXF7_257                   |     2|
+|360   |            \Instruction_Prefetch_Mux[3].Gen_Instr_DFF                           |MB_FDR_258                     |     3|
+|361   |            \Instruction_Prefetch_Mux[3].PC_Mux_MUXF7                            |MB_MUXF7_259                   |     2|
+|362   |            \Instruction_Prefetch_Mux[4].Gen_Instr_DFF                           |MB_FDR_260                     |     3|
+|363   |            \Instruction_Prefetch_Mux[4].PC_Mux_MUXF7                            |MB_MUXF7_261                   |     2|
+|364   |            \Instruction_Prefetch_Mux[5].Gen_Instr_DFF                           |MB_FDR_262                     |     3|
+|365   |            \Instruction_Prefetch_Mux[5].PC_Mux_MUXF7                            |MB_MUXF7_263                   |     2|
+|366   |            \Instruction_Prefetch_Mux[6].Gen_Instr_DFF                           |MB_FDR_264                     |     3|
+|367   |            \Instruction_Prefetch_Mux[6].PC_Mux_MUXF7                            |MB_MUXF7_265                   |     2|
+|368   |            \Instruction_Prefetch_Mux[7].Gen_Instr_DFF                           |MB_FDR_266                     |     3|
+|369   |            \Instruction_Prefetch_Mux[7].PC_Mux_MUXF7                            |MB_MUXF7_267                   |     2|
+|370   |            \Instruction_Prefetch_Mux[8].Gen_Instr_DFF                           |MB_FDR_268                     |     3|
+|371   |            \Instruction_Prefetch_Mux[8].PC_Mux_MUXF7                            |MB_MUXF7_269                   |     2|
+|372   |            \Instruction_Prefetch_Mux[9].Gen_Instr_DFF                           |MB_FDR_270                     |     3|
+|373   |            \Instruction_Prefetch_Mux[9].PC_Mux_MUXF7                            |MB_MUXF7_271                   |     2|
+|374   |            \Using_FPGA.Incr_PC[0].MUXCY_XOR_I                                   |MB_MUXCY_XORCY                 |     1|
+|375   |            \Using_FPGA.Incr_PC[10].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_272             |     2|
+|376   |            \Using_FPGA.Incr_PC[11].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_273             |     2|
+|377   |            \Using_FPGA.Incr_PC[12].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_274             |     2|
+|378   |            \Using_FPGA.Incr_PC[13].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_275             |     2|
+|379   |            \Using_FPGA.Incr_PC[14].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_276             |     2|
+|380   |            \Using_FPGA.Incr_PC[15].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_277             |     2|
+|381   |            \Using_FPGA.Incr_PC[16].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_278             |     2|
+|382   |            \Using_FPGA.Incr_PC[17].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_279             |     2|
+|383   |            \Using_FPGA.Incr_PC[18].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_280             |     2|
+|384   |            \Using_FPGA.Incr_PC[19].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_281             |     2|
+|385   |            \Using_FPGA.Incr_PC[1].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_282             |     2|
+|386   |            \Using_FPGA.Incr_PC[20].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_283             |     2|
+|387   |            \Using_FPGA.Incr_PC[21].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_284             |     2|
+|388   |            \Using_FPGA.Incr_PC[22].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_285             |     2|
+|389   |            \Using_FPGA.Incr_PC[23].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_286             |     2|
+|390   |            \Using_FPGA.Incr_PC[24].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_287             |     2|
+|391   |            \Using_FPGA.Incr_PC[25].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_288             |     2|
+|392   |            \Using_FPGA.Incr_PC[26].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_289             |     2|
+|393   |            \Using_FPGA.Incr_PC[27].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_290             |     2|
+|394   |            \Using_FPGA.Incr_PC[28].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_291             |     2|
+|395   |            \Using_FPGA.Incr_PC[29].MUXCY_XOR_I                                  |MB_MUXCY_XORCY_292             |     2|
+|396   |            \Using_FPGA.Incr_PC[2].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_293             |     2|
+|397   |            \Using_FPGA.Incr_PC[3].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_294             |     2|
+|398   |            \Using_FPGA.Incr_PC[4].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_295             |     2|
+|399   |            \Using_FPGA.Incr_PC[5].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_296             |     2|
+|400   |            \Using_FPGA.Incr_PC[6].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_297             |     2|
+|401   |            \Using_FPGA.Incr_PC[7].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_298             |     2|
+|402   |            \Using_FPGA.Incr_PC[8].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_299             |     2|
+|403   |            \Using_FPGA.Incr_PC[9].MUXCY_XOR_I                                   |MB_MUXCY_XORCY_300             |     2|
+|404   |          PreFetch_Buffer_I1                                                     |PreFetch_Buffer_gti            |   544|
+|405   |            \Gen_Mux_Select_LUT6[1].Gen_Sel_DFF                                  |MB_FDR_114                     |     4|
+|406   |            \Gen_Mux_Select_LUT6[1].Mux_Select_LUT6                              |MB_LUT6                        |     1|
+|407   |            \Gen_Mux_Select_LUT6[2].Gen_Sel_DFF                                  |MB_FDR_115                     |     4|
+|408   |            \Gen_Mux_Select_LUT6[2].Mux_Select_LUT6                              |MB_LUT6_116                    |     1|
+|409   |            \Gen_Mux_Select_LUT6[3].Gen_Sel_DFF                                  |MB_FDR_117                     |     1|
+|410   |            \Gen_Mux_Select_LUT6[3].Mux_Select_LUT6                              |MB_LUT6_118                    |     1|
+|411   |            \Gen_Mux_Select_LUT6[4].Gen_Sel_DFF                                  |MB_FDR_119                     |    43|
+|412   |            \Gen_Mux_Select_LUT6[4].Mux_Select_LUT6                              |MB_LUT6_120                    |     1|
+|413   |            \Gen_Mux_Select_LUT6[4].Using_ExtraMUX.Mux_Select_Delayslot_LUT6     |MB_LUT6__parameterized2        |     1|
+|414   |            \Gen_Mux_Select_LUT6[4].Using_ExtraMUX.Sel_Mux_MUXF7                 |MB_MUXF7                       |     2|
+|415   |            \Instruction_Prefetch_Mux[0].Gen_Instr_DFF                           |MB_FDR_121                     |     1|
+|416   |            \Instruction_Prefetch_Mux[0].Instr_Mux_MUXF7                         |MB_MUXF7_122                   |     1|
+|417   |            \Instruction_Prefetch_Mux[10].Gen_Instr_DFF                          |MB_FDR_123                     |     2|
+|418   |            \Instruction_Prefetch_Mux[10].Instr_Mux_MUXF7                        |MB_MUXF7_124                   |     1|
+|419   |            \Instruction_Prefetch_Mux[11].Gen_Instr_DFF                          |MB_FDR_125                     |     1|
+|420   |            \Instruction_Prefetch_Mux[11].Instr_Mux_MUXF7                        |MB_MUXF7_126                   |     1|
+|421   |            \Instruction_Prefetch_Mux[12].Gen_Instr_DFF                          |MB_FDR_127                     |     1|
+|422   |            \Instruction_Prefetch_Mux[12].Instr_Mux_MUXF7                        |MB_MUXF7_128                   |     1|
+|423   |            \Instruction_Prefetch_Mux[13].Gen_Instr_DFF                          |MB_FDR_129                     |     2|
+|424   |            \Instruction_Prefetch_Mux[13].Instr_Mux_MUXF7                        |MB_MUXF7_130                   |     1|
+|425   |            \Instruction_Prefetch_Mux[14].Gen_Instr_DFF                          |MB_FDR_131                     |     2|
+|426   |            \Instruction_Prefetch_Mux[14].Instr_Mux_MUXF7                        |MB_MUXF7_132                   |     1|
+|427   |            \Instruction_Prefetch_Mux[15].Gen_Instr_DFF                          |MB_FDR_133                     |     1|
+|428   |            \Instruction_Prefetch_Mux[15].Instr_Mux_MUXF7                        |MB_MUXF7_134                   |     1|
+|429   |            \Instruction_Prefetch_Mux[16].Gen_Instr_DFF                          |MB_FDR_135                     |    18|
+|430   |            \Instruction_Prefetch_Mux[16].Instr_Mux_MUXF7                        |MB_MUXF7_136                   |     1|
+|431   |            \Instruction_Prefetch_Mux[17].Gen_Instr_DFF                          |MB_FDR_137                     |     8|
+|432   |            \Instruction_Prefetch_Mux[17].Instr_Mux_MUXF7                        |MB_MUXF7_138                   |     1|
+|433   |            \Instruction_Prefetch_Mux[18].Gen_Instr_DFF                          |MB_FDR_139                     |     2|
+|434   |            \Instruction_Prefetch_Mux[18].Instr_Mux_MUXF7                        |MB_MUXF7_140                   |     1|
+|435   |            \Instruction_Prefetch_Mux[19].Gen_Instr_DFF                          |MB_FDR_141                     |     2|
+|436   |            \Instruction_Prefetch_Mux[19].Instr_Mux_MUXF7                        |MB_MUXF7_142                   |     1|
+|437   |            \Instruction_Prefetch_Mux[1].Gen_Instr_DFF                           |MB_FDR_143                     |    25|
+|438   |            \Instruction_Prefetch_Mux[1].Instr_Mux_MUXF7                         |MB_MUXF7_144                   |     1|
+|439   |            \Instruction_Prefetch_Mux[20].Gen_Instr_DFF                          |MB_FDR_145                     |     2|
+|440   |            \Instruction_Prefetch_Mux[20].Instr_Mux_MUXF7                        |MB_MUXF7_146                   |     1|
+|441   |            \Instruction_Prefetch_Mux[21].Gen_Instr_DFF                          |MB_FDR_147                     |     3|
+|442   |            \Instruction_Prefetch_Mux[21].Instr_Mux_MUXF7                        |MB_MUXF7_148                   |     1|
+|443   |            \Instruction_Prefetch_Mux[22].Gen_Instr_DFF                          |MB_FDR_149                     |     3|
+|444   |            \Instruction_Prefetch_Mux[22].Instr_Mux_MUXF7                        |MB_MUXF7_150                   |     1|
+|445   |            \Instruction_Prefetch_Mux[23].Gen_Instr_DFF                          |MB_FDR_151                     |     3|
+|446   |            \Instruction_Prefetch_Mux[23].Instr_Mux_MUXF7                        |MB_MUXF7_152                   |     1|
+|447   |            \Instruction_Prefetch_Mux[24].Gen_Instr_DFF                          |MB_FDR_153                     |     2|
+|448   |            \Instruction_Prefetch_Mux[24].Instr_Mux_MUXF7                        |MB_MUXF7_154                   |     1|
+|449   |            \Instruction_Prefetch_Mux[25].Gen_Instr_DFF                          |MB_FDR_155                     |     2|
+|450   |            \Instruction_Prefetch_Mux[25].Instr_Mux_MUXF7                        |MB_MUXF7_156                   |     1|
+|451   |            \Instruction_Prefetch_Mux[26].Gen_Instr_DFF                          |MB_FDR_157                     |     2|
+|452   |            \Instruction_Prefetch_Mux[26].Instr_Mux_MUXF7                        |MB_MUXF7_158                   |     1|
+|453   |            \Instruction_Prefetch_Mux[27].Gen_Instr_DFF                          |MB_FDR_159                     |     3|
+|454   |            \Instruction_Prefetch_Mux[27].Instr_Mux_MUXF7                        |MB_MUXF7_160                   |     1|
+|455   |            \Instruction_Prefetch_Mux[28].Gen_Instr_DFF                          |MB_FDR_161                     |     2|
+|456   |            \Instruction_Prefetch_Mux[28].Instr_Mux_MUXF7                        |MB_MUXF7_162                   |     1|
+|457   |            \Instruction_Prefetch_Mux[29].Gen_Instr_DFF                          |MB_FDR_163                     |     2|
+|458   |            \Instruction_Prefetch_Mux[29].Instr_Mux_MUXF7                        |MB_MUXF7_164                   |     1|
+|459   |            \Instruction_Prefetch_Mux[2].Gen_Instr_DFF                           |MB_FDR_165                     |     3|
+|460   |            \Instruction_Prefetch_Mux[2].Instr_Mux_MUXF7                         |MB_MUXF7_166                   |     1|
+|461   |            \Instruction_Prefetch_Mux[30].Gen_Instr_DFF                          |MB_FDR_167                     |     4|
+|462   |            \Instruction_Prefetch_Mux[30].Instr_Mux_MUXF7                        |MB_MUXF7_168                   |     1|
+|463   |            \Instruction_Prefetch_Mux[31].Gen_Instr_DFF                          |MB_FDR_169                     |     3|
+|464   |            \Instruction_Prefetch_Mux[31].Instr_Mux_MUXF7                        |MB_MUXF7_170                   |     1|
+|465   |            \Instruction_Prefetch_Mux[32].Gen_Instr_DFF                          |MB_FDR_171                     |    33|
+|466   |            \Instruction_Prefetch_Mux[32].Instr_Mux_MUXF7                        |MB_MUXF7_172                   |     1|
+|467   |            \Instruction_Prefetch_Mux[33].Gen_Instr_DFF                          |MB_FDR_173                     |    60|
+|468   |            \Instruction_Prefetch_Mux[33].Instr_Mux_MUXF7                        |MB_MUXF7_174                   |     1|
+|469   |            \Instruction_Prefetch_Mux[34].Gen_Instr_DFF                          |MB_FDR_175                     |     1|
+|470   |            \Instruction_Prefetch_Mux[34].Instr_Mux_MUXF7                        |MB_MUXF7_176                   |     1|
+|471   |            \Instruction_Prefetch_Mux[35].Gen_Instr_DFF                          |MB_FDR_177                     |     2|
+|472   |            \Instruction_Prefetch_Mux[35].Instr_Mux_MUXF7                        |MB_MUXF7_178                   |     1|
+|473   |            \Instruction_Prefetch_Mux[36].Gen_Instr_DFF                          |MB_FDR_179                     |     1|
+|474   |            \Instruction_Prefetch_Mux[36].Instr_Mux_MUXF7                        |MB_MUXF7_180                   |     1|
+|475   |            \Instruction_Prefetch_Mux[37].Gen_Instr_DFF                          |MB_FDR_181                     |     4|
+|476   |            \Instruction_Prefetch_Mux[37].Instr_Mux_MUXF7                        |MB_MUXF7_182                   |     1|
+|477   |            \Instruction_Prefetch_Mux[38].Gen_Instr_DFF                          |MB_FDR_183                     |    67|
+|478   |            \Instruction_Prefetch_Mux[38].Instr_Mux_MUXF7                        |MB_MUXF7_184                   |     1|
+|479   |            \Instruction_Prefetch_Mux[39].Gen_Instr_DFF                          |MB_FDR_185                     |     6|
+|480   |            \Instruction_Prefetch_Mux[39].Instr_Mux_MUXF7                        |MB_MUXF7_186                   |     1|
+|481   |            \Instruction_Prefetch_Mux[3].Gen_Instr_DFF                           |MB_FDR_187                     |    16|
+|482   |            \Instruction_Prefetch_Mux[3].Instr_Mux_MUXF7                         |MB_MUXF7_188                   |     1|
+|483   |            \Instruction_Prefetch_Mux[40].Gen_Instr_DFF                          |MB_FDR_189                     |     1|
+|484   |            \Instruction_Prefetch_Mux[40].Instr_Mux_MUXF7                        |MB_MUXF7_190                   |     1|
+|485   |            \Instruction_Prefetch_Mux[41].Gen_Instr_DFF                          |MB_FDR_191                     |     2|
+|486   |            \Instruction_Prefetch_Mux[41].Instr_Mux_MUXF7                        |MB_MUXF7_192                   |     1|
+|487   |            \Instruction_Prefetch_Mux[42].Gen_Instr_DFF                          |MB_FDR_193                     |     3|
+|488   |            \Instruction_Prefetch_Mux[42].Instr_Mux_MUXF7                        |MB_MUXF7_194                   |     1|
+|489   |            \Instruction_Prefetch_Mux[4].Gen_Instr_DFF                           |MB_FDR_195                     |     9|
+|490   |            \Instruction_Prefetch_Mux[4].Instr_Mux_MUXF7                         |MB_MUXF7_196                   |     1|
+|491   |            \Instruction_Prefetch_Mux[5].Gen_Instr_DFF                           |MB_FDR_197                     |    13|
+|492   |            \Instruction_Prefetch_Mux[5].Instr_Mux_MUXF7                         |MB_MUXF7_198                   |     1|
+|493   |            \Instruction_Prefetch_Mux[6].Gen_Instr_DFF                           |MB_FDR_199                     |     5|
+|494   |            \Instruction_Prefetch_Mux[6].Instr_Mux_MUXF7                         |MB_MUXF7_200                   |     1|
+|495   |            \Instruction_Prefetch_Mux[7].Gen_Instr_DFF                           |MB_FDR_201                     |     1|
+|496   |            \Instruction_Prefetch_Mux[7].Instr_Mux_MUXF7                         |MB_MUXF7_202                   |     1|
+|497   |            \Instruction_Prefetch_Mux[8].Gen_Instr_DFF                           |MB_FDR_203                     |    18|
+|498   |            \Instruction_Prefetch_Mux[8].Instr_Mux_MUXF7                         |MB_MUXF7_204                   |     1|
+|499   |            \Instruction_Prefetch_Mux[9].Gen_Instr_DFF                           |MB_FDR_205                     |     4|
+|500   |            \Instruction_Prefetch_Mux[9].Instr_Mux_MUXF7                         |MB_MUXF7_206                   |     1|
+|501   |            Last_Sel_DFF                                                         |MB_FDS                         |    44|
+|502   |            Mux_Select_Empty_LUT6                                                |MB_LUT6__parameterized4        |     1|
+|503   |            Mux_Select_OF_Valid_LUT6                                             |MB_LUT6__parameterized6        |     1|
+|504   |            OF_Valid_DFF                                                         |MB_FDR_207                     |     7|
+|505   |          \Use_MuxCy[10].OF_Piperun_Stage                                        |carry_and                      |     1|
+|506   |            MUXCY_I                                                              |MB_MUXCY_113                   |     1|
+|507   |          \Use_MuxCy[11].OF_Piperun_Stage                                        |carry_and_58                   |     6|
+|508   |            MUXCY_I                                                              |MB_MUXCY_112                   |     6|
+|509   |          \Use_MuxCy[1].OF_Piperun_Stage                                         |carry_and_59                   |     1|
+|510   |            MUXCY_I                                                              |MB_MUXCY_111                   |     1|
+|511   |          \Use_MuxCy[2].OF_Piperun_Stage                                         |carry_and_60                   |     2|
+|512   |            MUXCY_I                                                              |MB_MUXCY_110                   |     2|
+|513   |          \Use_MuxCy[3].OF_Piperun_Stage                                         |carry_and_61                   |    10|
+|514   |            MUXCY_I                                                              |MB_MUXCY_109                   |    10|
+|515   |          \Use_MuxCy[4].OF_Piperun_Stage                                         |carry_and_62                   |     1|
+|516   |            MUXCY_I                                                              |MB_MUXCY_108                   |     1|
+|517   |          \Use_MuxCy[5].OF_Piperun_Stage                                         |carry_and_63                   |     1|
+|518   |            MUXCY_I                                                              |MB_MUXCY_107                   |     1|
+|519   |          \Use_MuxCy[6].OF_Piperun_Stage                                         |carry_and_64                   |     1|
+|520   |            MUXCY_I                                                              |MB_MUXCY_106                   |     1|
+|521   |          \Use_MuxCy[7].OF_Piperun_Stage                                         |carry_and_65                   |     1|
+|522   |            MUXCY_I                                                              |MB_MUXCY_105                   |     1|
+|523   |          \Use_MuxCy[8].OF_Piperun_Stage                                         |carry_and_66                   |     1|
+|524   |            MUXCY_I                                                              |MB_MUXCY_104                   |     1|
+|525   |          \Use_MuxCy[9].OF_Piperun_Stage                                         |carry_and_67                   |     1|
+|526   |            MUXCY_I                                                              |MB_MUXCY_103                   |     1|
+|527   |          \Using_FPGA.Gen_Bits[28].MEM_EX_Result_Inst                            |MB_FDRE                        |     2|
+|528   |          \Using_FPGA.Gen_Bits[31].MEM_EX_Result_Inst                            |MB_FDRE_68                     |     2|
+|529   |          \Using_FPGA_2.ex_byte_access_i_Inst                                    |MB_FDRE_69                     |     1|
+|530   |          \Using_FPGA_2.ex_doublet_access_i_Inst                                 |MB_FDRE_70                     |     1|
+|531   |          \Using_FPGA_2.ex_is_load_instr_Inst                                    |MB_FDRE_71                     |     5|
+|532   |          \Using_FPGA_2.ex_is_lwx_instr_Inst                                     |MB_FDRE_72                     |     1|
+|533   |          \Using_FPGA_2.ex_is_swx_instr_Inst                                     |MB_FDRE_73                     |     4|
+|534   |          \Using_FPGA_2.ex_load_store_instr_Inst                                 |MB_FDRE_74                     |     7|
+|535   |          \Using_FPGA_2.ex_reverse_mem_access_inst                               |MB_FDRE_75                     |     3|
+|536   |          \Using_FPGA_3.ex_clear_MSR_BIP_instr_Inst                              |MB_FDRE_76                     |     4|
+|537   |          \Using_FPGA_3.of_clear_MSR_BIP_hold_Inst                               |MB_FDR                         |     3|
+|538   |          \Using_FPGA_4.of_read_ex_write_op1_conflict_INST1                      |MB_LUT6__parameterized8        |     1|
+|539   |          \Using_FPGA_4.of_read_ex_write_op1_conflict_INST2                      |MB_LUT6__parameterized10       |     2|
+|540   |          \Using_FPGA_4.of_read_ex_write_op2_conflict_INST1                      |MB_LUT6__parameterized8_77     |     1|
+|541   |          \Using_FPGA_4.of_read_ex_write_op2_conflict_INST2                      |MB_LUT6__parameterized10_78    |     1|
+|542   |          \Using_FPGA_4.of_read_ex_write_op3_conflict_INST1                      |MB_LUT6__parameterized8_79     |     2|
+|543   |          \Using_FPGA_4.of_read_ex_write_op3_conflict_INST2                      |MB_LUT6__parameterized10_80    |     1|
+|544   |          \Using_FPGA_4.of_read_mem_write_op1_conflict_INST1                     |MB_LUT6__parameterized8_81     |     1|
+|545   |          \Using_FPGA_4.of_read_mem_write_op1_conflict_INST2                     |MB_LUT6__parameterized10_82    |     2|
+|546   |          \Using_FPGA_4.of_read_mem_write_op2_conflict_INST1                     |MB_LUT6__parameterized8_83     |     1|
+|547   |          \Using_FPGA_4.of_read_mem_write_op2_conflict_INST2                     |MB_LUT6__parameterized10_84    |     1|
+|548   |          \Using_FPGA_4.of_read_mem_write_op3_conflict_INST1                     |MB_LUT6__parameterized8_85     |     1|
+|549   |          \Using_FPGA_4.of_read_mem_write_op3_conflict_INST2                     |MB_LUT6__parameterized10_86    |     2|
+|550   |          \Using_PC_Incr_Dbg_or_Prot.if_pc_incr_carry_and_1                      |carry_and_87                   |     1|
+|551   |            MUXCY_I                                                              |MB_MUXCY_102                   |     1|
+|552   |          if_pc_incr_carry_and_0                                                 |carry_and_88                   |     2|
+|553   |            MUXCY_I                                                              |MB_MUXCY_101                   |     2|
+|554   |          if_pc_incr_carry_and_3                                                 |carry_and_89                   |     1|
+|555   |            MUXCY_I                                                              |MB_MUXCY_100                   |     1|
+|556   |          jump_logic_I1                                                          |jump_logic                     |    62|
+|557   |            MUXCY_JUMP_CARRY                                                     |MB_MUXCY_94                    |     1|
+|558   |            MUXCY_JUMP_CARRY2                                                    |MB_MUXCY_95                    |     3|
+|559   |            MUXCY_JUMP_CARRY3                                                    |MB_MUXCY_96                    |     2|
+|560   |            MUXCY_JUMP_CARRY4                                                    |MB_MUXCY_97                    |     2|
+|561   |            MUXCY_JUMP_CARRY5                                                    |MB_MUXCY_98                    |     1|
+|562   |            MUXCY_JUMP_CARRY6                                                    |MB_MUXCY_99                    |    42|
+|563   |          mem_PipeRun_carry_and                                                  |carry_and_90                   |     4|
+|564   |            MUXCY_I                                                              |MB_MUXCY_93                    |     4|
+|565   |          mem_wait_on_ready_N_carry_or                                           |carry_or_91                    |     2|
+|566   |            MUXCY_I                                                              |MB_MUXCY_92                    |     2|
+|567   |        \Use_DBUS.DAXI_Interface_I1                                              |DAXI_interface                 |   113|
+|568   |        \Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1                                |MB_AND2B1L                     |     1|
+|569   |        \Use_Debug_Logic.Master_Core.Debug_Perf                                  |Debug                          |   413|
+|570   |          \Serial_Dbg_Intf.SRL16E_1                                              |MB_SRL16E                      |     1|
+|571   |          \Serial_Dbg_Intf.SRL16E_2                                              |MB_SRL16E__parameterized1      |     1|
+|572   |          \Serial_Dbg_Intf.SRL16E_3                                              |MB_SRL16E__parameterized7      |     1|
+|573   |          \Serial_Dbg_Intf.SRL16E_4                                              |MB_SRL16E__parameterized9      |     2|
+|574   |          \Serial_Dbg_Intf.SRL16E_7                                              |MB_SRL16E__parameterized1_17   |     1|
+|575   |          \Serial_Dbg_Intf.SRL16E_8                                              |MB_SRL16E__parameterized1_18   |     2|
+|576   |          \Serial_Dbg_Intf.The_Cache_Addresses[1].SRL16E_Cache_I                 |MB_SRL16E__parameterized3      |     1|
+|577   |          \Serial_Dbg_Intf.The_Cache_Addresses[2].SRL16E_Cache_I                 |MB_SRL16E__parameterized5      |     5|
+|578   |          \Serial_Dbg_Intf.The_Cache_Addresses[3].SRL16E_Cache_I                 |MB_SRL16E__parameterized1_19   |     1|
+|579   |          \Serial_Dbg_Intf.The_Cache_Addresses[4].SRL16E_Cache_I                 |MB_SRL16E__parameterized1_20   |     1|
+|580   |          \Serial_Dbg_Intf.The_Cache_Addresses[5].SRL16E_Cache_I                 |MB_SRL16E__parameterized3_21   |     1|
+|581   |          \Serial_Dbg_Intf.The_Cache_Addresses[6].SRL16E_Cache_I                 |MB_SRL16E__parameterized5_22   |     2|
+|582   |          \Serial_Dbg_Intf.The_Cache_Addresses[7].SRL16E_Cache_I                 |MB_SRL16E__parameterized1_23   |     1|
+|583   |          \Serial_Dbg_Intf.The_Cache_Addresses[8].SRL16E_Cache_I                 |MB_SRL16E__parameterized1_24   |     1|
+|584   |          \Serial_Dbg_Intf.sync_dbg_brk_hit                                      |mb_sync_bit__parameterized2    |     1|
+|585   |          \Serial_Dbg_Intf.sync_dbg_hit                                          |mb_sync_vec                    |     2|
+|586   |            \sync_bits[0].sync_bit                                               |mb_sync_bit__parameterized2_57 |     2|
+|587   |          \Serial_Dbg_Intf.sync_dbg_wakeup                                       |mb_sync_bit__parameterized4    |     3|
+|588   |          \Serial_Dbg_Intf.sync_pause                                            |mb_sync_bit__parameterized2_25 |     1|
+|589   |          \Serial_Dbg_Intf.sync_running_clock                                    |mb_sync_bit__parameterized2_26 |     1|
+|590   |          \Serial_Dbg_Intf.sync_sample                                           |mb_sync_vec__parameterized1    |    30|
+|591   |            \sync_bits[0].sync_bit                                               |mb_sync_bit_47                 |     3|
+|592   |            \sync_bits[1].sync_bit                                               |mb_sync_bit_48                 |     3|
+|593   |            \sync_bits[2].sync_bit                                               |mb_sync_bit_49                 |     4|
+|594   |            \sync_bits[3].sync_bit                                               |mb_sync_bit_50                 |     3|
+|595   |            \sync_bits[4].sync_bit                                               |mb_sync_bit_51                 |     3|
+|596   |            \sync_bits[5].sync_bit                                               |mb_sync_bit_52                 |     2|
+|597   |            \sync_bits[6].sync_bit                                               |mb_sync_bit_53                 |     3|
+|598   |            \sync_bits[7].sync_bit                                               |mb_sync_bit_54                 |     4|
+|599   |            \sync_bits[8].sync_bit                                               |mb_sync_bit_55                 |     3|
+|600   |            \sync_bits[9].sync_bit                                               |mb_sync_bit_56                 |     2|
+|601   |          \Serial_Dbg_Intf.sync_sleep                                            |mb_sync_bit__parameterized2_27 |     2|
+|602   |          \Serial_Dbg_Intf.sync_stop_CPU                                         |mb_sync_bit__parameterized2_28 |     1|
+|603   |          \Using_PC_Breakpoints.All_PC_Brks[0].Serial_Interface_1.address_hit_I  |address_hit                    |    23|
+|604   |            \Compare[0].MUXCY_I                                                  |MB_MUXCY_31                    |     1|
+|605   |            \Compare[0].SRLC16E_I                                                |MB_SRLC16E                     |     3|
+|606   |            \Compare[1].MUXCY_I                                                  |MB_MUXCY_32                    |     1|
+|607   |            \Compare[1].SRLC16E_I                                                |MB_SRLC16E_33                  |     1|
+|608   |            \Compare[2].MUXCY_I                                                  |MB_MUXCY_34                    |     1|
+|609   |            \Compare[2].SRLC16E_I                                                |MB_SRLC16E_35                  |     1|
+|610   |            \Compare[3].MUXCY_I                                                  |MB_MUXCY_36                    |     1|
+|611   |            \Compare[3].SRLC16E_I                                                |MB_SRLC16E_37                  |     1|
+|612   |            \Compare[4].MUXCY_I                                                  |MB_MUXCY_38                    |     1|
+|613   |            \Compare[4].SRLC16E_I                                                |MB_SRLC16E_39                  |     1|
+|614   |            \Compare[5].MUXCY_I                                                  |MB_MUXCY_40                    |     1|
+|615   |            \Compare[5].SRLC16E_I                                                |MB_SRLC16E_41                  |     1|
+|616   |            \Compare[6].MUXCY_I                                                  |MB_MUXCY_42                    |     1|
+|617   |            \Compare[6].SRLC16E_I                                                |MB_SRLC16E_43                  |     1|
+|618   |            \Compare[7].MUXCY_I                                                  |MB_MUXCY_44                    |     1|
+|619   |            \Compare[7].SRLC16E_I                                                |MB_SRLC16E_45                  |     1|
+|620   |            \The_First_BreakPoints.MUXCY_Post                                    |MB_MUXCY_46                    |     5|
+|621   |          sync_trig_ack_in_0                                                     |mb_sync_bit__parameterized4_29 |     2|
+|622   |          sync_trig_out_0                                                        |mb_sync_bit__parameterized4_30 |     3|
+|623   |        instr_mux_I                                                              |instr_mux                      |    19|
+|624   |          \Mux_LD.LD_inst                                                        |mux_bus                        |    19|
+|625   |            \Mux_Loop[0].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3      |     1|
+|626   |            \Mux_Loop[10].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_2    |     1|
+|627   |            \Mux_Loop[11].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_3    |     1|
+|628   |            \Mux_Loop[12].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_4    |     1|
+|629   |            \Mux_Loop[13].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_5    |     1|
+|630   |            \Mux_Loop[14].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_6    |     1|
+|631   |            \Mux_Loop[15].I_MUX_LUT6                                             |MB_LUT6_2__parameterized3_7    |     1|
+|632   |            \Mux_Loop[1].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_8    |     1|
+|633   |            \Mux_Loop[2].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_9    |     1|
+|634   |            \Mux_Loop[3].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_10   |     4|
+|635   |            \Mux_Loop[4].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_11   |     1|
+|636   |            \Mux_Loop[5].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_12   |     1|
+|637   |            \Mux_Loop[6].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_13   |     1|
+|638   |            \Mux_Loop[7].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_14   |     1|
+|639   |            \Mux_Loop[8].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_15   |     1|
+|640   |            \Mux_Loop[9].I_MUX_LUT6                                              |MB_LUT6_2__parameterized3_16   |     1|
+|641   |        mem_databus_ready_sel_carry_or                                           |carry_or                       |     1|
+|642   |          MUXCY_I                                                                |MB_MUXCY                       |     1|
+|643   |      Reset_DFF                                                                  |mb_sync_bit                    |     2|
+|644   |      \Using_Async_Wakeup_0.Wakeup_DFF                                           |mb_sync_bit_0                  |     2|
+|645   |      \Using_Async_Wakeup_1.Wakeup_DFF                                           |mb_sync_bit_1                  |     3|
++------+---------------------------------------------------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9872 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:09 . Memory (MB): peak = 975.406 ; gain = 394.875
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:21 . Memory (MB): peak = 975.406 ; gain = 620.031
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 557 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 255 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 38 instances
+  FDE => FDRE: 32 instances
+  FDR => FDRE: 87 instances
+  FDS => FDSE: 1 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  MULT_AND => LUT2: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+358 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 975.406 ; gain = 628.637
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.runs/Gyro_Demo_microblaze_0_0_synth_1/Gyro_Demo_microblaze_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.srcs/sources_1/bd/Gyro_Demo/ip/Gyro_Demo_microblaze_0_0/Gyro_Demo_microblaze_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 644 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.runs/Gyro_Demo_microblaze_0_0_synth_1/Gyro_Demo_microblaze_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Gyro_Demo_microblaze_0_0_utilization_synth.rpt -pb Gyro_Demo_microblaze_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 975.406 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 19:22:38 2019...

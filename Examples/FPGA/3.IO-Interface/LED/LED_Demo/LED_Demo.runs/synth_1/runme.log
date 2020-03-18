@@ -1,0 +1,521 @@
+
+*** Running vivado
+    with args -log LED_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LED_Demo.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source LED_Demo.tcl -notrace
+Command: synth_design -top LED_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2084 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 451.199 ; gain = 99.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LED_Demo' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Demo.v:30]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.runs/synth_1/.Xil/Vivado-9468-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.runs/synth_1/.Xil/Vivado-9468-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Task' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Task.v:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Task.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Task' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Task.v:32]
+INFO: [Synth 8-6157] synthesizing module 'RGB_LED_Task' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/RGB_LED_Task.v:26]
+	Parameter PWM_PERCENT_Max bound to: 500 - type: integer 
+	Parameter PWM_PERCENT_Min bound to: 0 - type: integer 
+	Parameter Delta_Min bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Driver_SK6805' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/Driver_SK6805.v:34]
+	Parameter Period_Send bound to: 12 - type: integer 
+	Parameter Division_Factor bound to: 1000 - type: integer 
+	Parameter RGB_All_Bit bound to: 48 - type: integer 
+	Parameter CODE_High_0 bound to: 3 - type: integer 
+	Parameter CODE_High_1 bound to: 9 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/Driver_SK6805.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_SK6805' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/Driver_SK6805.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_LED_Task' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/RGB_LED_Task.v:26]
+WARNING: [Synth 8-6014] Unused sequential element R_In2_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Demo.v:76]
+WARNING: [Synth 8-6014] Unused sequential element G_In2_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Demo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element B_In2_reg was removed.  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Demo.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Demo' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/new/LED_Demo.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 505.746 ; gain = 153.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 505.746 ; gain = 153.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 505.746 ; gain = 153.949
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LED_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LED_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 812.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.734 ; gain = 460.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.734 ; gain = 460.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.734 ; gain = 460.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Send_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Send_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Send_Cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RGB_State" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 812.734 ; gain = 460.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'LED_Task0' (LED_Task) to 'LED_Task1'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LED_Demo 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module LED_Task 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     26 Bit        Muxes := 1     
+Module Driver_SK6805 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+Module RGB_LED_Task 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Driver_SK6805_0/Data_Cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Driver_SK6805_0/LED_IO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RGB_State" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP Clk_Divide_2_reg, operation Mode is: (A*(B:0x1f4))'.
+DSP Report: register Clk_Divide_2_reg is absorbed into DSP Clk_Divide_2_reg.
+DSP Report: operator Clk_Divide_20 is absorbed into DSP Clk_Divide_2_reg.
+DSP Report: Generating DSP Clk_Division1/Count1, operation Mode is: (C:0xffffffffffff)+(A*(B:0x1f4))'.
+DSP Report: register Clk_Divide_2_reg is absorbed into DSP Clk_Division1/Count1.
+DSP Report: operator Clk_Division1/Count1 is absorbed into DSP Clk_Division1/Count1.
+DSP Report: operator Clk_Divide_20 is absorbed into DSP Clk_Division1/Count1.
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[1]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[6]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[7]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[10]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[11]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[12]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_LED_Task0/Clk_Divide_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Clk_Division0/Is_Odd_reg' (FD_1) to 'RGB_LED_Task0/Clk_Division0/Is_Odd_reg'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Division0/Is_Odd_reg' (FD_1) to 'Clk_Division1/Is_Odd_reg'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[7]' (FDRE) to 'B_In1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[6]' (FDRE) to 'B_In1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[5]' (FDRE) to 'B_In1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[4]' (FDRE) to 'B_In1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[3]' (FDRE) to 'B_In1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[2]' (FDRE) to 'B_In1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B_In1_reg[1]' (FDRE) to 'B_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[7]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[6]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[5]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[4]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[3]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[2]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'R_In1_reg[1]' (FDSE) to 'R_In1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Cnt_1_reg[9]' (FDC) to 'RGB_LED_Task0/Cnt_1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Cnt_2_reg[9]' (FDC_1) to 'RGB_LED_Task0/Cnt_2_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_LED_Task0/Cnt_1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_LED_Task0/Cnt_2_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clk_Division1/Is_Odd_reg )
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[7]' (FDC) to 'RGB_LED_Task0/G_Out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[6]' (FDC) to 'RGB_LED_Task0/G_Out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[5]' (FDC) to 'RGB_LED_Task0/G_Out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[4]' (FDC) to 'RGB_LED_Task0/G_Out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[3]' (FDC) to 'RGB_LED_Task0/G_Out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[2]' (FDC) to 'RGB_LED_Task0/G_Out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/G_Out_reg[1]' (FDC) to 'RGB_LED_Task0/G_Out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[1]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[2]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[3]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[4]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[5]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[6]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[7]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[8]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[9]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[10]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[11]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[12]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[13]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[14]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[15]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[16]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[17]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[18]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[19]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[20]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[21]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[22]' (FD) to 'LED_Task0/Clk_Divide_reg[24]'
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[23]' (FD) to 'LED_Task0/Clk_Divide_reg[25]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LED_Task0/Clk_Divide_reg[24] )
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Divide_reg[25]' (FD) to 'LED_Task0/Clk_Divide_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_Task0/Clk_Divide_reg[0] )
+INFO: [Synth 8-3886] merging instance 'LED_Task0/Clk_Division1/Is_Odd_reg' (FD_1) to 'Clk_Division1/Is_Odd_reg'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[7]' (FDC) to 'RGB_LED_Task0/B_Out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[6]' (FDC) to 'RGB_LED_Task0/B_Out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[5]' (FDC) to 'RGB_LED_Task0/B_Out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[4]' (FDC) to 'RGB_LED_Task0/B_Out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[3]' (FDC) to 'RGB_LED_Task0/B_Out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[2]' (FDC) to 'RGB_LED_Task0/B_Out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/B_Out_reg[1]' (FDC) to 'RGB_LED_Task0/B_Out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[7]' (FDC) to 'RGB_LED_Task0/R_Out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[6]' (FDC) to 'RGB_LED_Task0/R_Out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[5]' (FDC) to 'RGB_LED_Task0/R_Out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[4]' (FDC) to 'RGB_LED_Task0/R_Out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[3]' (FDC) to 'RGB_LED_Task0/R_Out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[2]' (FDC) to 'RGB_LED_Task0/R_Out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/R_Out_reg[1]' (FDC) to 'RGB_LED_Task0/R_Out_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Clk_Division1/Is_Odd_reg )
+WARNING: [Synth 8-3332] Sequential element (Clk_Division0/flag_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (Clk_Division0/Clk_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (Clk_Division1/flag_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (LED_Task0/Clk_Divide_reg[24]) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (LED_Task0/Clk_Divide_reg[0]) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (LED_Task0/Clk_Division1/flag_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Clk_Divide_1_reg[0]) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Clk_Division0/flag_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Light_Ok_reg) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Cnt_2_reg[10]) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Cnt_1_reg[10]) is unused and will be removed from module LED_Demo.
+WARNING: [Synth 8-3332] Sequential element (Clk_Division1/Is_Odd_reg) is unused and will be removed from module LED_Demo.
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[4]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[5]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_LED_Task0/Clk_Divide_1_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Clk_Divide_1_reg[9]) is unused and will be removed from module LED_Demo.
+INFO: [Synth 8-3886] merging instance 'RGB_LED_Task0/Clk_Divide_1_reg[2]' (FD) to 'RGB_LED_Task0/Clk_Divide_1_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RGB_LED_Task0/Clk_Divide_1_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (RGB_LED_Task0/Clk_Divide_1_reg[3]) is unused and will be removed from module LED_Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 812.734 ; gain = 460.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_LED_Task | (A*(B:0x1f4))'                    | 13     | 9      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|RGB_LED_Task | (C:0xffffffffffff)+(A*(B:0x1f4))' | 13     | 9      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
++-------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 848.848 ; gain = 497.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 859.855 ; gain = 508.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop Rst_reg is being inverted and renamed to Rst_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    75|
+|4     |DSP48E1_2 |     2|
+|5     |LUT1      |    26|
+|6     |LUT2      |    22|
+|7     |LUT3      |    74|
+|8     |LUT4      |    40|
+|9     |LUT5      |    22|
+|10    |LUT6      |    69|
+|11    |FDCE      |    55|
+|12    |FDRE      |   172|
+|13    |OBUF      |     3|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               |   562|
+|2     |  Clk_Division1     |Clk_Division   |    57|
+|3     |  LED_Task0         |LED_Task       |    59|
+|4     |    Clk_Division1   |Clk_Division_2 |    57|
+|5     |  RGB_LED_Task0     |RGB_LED_Task   |   339|
+|6     |    Clk_Division0   |Clk_Division_0 |    57|
+|7     |    Clk_Division1   |Clk_Division_1 |    90|
+|8     |    Driver_SK6805_0 |Driver_SK6805  |    74|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 871.297 ; gain = 519.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 871.297 ; gain = 212.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 871.297 ; gain = 519.500
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 871.297 ; gain = 531.156
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/LED-Demo/LED_Demo/LED_Demo.runs/synth_1/LED_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LED_Demo_utilization_synth.rpt -pb LED_Demo_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 871.297 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 16:29:20 2019...

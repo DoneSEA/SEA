@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Image_Demo.srcs/sources_1/ip/Shift_Line/sim/Shift_Line.vhd" \
+
+nosort

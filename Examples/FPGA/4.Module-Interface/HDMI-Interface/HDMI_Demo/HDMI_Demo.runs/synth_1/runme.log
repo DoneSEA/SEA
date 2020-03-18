@@ -1,0 +1,417 @@
+
+*** Running vivado
+    with args -log HDMI_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_Demo.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source HDMI_Demo.tcl -notrace
+Command: synth_design -top HDMI_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 454.434 ; gain = 101.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Demo' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:24]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Driver_HDMI.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Video_Generator' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Video_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Picture_R_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_R_Rom' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_R_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_G_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_G_Rom' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_G_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Picture_B_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Picture_B_Rom' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/.Xil/Vivado-10756-DESKTOP-DU9F0PS/realtime/Picture_B_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Video_Generator' (7#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Video_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Demo' (8#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/HDMI_Demo.v:23]
+WARNING: [Synth 8-3331] design Video_Generator has unconnected port RGB_VDE
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 510.402 ; gain = 157.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 510.402 ; gain = 157.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 510.402 ; gain = 157.781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom/Picture_R_Rom_in_context.xdc] for cell 'Video_Generator0/R_ROM'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_R_Rom/Picture_R_Rom/Picture_R_Rom_in_context.xdc] for cell 'Video_Generator0/R_ROM'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom/Picture_G_Rom_in_context.xdc] for cell 'Video_Generator0/G_ROM'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/Picture_G_Rom/Picture_G_Rom_in_context.xdc] for cell 'Video_Generator0/G_ROM'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom/Picture_B_Rom_in_context.xdc] for cell 'Video_Generator0/B_ROM'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/Picture_B_Rom/Picture_B_Rom/Picture_B_Rom_in_context.xdc] for cell 'Video_Generator0/B_ROM'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 811.609 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/B_ROM' at clock pin 'clka' is different from the actual clock period '6.734', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/G_ROM' at clock pin 'clka' is different from the actual clock period '6.734', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Video_Generator0/R_ROM' at clock pin 'clka' is different from the actual clock period '6.734', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 811.609 ; gain = 458.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 811.609 ; gain = 458.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/R_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/G_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Video_Generator0/B_ROM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 811.609 ; gain = 458.988
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Address_reg' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.srcs/sources_1/new/Video_Generator.v:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 811.609 ; gain = 458.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     14 Bit       Adders := 1     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Video_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP Video_Generator0/Address1, operation Mode is: A*(B:0x64).
+DSP Report: operator Video_Generator0/Address1 is absorbed into DSP Video_Generator0/Address1.
+DSP Report: Generating DSP Video_Generator0/Address0, operation Mode is: PCIN+(A:0x0):B2+(C:0xfffffffffe17).
+DSP Report: register Driver_HDMI0/Set_Y_reg is absorbed into DSP Video_Generator0/Address0.
+DSP Report: operator Video_Generator0/Address0 is absorbed into DSP Video_Generator0/Address0.
+WARNING: [Synth 8-3332] Sequential element (Driver_HDMI0/Set_Y_reg[0]) is unused and will be removed from module HDMI_Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 811.609 ; gain = 458.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Video_Generator | A*(B:0x64)                         | 14     | 7      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|HDMI_Demo       | PCIN+(A:0x0):B2+(C:0xfffffffffe17) | 30     | 12     | 10     | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
++----------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 854.770 ; gain = 502.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 865.434 ; gain = 512.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |rgb2dvi_0     |         1|
+|3     |Picture_R_Rom |         1|
+|4     |Picture_G_Rom |         1|
+|5     |Picture_B_Rom |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |Picture_B_Rom |     1|
+|2     |Picture_G_Rom |     1|
+|3     |Picture_R_Rom |     1|
+|4     |clk_wiz_0     |     1|
+|5     |rgb2dvi_0     |     1|
+|6     |CARRY4        |    27|
+|7     |DSP48E1       |     1|
+|8     |DSP48E1_1     |     1|
+|9     |LUT1          |    23|
+|10    |LUT2          |    47|
+|11    |LUT3          |    35|
+|12    |LUT4          |     4|
+|13    |LUT5          |     2|
+|14    |LUT6          |    27|
+|15    |FDRE          |    52|
+|16    |LD            |    14|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------+------+
+|      |Instance           |Module          |Cells |
++------+-------------------+----------------+------+
+|1     |top                |                |   266|
+|2     |  Driver_HDMI0     |Driver_HDMI     |   214|
+|3     |  Video_Generator0 |Video_Generator |    43|
++------+-------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 866.246 ; gain = 212.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 866.246 ; gain = 513.625
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 866.246 ; gain = 526.125
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/HDMI-Demo/HDMI_Demo/HDMI_Demo.runs/synth_1/HDMI_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMI_Demo_utilization_synth.rpt -pb HDMI_Demo_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 866.246 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 11 15:42:50 2019...

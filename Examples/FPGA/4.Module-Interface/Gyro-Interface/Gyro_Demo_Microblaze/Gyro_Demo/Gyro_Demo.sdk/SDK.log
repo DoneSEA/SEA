@@ -1,0 +1,43 @@
+19:27:44 INFO  : Registering command handlers for SDK TCF services
+19:27:45 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Opex9020\Desktop\SEA-Tutorial\Experiment-of-SEA\FPGA-Demo-Project\Gyro-Demo\Gyro_Demo_Microblaze\Gyro_Demo\Gyro_Demo.sdk\temp_xsdb_launch_script.tcl
+19:27:47 INFO  : XSCT server has started successfully.
+19:27:47 INFO  : Successfully done setting XSCT server connection channel  
+19:27:47 INFO  : Successfully done setting SDK workspace  
+19:27:47 INFO  : Processing command line option -hwspec C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo_wrapper.hdf.
+19:34:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:34:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==0} -index 0' command is executed.
+19:34:36 INFO  : FPGA configured successfully with bitstream "C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo_wrapper_hw_platform_0/download.bit"
+19:35:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870" && level==0} -index 0' command is executed.
+19:35:03 INFO  : 'fpga -state' command is executed.
+19:35:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:35:04 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251A08870' is selected.
+19:35:04 INFO  : 'jtag frequency' command is executed.
+19:35:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+19:35:04 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:04 INFO  : Processor reset is completed for 'microblaze_0'.
+19:35:04 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:04 INFO  : The application 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo/Debug/Gyro_Demo.elf' is downloaded to processor 'microblaze_0'.
+19:35:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0
+dow C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo/Debug/Gyro_Demo.elf
+----------------End of Script----------------
+
+19:35:04 INFO  : Context for processor 'microblaze_0' is selected.
+19:35:04 INFO  : 'con' command is executed.
+19:35:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT2 210251A08870"} -index 0
+con
+----------------End of Script----------------
+
+19:35:04 INFO  : Disconnected from the channel tcfchan#1.
+16:14:04 INFO  : Registering command handlers for SDK TCF services
+16:14:05 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Opex9020\Desktop\SEA-Tutorial\Experiment-of-SEA\FPGA-Demo-Project\Gyro-Demo\Gyro_Demo_Microblaze\Gyro_Demo\Gyro_Demo.sdk\temp_xsdb_launch_script.tcl
+16:14:07 INFO  : XSCT server has started successfully.
+16:14:07 INFO  : Processing command line option -hwspec C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Gyro-Demo/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo_wrapper.hdf.
+16:14:07 INFO  : Successfully done setting XSCT server connection channel  
+16:14:07 INFO  : Successfully done setting SDK workspace  
+16:14:07 INFO  : Checking for hwspec changes in the project Gyro_Demo_wrapper_hw_platform_0.

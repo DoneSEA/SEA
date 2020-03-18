@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../HDMI_Demo.srcs/sources_1/ip/Picture_G_Rom/sim/Picture_G_Rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

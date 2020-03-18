@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Gyro_Demo_wrapper.bit" key="Gyro_Demo_wrapper_hw_platform_0-bitFile"/>
+	<item value="Gyro_Demo_wrapper.mmi" key="Gyro_Demo_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Gyro_Demo_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="false" key="Gyro_Demo_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Local" key="Gyro_Demo_wrapper_hw_platform_0-target"/>
+	<item value="Auto Detect" key="Gyro_Demo_wrapper_hw_platform_0-device"/>
+	<item value="bootloop" key="Gyro_Demo_wrapper_hw_platform_0-microblaze_0-initElf"/>
+</section>

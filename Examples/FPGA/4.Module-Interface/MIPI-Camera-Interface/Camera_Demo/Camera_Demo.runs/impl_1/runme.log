@@ -1,0 +1,648 @@
+
+*** Running vivado
+    with args -log Camera_Demo.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Camera_Demo.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Camera_Demo.tcl -notrace
+Command: link_design -top Camera_Demo -part xc7s15ftgb196-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.dcp' for cell 'clk_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/csi2_d_phy_rx_0.dcp' for cell 'Driver_MIPI0/Data_Read'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/csi_to_axis_0.dcp' for cell 'Driver_MIPI0/Data_To_Csi'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'Driver_MIPI0/Driver_Bayer_To_RGB0/bram0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'Driver_MIPI0/Driver_Csi_To_Dvp0/bram0'
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clk_4/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_4/clk_in1' is not directly connected to top level port. Synthesis is ignored for c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1.edf but preserved for implementation. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1.edf:276]
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_10/inst'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_10/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1109.680 ; gain = 460.570
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_10/inst'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'Driver_MIPI0/Data_To_Csi/U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi_to_axis_0/hdl/csi_to_axis.xdc] for cell 'Driver_MIPI0/Data_To_Csi/U0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'Driver_MIPI0/Data_Read/U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/csi2_d_phy_rx_0/hdl/csi2_d_phy_rx.xdc] for cell 'Driver_MIPI0/Data_Read/U0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi/U0'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_4/inst'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_4/inst'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_4/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:57]
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_4/inst'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/constrs_1/new/system.xdc]
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+17 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1109.828 ; gain = 767.660
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.971 . Memory (MB): peak = 1109.828 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1856fd3c5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1123.316 ; gain = 13.488
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 235519a4f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 24678aacf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 24feaf2b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.190 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 4 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 24feaf2b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.229 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 199a48c28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 199a48c28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1123.316 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1123.316 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 199a48c28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.304 . Memory (MB): peak = 1123.316 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-10.162 | TNS=-10.162 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 4 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 4 newly gated: 7 Total Ports: 12
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 1be71be41
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1be71be41
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.625 ; gain = 179.309
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1a54d0ced
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.292 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1a54d0ced
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.298 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+41 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Camera_Demo_drc_opted.rpt -pb Camera_Demo_drc_opted.pb -rpx Camera_Demo_drc_opted.rpx
+Command: report_drc -file Camera_Demo_drc_opted.rpt -pb Camera_Demo_drc_opted.pb -rpx Camera_Demo_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 14e700a42
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'Driver_IIC0/FSM_sequential_Write_State[6]_i_3' is driving clock pin of 10 registers. This could lead to large hold time violations. First few involved registers are:
+	Diver_OV5647_Init/FSM_sequential_Write_State_reg[5] {FDRE}
+	Diver_OV5647_Init/FSM_sequential_Write_State_reg[3] {FDRE}
+	Diver_OV5647_Init/Reg_Addr_reg {RAMB18E1}
+	Diver_OV5647_Init/FSM_sequential_Write_State_reg[1] {FDRE}
+	Diver_OV5647_Init/FSM_sequential_Write_State_reg[4] {FDRE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6d207da3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1149be62d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1149be62d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1149be62d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 9ffc9ddf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 193171231
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1dffc1e6a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1dffc1e6a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13b057e8c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1957a3713
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 191961977
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 191961977
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 191961977
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: e984974e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: d4579d80
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: d4579d80
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: d4579d80
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: d4579d80
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 104c70479
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 104c70479
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-14.242. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: be2f9aa1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: be2f9aa1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: be2f9aa1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: be2f9aa1
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: a9871d33
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: a9871d33
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Ending Placer Task | Checksum: 3eebce4b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+64 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.247 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file Camera_Demo_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Camera_Demo_utilization_placed.rpt -pb Camera_Demo_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file Camera_Demo_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 36c478a2 ConstDB: 0 ShapeSum: 82755a9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1065895d7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 96bd9a00 NumContArr: 6f9afbd7 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1065895d7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1065895d7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1065895d7
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1d875819c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.621| TNS=-13.621| WHS=-0.463 | THS=-30.544|
+
+Phase 2 Router Initialization | Checksum: 14307633b
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 10eeea344
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 158
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.621| TNS=-21.089| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 17306d6a6
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.621| TNS=-14.121| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1f46b5fd1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1f46b5fd1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 220688564
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.621| TNS=-13.806| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1ee07e40e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ee07e40e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 1ee07e40e
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 238dc58dc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-13.621| TNS=-13.621| WHS=0.061  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 238dc58dc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 238dc58dc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.776705 %
+  Global Horizontal Routing Utilization  = 1.15546 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 17.1171%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 25.2252%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 26.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 48.5294%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1cbf2212f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1cbf2212f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 13bca09bc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-13.621| TNS=-13.621| WHS=0.061  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 13bca09bc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1302.625 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+82 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.200 . Memory (MB): peak = 1302.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Camera_Demo_drc_routed.rpt -pb Camera_Demo_drc_routed.pb -rpx Camera_Demo_drc_routed.rpx
+Command: report_drc -file Camera_Demo_drc_routed.rpt -pb Camera_Demo_drc_routed.pb -rpx Camera_Demo_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file Camera_Demo_methodology_drc_routed.rpt -pb Camera_Demo_methodology_drc_routed.pb -rpx Camera_Demo_methodology_drc_routed.rpx
+Command: report_methodology -file Camera_Demo_methodology_drc_routed.rpt -pb Camera_Demo_methodology_drc_routed.pb -rpx Camera_Demo_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/Camera-Demo/Camera_Demo/Camera_Demo.runs/impl_1/Camera_Demo_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file Camera_Demo_power_routed.rpt -pb Camera_Demo_power_summary_routed.pb -rpx Camera_Demo_power_routed.rpx
+Command: report_power -file Camera_Demo_power_routed.rpt -pb Camera_Demo_power_summary_routed.pb -rpx Camera_Demo_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+94 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file Camera_Demo_route_status.rpt -pb Camera_Demo_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Camera_Demo_timing_summary_routed.rpt -pb Camera_Demo_timing_summary_routed.pb -rpx Camera_Demo_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Camera_Demo_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Camera_Demo_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Camera_Demo_bus_skew_routed.rpt -pb Camera_Demo_bus_skew_routed.pb -rpx Camera_Demo_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force Camera_Demo.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s15'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer Camera_IIC_SDA_IOBUF/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net Driver_IIC0/IIC_Busy is a gated clock net sourced by a combinational pin Driver_IIC0/FSM_sequential_Write_State[6]_i_3/O, cell Driver_IIC0/FSM_sequential_Write_State[6]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Driver_MIPI0/Data_Read/U0/clock_system_inst/I1 is a gated clock net sourced by a combinational pin Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1/O, cell Driver_MIPI0/Data_Read/U0/clock_system_inst/dly_gen.BUFGCTRL_inst_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT Driver_IIC0/FSM_sequential_Write_State[6]_i_3 is driving clock pin of 10 cells. This could lead to large hold time violations. First few involved cells are:
+    Diver_OV5647_Init/Enable_reg {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[0] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[1] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[2] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[3] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[4] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[5] {FDRE}
+    Diver_OV5647_Init/FSM_sequential_Write_State_reg[6] {FDRE}
+    Diver_OV5647_Init/Reg_Addr_reg {RAMB18E1}
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/ClockSerializer/SerializerMaster. This can result in corrupted data. The rgb2dvi/U0/ClockSerializer/SerializerMaster/CLK / rgb2dvi/U0/ClockSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/ClockSerializer/SerializerSlave. This can result in corrupted data. The rgb2dvi/U0/ClockSerializer/SerializerSlave/CLK / rgb2dvi/U0/ClockSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerMaster. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLK / rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerSlave. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLK / rgb2dvi/U0/DataEncoders[0].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerMaster. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLK / rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerSlave. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLK / rgb2dvi/U0/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerMaster. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLK / rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+WARNING: [DRC REQP-1580] Phase alignment: Unsupported clocking topology used for OSERDESE2 rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerSlave. This can result in corrupted data. The rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLK / rgb2dvi/U0/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 13 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Camera_Demo.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+112 Infos, 17 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1605.434 ; gain = 302.809
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 15:57:32 2019...

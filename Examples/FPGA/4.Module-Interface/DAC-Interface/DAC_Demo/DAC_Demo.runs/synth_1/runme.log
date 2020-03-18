@@ -1,0 +1,353 @@
+
+*** Running vivado
+    with args -log DAC_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DAC_Demo.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source DAC_Demo.tcl -notrace
+Command: synth_design -top DAC_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 50656 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 454.609 ; gain = 101.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DAC_Demo' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_5_10' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/clk_5_10_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_5_10' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/clk_5_10_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Driver_DAC' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:63]
+INFO: [Synth 8-6157] synthesizing module 'DDS_Addr_Generator' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v:23]
+	Parameter NWORD bound to: 256 - type: integer 
+	Parameter Freq bound to: 1000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DDS_Addr_Generator' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sin_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Sin_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Sin_Rom' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Sin_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Square_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Square_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Square_Rom' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Square_Rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Triangle_Rom' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Triangle_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Triangle_Rom' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/.Xil/Vivado-51152-DESKTOP-DU9F0PS/realtime/Triangle_Rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_DAC' (7#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DAC_Demo' (8#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 509.809 ; gain = 156.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 509.809 ; gain = 156.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 509.809 ; gain = 156.996
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/Sin_Rom/Sin_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Sin'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/Sin_Rom/Sin_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Sin'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/Square_Rom/Square_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Square'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/Square_Rom/Square_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Square'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/Triangle_Rom/Triangle_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Triangle'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/Triangle_Rom/Triangle_Rom_in_context.xdc] for cell 'Driver_DAC0/Rom_Triangle'
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc] for cell 'clk_division'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc] for cell 'clk_division'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DAC_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DAC_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 799.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 799.742 ; gain = 446.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 799.742 ; gain = 446.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Rom_Sin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Rom_Square. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_DAC0/Rom_Triangle. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_division. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 799.742 ; gain = 446.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 799.742 ; gain = 446.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module DDS_Addr_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Driver_DAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_DAC0/DDS_Addr_Generator/Clk_Division_0/Is_Odd_reg )
+WARNING: [Synth 8-3332] Sequential element (Driver_DAC0/DDS_Addr_Generator/Clk_Division_0/Is_Odd_reg) is unused and will be removed from module DAC_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_DAC0/DDS_Addr_Generator/Clk_Division_0/flag_reg) is unused and will be removed from module DAC_Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 799.742 ; gain = 446.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_division/clk_out1' to pin 'clk_division/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_division/clk_out2' to pin 'clk_division/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 804.008 ; gain = 451.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 813.824 ; gain = 461.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_5_10      |         1|
+|2     |Sin_Rom       |         1|
+|3     |Square_Rom    |         1|
+|4     |Triangle_Rom  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |Sin_Rom      |     1|
+|2     |Square_Rom   |     1|
+|3     |Triangle_Rom |     1|
+|4     |clk_5_10     |     1|
+|5     |CARRY4       |    11|
+|6     |LUT1         |     4|
+|7     |LUT2         |     8|
+|8     |LUT3         |    37|
+|9     |LUT4         |     2|
+|10    |LUT5         |    11|
+|11    |LUT6         |     5|
+|12    |MUXF7        |     4|
+|13    |MUXF8        |     1|
+|14    |FDRE         |    48|
+|15    |IBUF         |     2|
+|16    |OBUF         |     3|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------------+------+
+|      |Instance               |Module             |Cells |
++------+-----------------------+-------------------+------+
+|1     |top                    |                   |   162|
+|2     |  Driver_DAC0          |Driver_DAC         |   155|
+|3     |    DDS_Addr_Generator |DDS_Addr_Generator |    98|
+|4     |      Clk_Division_0   |Clk_Division       |    57|
++------+-----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 823.859 ; gain = 181.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 823.859 ; gain = 471.047
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 825.578 ; gain = 484.984
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo/DAC_Demo.runs/synth_1/DAC_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DAC_Demo_utilization_synth.rpt -pb DAC_Demo_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 825.578 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 16:51:19 2019...
