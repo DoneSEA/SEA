@@ -5,7 +5,7 @@
 ### 模块构成
 
   模块组成结构如下:
-
+'''C
 module Driver_ADC(   
   input clk_100MHz,       //Clock   
   input clk_system,       //Clock reading signal   
@@ -18,7 +18,7 @@ module Driver_ADC(
   output ADC_En,          //ADC enable signal   
   output [7:0]ADC_Data_Out //Storage signal output   
   );
-
+'''
 ### 参数介绍
   
 | **信号类型**    | **信号名称**    | **描述** |
