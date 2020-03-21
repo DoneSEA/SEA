@@ -2,6 +2,6 @@
 
 | 序号 | 名称                                                         | 描述                                       |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | 纯硬核，采用verilog编写的Vivado工程         |
+| 1    | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | 纯硬核，采用Verilog语言编写的Vivado工程     |
 | 2    | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | 纯软核，采用C语言编写的Vivado SDK工程       |
 
