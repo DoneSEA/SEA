@@ -1,7 +1,7 @@
 本部分用于存放SEA板卡FPGA的IP核库及对应的库工程，IP核库的结构如下:
   > XXX-IP
-  > > Driver_XXX
-  > > IP
+  > > Driver_XXX   
+  > > IP   
 
 
 
