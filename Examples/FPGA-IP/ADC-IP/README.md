@@ -36,5 +36,5 @@ module Driver_ADC(
 
 ## 使用说明
 
-本IP核仅配合板载ADC模块(ADC1173)使用，在[Examples](/Examples)中可以找到对应的使用案例[ADC_Demo](/Examples/FPGA/4.Module-Interface/ADC-Interface)
+本IP核仅配合板载ADC模块(ADC1173)使用，在[Examples](/Examples)中可以找到对应的使用案例[ADC_Demo](/Examples/FPGA/4.Module-Interface/ADC-Interface)。
 
