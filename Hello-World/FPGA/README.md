@@ -1,6 +1,6 @@
 # Hello-World工程FPGA部分
 
-本仓库用于存放SEA的FPGA基础工程案例（Hello-World）。
+本部分用于存放SEA的FPGA基础工程案例（Hello-World）。
 
 ## 工程组成
 

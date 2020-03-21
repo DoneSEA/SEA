@@ -4,7 +4,9 @@
 
 ## IP核库结构
 
-结构如下：
+FPGA的IP核库，官方提供了相应的vivado版本的库文件,以及对应的vivado工程
+
+本部分具体结构，均按照如下格式进行：   
   > XXX-IP
   > > Driver_XXX   
   > > IP   
