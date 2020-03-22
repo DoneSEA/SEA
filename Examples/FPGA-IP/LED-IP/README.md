@@ -51,7 +51,7 @@ module Driver_SK6805(
 | 输入信号 | G_In2           | 第二级的G通道 |
 | 输入信号 | B_In2           | 第二级的B通道 |
 | 输入信号 | clk_10MHz       | 10MHz的时钟信号 |
-| 输入信号 | Rst             | 复位信号，低电平有效  |
+| 输入信号 | Rst             | 复位信号，低电平复位  |
 | 输出信号 | LED_IO          | RGB LED数据线输出  |
 
 ### RGB LED驱动介绍
@@ -84,7 +84,7 @@ module RGB_LED_Task(
 | 输入信号 | G_In        | G通道值      |
 | 输入信号 | B_In        | B通道值      |
 | 输入信号 | Light_Num   | 呼吸闪烁次数  |
-| 输入信号 | Rst         | 复位信号，低电平有效  |
+| 输入信号 | Rst         | 复位信号，低电平复位  |
 | 输出信号 | RGB_LED_IO  | RGB LED数据线输出  |
 | 输出信号 | Light_Ok    | 呼吸次数完成  |
 
