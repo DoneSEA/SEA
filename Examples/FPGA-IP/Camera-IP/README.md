@@ -8,6 +8,6 @@
 
 ## 使用说明
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Interface)。
+本IP核在[Examples](/Examples)中可以找到对应的使用案例[Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface)。
 
 
