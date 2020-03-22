@@ -27,9 +27,9 @@ module SPI_Master(
     input MISO,
     input [7:0]Data,
     output SCK,
-    output MOSI,
-	output reg CS=1,
-	output reg ACK=0
+    output MOSI,   
+    output reg CS=1,   
+    output reg ACK=0   
 );
 ```
 ### 输入输出信号介绍
