@@ -1,45 +1,57 @@
-# HDMI-IP使用介绍
+# IIC-IP使用介绍
 
 ## IP核介绍
 
-HDMI驱动IP核，提供了720p@60Hz与1280p@60Hz两种视频信号的HDMI驱动。
+IIC驱动IP核，支持双地址寄存器读写，不支持连续读写。
 
-### HDMI驱动模块构成
+默认设定IIC传输速率为100k，参数为SCL_SUM=100M/100k。
+
+如需调整传输速率，或者调整IIC的工作时钟，那么需要相应的调整IP核的参数SCL_SUM。
+
+### IIC驱动模块构成
 
 构成如下:
 
 ```c
-module Driver_HDMI(
-    input clk,                          //Clock
-    input Rst,                          //Reset signal, low reset
-    input Video_Mode,                   //Video format,0 is 1920*1080@60Hz,1 is 1280*720@60Hz
-    input [23:0]RGB_In,                 //Input data
-    output [23:0]RGB_Data,              //Output Data
-    output reg RGB_HSync=0,            //Line signal
-    output reg RGB_VSync=0,            //Field signal
-    output reg RGB_VDE=0,              //Data valid signal
-    output reg [11:0]Set_X=0,          //Image coordinate X
-    output reg [11:0]Set_Y=0           //Image coordinate Y
+module Driver_IIC(
+    input clk, 
+    input Rst,
+    input   [7:0]Addr,
+    input   [15:0]Reg_Addr,
+    input   [7:0]Data,
+    input   IIC_Write,
+    input   IIC_Read,
+    output  reg[7:0]IIC_Read_Data=0,
+    output  IIC_Busy,
+    input Reg_2Addr,        
+    output  IIC_SCL,
+    input   IIC_SDA_In,
+    output reg SDA_Dir=0,  
+    output reg SDA_Out=0   
     );
 ```
 ### 输入输出信号介绍
   
 | **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk             | HDMI的系统时钟，720p@60Hz图像需要74.25MHz，1080p@60Hz图像需要148.5MHz |
+| 输入信号 | clk             | IIC工作时钟,默认为100MHz |
 | 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | Video_Mode      | 视频模式，0模式-1080p@60Hz，1模式-720p@60Hz       |
-| 输入信号 | RGB_In          | RGB数据，需要传输的数据       |
-| 输出信号 | RGB_Data        | RGB数据，需要传输的数据     |
-| 输出信号 | RGB_HSync       | 视频传输行同步信号，高电平有效     |
-| 输出信号 | RGB_VSync       | 视频传输场同步信号，高电平有效     |
-| 输出信号 | RGB_VDE         | 视频传输有效信号，高电平有效     |
-| 输出信号 | Set_X           | 当前X轴坐标，横向，左边为原点     |
-| 输出信号 | Set_Y           | 当前Y轴坐标，纵向，上边为原点     |
+| 输入信号 | Addr            | 从机地址       |
+| 输入信号 | Reg_Addr        | 寄存器地址       |
+| 输入信号 | Data            | 数据       |
+| 输入信号 | IIC_Write       | IIC写使能，上升沿有效       |
+| 输入信号 | IIC_Read        | IIC读使能，上升沿有效       |
+| 输入信号 | Reg_2Addr       | 寄存器双地址位,高电平为双地址       |
+| 输入信号 | IIC_SDA_In      | IIC总线的SDA数据线       |
+| 输出信号 | IIC_Read_Data   | IIC读到的数据     |
+| 输出信号 | IIC_Busy        | IIC忙信号，高电平为忙     |
+| 输出信号 | IIC_SCL         | IIC总线的SCL时钟线     |
+| 输出信号 | SDA_Dir         | IIC总线的SDA数据线方向，0模式为输入，1模式为输出     |
+| 输出信号 | SDA_Out         | IIC总线的SDA数据线     |
 
 
 ## 使用说明
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[HDMI_Demo](/Examples/FPGA/4.Module-Interface/HDMI-Interface)。
+本IP核在[Examples](/Examples)中可以找到对应的使用案例[Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Interface)以及[Gyro_Demo](/Examples/FPGA/4.Module-Interface/Gyro-Interface)。
 
 
