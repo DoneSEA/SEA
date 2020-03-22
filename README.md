@@ -2,6 +2,8 @@
 
 本仓库用于存放SEA板卡的官方案例，并提供社区交流。
 
+![](/Images/SEA.jpg)
+
 ## 官方案例
 
 官方案例，目前包括Hello World部分、Examples基础案例部分、Demos系统案例部分。
