@@ -41,3 +41,9 @@ con
 16:14:07 INFO  : Successfully done setting XSCT server connection channel  
 16:14:07 INFO  : Successfully done setting SDK workspace  
 16:14:07 INFO  : Checking for hwspec changes in the project Gyro_Demo_wrapper_hw_platform_0.
+12:52:53 INFO  : Registering command handlers for SDK TCF services
+12:52:56 INFO  : Launching XSCT server: xsct.bat -interactive D:\GitHub-Project\SEA\Examples\FPGA\4.Module-Interface\Gyro-Interface\Gyro_Demo_Microblaze\Gyro_Demo\Gyro_Demo.sdk\temp_xsdb_launch_script.tcl
+12:53:14 INFO  : XSCT server has started successfully.
+12:53:30 INFO  : Successfully done setting XSCT server connection channel  
+12:53:30 INFO  : Processing command line option -hwspec D:/GitHub-Project/SEA/Examples/FPGA/4.Module-Interface/Gyro-Interface/Gyro_Demo_Microblaze/Gyro_Demo/Gyro_Demo.sdk/Gyro_Demo_wrapper.hdf.
+12:53:31 INFO  : Successfully done setting SDK workspace  

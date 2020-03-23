@@ -1,0 +1,2606 @@
+!SESSION 2020-03-23 12:52:06.610 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-03-23 12:52:34.234
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-23 12:52:34.234
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-03-23 12:52:37.596
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-23 12:52:37.596
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:14.405
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:14.414
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:30.882
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:30.888
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:30.894
+!MESSAGE XSCT Command: [setws D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:30.901
+!MESSAGE XSCT command with result: [setws D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:31.084
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:43.260
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:43.303
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:43.376
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7s15",
+"family": "spartan7",
+"timestamp": "Mon Mar 23 12:42:45 2020",
+"vivado_version": "2018.2",
+"part": "xc7s15ftgb196-1",
+}]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:43.386
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:43.399
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_iic_0": {"hier_name": "axi_iic_0",
+"type": "axi_iic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "10.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"rst_clk_wiz_0_100M": {"hier_name": "rst_clk_wiz_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.140
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.249
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_iic_0_S_AXI": {"name": "axi_iic_0",
+"base": "0x40800000",
+"high": "0x4080FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00003FFF",
+"size": "16384",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.385
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf mdm_1], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.394
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.506
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:53:44.816
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"axi_iic_0": {"GIE": {"description": "Global Interrupt Enable Register",
+"address_offset": "0x1c",
+"access": "read-write",
+"size": "32",
+"fields": {"GIE": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Global Interrupt Enable
+0 - All Interrupts disabled; no interrupt (even if unmasked in IER) possible from AXI IIC core
+1 - Unmasked AXI IIC core interrupts are passed to processor
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"ISR": {"description": "Interrupt Status Register",
+"address_offset": "0x020",
+"access": "read-write",
+"size": "32",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IER": {"description": "Interrupt Enable Register",
+"address_offset": "0x028",
+"access": "read-write",
+"size": "32",
+"fields": {"int0": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt0 - Arbitration Lost
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int1": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt1 - Transmit Error/Slave Transmit Complete
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int2": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt2 - Transmit FIFO Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int3": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt3 - Recieve FIFO FULL
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int4": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt4 - IIC Bus is Not Busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int5": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt5 - Addressed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int6": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt6 - Not Addessed As Slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"int7": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Interrupt7 - Transmit FIFO Half Empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"SOFTR": {"description": "Soft Reset Register",
+"address_offset": "0x040",
+"access": "read-write",
+"size": "32",
+"fields": {"RKEY": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Reset Key - Firmware must write a value of 0xA to this field to
+            cause a soft reset of the Interrupt registers of AXI IIC controller.
+            Writing any other value results in an AXI transaction
+            acknowledgement with SLVERR and no reset occurs.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CR": {"description": "Control Register",
+"address_offset": "0x100",
+"access": "read-write",
+"size": "32",
+"fields": {"EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set before any other CR bits have any effect
+0 - resets and disables the AXI IIC controller but not the registers or FIFOs
+1 - enables the AXI IIC controller
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO Reset": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit must be set to flush the FIFO if either (a) arbitration is lost or (b) if a transmit error occurs
+0 - transmit FIFO normal operation
+1 - resets the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"MSMS": {"access": "read-write",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When this bit is changed from 0 to 1, the
+AXI IIC bus interface generates a START condition in master mode. When
+this bit is cleared, a STOP condition is generated and the AXI IIC bus
+interface switches to slave mode. When this bit is cleared by the
+hardware, because arbitration for the bus has been lost, a STOP
+condition is not generated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX": {"access": "read-write",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit selects the direction of master/slave transfers.
+0 - selects an AXI IIC receive
+1 - selects an AXI IIC transmit
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TXAK": {"access": "read-write",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit specifies the value driven onto
+the sda line during acknowledge cycles for both master and slave recievers.
+0 - acknowledge
+1 - not-acknowledge
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RSTA": {"access": "read-write",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Writing a 1 to this bit generates a repeated START 
+condition on the bus if the AXI IIC bus interface is the current bus
+master. Attempting a repeated START at the wrong time, if the bus is
+owned by another master, results in a loss of arbitration. This bit is reset
+when the repeated start occurs. This bit must be set prior to writing the
+new address to the TX_FIFO or DTR
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"GC_EN": {"access": "read-write",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Setting this bit High allows the AXI IIC to respond to a general call address.
+0 - General Call Disabled
+1 - General Call Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"SR": {"description": "Status Register",
+"address_offset": "0x104",
+"access": "read-only",
+"size": "32",
+"fields": {"ABGC": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set to 1 when another master has issued a general call and
+the general call enable bit is set to 1, CR(6) = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AAS": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the address on the IIC bus matches the slave address in the Address register (ADR), the IIC bus interface
+is being addressed as a slave and switches to slave mode. If 10-bit addressing is selected this device only responds to a 10-bit
+address or general call if enabled. This bit is cleared when a stop
+condition is detected or a repeated start occurs.
+0 - indicates not being addressed as a slave
+1 - indicates being addressed as a slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"BB": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit indicates the status of the IIC bus. This bit is set
+when a START condition is detected and cleared when a STOP
+condition is detected.
+0 - indicates the bus is idle
+1 - indicates the bus is busy
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"ARW": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "When the IIC bus interface has been addressed as a slave (AAS is set), 
+this bit indicates the value of the read/write bit sent by the master.
+This bit is only valid when a complete transfer has occurred and
+no other transfers have been initiated.
+0 - indicates master writing to slave
+1 - indicates master reading from slave
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the transmit FIFO is full.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This bit is set High when the receive FIFO is full.
+This bit is set only when all 16 locations in the FIFO are full,
+regardless of the compare value field of the RX_FIFO_PIRQ register.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the receive FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "This is set High when the transmit FIFO is empty.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO": {"description": "Transmit FIFO Register",
+"address_offset": "0x108",
+"access": "write-only",
+"size": "32",
+"fields": {"D7_D0": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "If the dynamic stop bit is used and the AXI IIC is a master receiver,
+the value is the number of bytes to receive.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Start": {"access": "write-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic start bit can be used to send a start or repeated start sequence on the
+IIC bus. A start sequence is generated if the MSMS = 0, a
+repeated start sequence is generated if the MSMS = 1.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Stop": {"access": "write-only",
+"bit_offset": "9",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The dynamic stop bit can be used to send an IIC stop
+sequence on the IIC bus after the last byte has been transmitted or received.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"RX_FIFO": {"description": "Recieve FIFO Register",
+"address_offset": "0x10C",
+"access": "read-only",
+"size": "32",
+"fields": {"D7_D0": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "IIC Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"ADR": {"description": "Slave Address Register",
+"address_offset": "0x110",
+"access": "read-write",
+"size": "32",
+"fields": {"Slave_Address": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "7",
+"desc": "Address used by the IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO_OCY": {"description": "Transmit FIFO Occupency Register",
+"address_offset": "0x114",
+"access": "read-only",
+"size": "32",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"RX_FIFO_OCY": {"description": "Recieve FIFO Occupency Register",
+"address_offset": "0x118",
+"access": "read-only",
+"size": "32",
+"fields": {"Occupancy_Value": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 indicates that
+10 locations are full in the FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TEN_ADR": {"description": "Slave Ten Bit Address Register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"MSB of Slave Address": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Three MSBs of the 10-bit address used by the AXI IIC bus interface when in slave mode.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"RX_FIFO_PIRQ": {"description": "Recieve FIFO Programmable Depth Interrupt Register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Compare Value": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "4",
+"desc": "Bit[3] is the MSB. A binary value of 1001 implies that when
+10 locations in the receive FIFO are filled, the receive FIFO
+interrupt is set.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPO": {"description": "General Purpose Output Register",
+"address_offset": "0x124",
+"access": "read-write",
+"size": "1",
+"fields": {"General Purpose Outputs": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "The LSB (Bit[0]) is the first bit populated
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TSUSTA": {"description": "Timing Parameter TSUSTA Register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"TSUSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TSUSTO": {"description": "Timing Parameter TSUSTO Register",
+"address_offset": "0x12C",
+"access": "read-write",
+"size": "32",
+"fields": {"TSUSTO": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Setup time for a repeated STOP condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"THDSTA": {"description": "Timing Parameter THDSTA Register",
+"address_offset": "0x130",
+"access": "read-write",
+"size": "32",
+"fields": {"THDSTA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Hold time for a repeated START condition.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TSUDAT": {"description": "Timing Parameter TSUDAT Register",
+"address_offset": "0x134",
+"access": "read-write",
+"size": "32",
+"fields": {"TSUDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Setup time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TBUF": {"description": "Timing Parameter TBUF Register",
+"address_offset": "0x138",
+"access": "read-write",
+"size": "32",
+"fields": {"TBUF": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bus free time between a STOP and START condition
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"THIGH": {"description": "Timing Parameter THIGH Register",
+"address_offset": "0x138",
+"access": "read-write",
+"size": "32",
+"fields": {"THIGH": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "High Period of the scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TLOW": {"description": "Timing Parameter TLOW Register",
+"address_offset": "0x140",
+"access": "read-write",
+"size": "32",
+"fields": {"TLOW": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Low Period of scl clock.
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"THDDAT": {"description": "Timing Parameter THDDAT Register",
+"address_offset": "0x144",
+"access": "read-write",
+"size": "32",
+"fields": {"THDDAT": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Data Hold time
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.885
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.897
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
+"version": "1.1",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_1",
+},
+"standalone_v6_7": {"name": "standalone",
+"version": "6.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/bsp/standalone_v6_7",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.925
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.932
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.946
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.953
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.959
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.966
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.972
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.984
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.991
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:14.998
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.015
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.026
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.032
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.060
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "standalone",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "standalone",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "standalone",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "standalone",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family and serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.071
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.186
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.194
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:15.210
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:20.530
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:20.537
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.538
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.544
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.797
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.807
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.879
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:21.887
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:22.125
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:22.132
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:23.292
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:23.300
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:23.537
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:23.549
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:24.067
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:24.074
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:24.502
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:24.509
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:25.275
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:25.283
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:25.800
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:25.809
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:26.163
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:26.169
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.274
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.281
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.691
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.699
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.925
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:29.933
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:30.592
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:30.599
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:30.776
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:30.782
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:38.230
+!MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:38.259
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
+"description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
+"supp_proc": "psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/ddr_self_refresh",
+"os": "standalone",
+},
+"dhrystone": {"userdefname": "Dhrystone",
+"description": "Dhrystone synthetic benchmark program.",
+"supp_proc": "microblaze ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/dhrystone",
+"os": "standalone",
+},
+"empty_application": {"userdefname": "Empty Application",
+"description": "A blank C project.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/empty_application",
+"os": "standalone",
+},
+"freertos_hello_world": {"userdefname": "FreeRTOS Hello World",
+"description": " FreeRTOS Hello World application",
+"supp_proc": "psu_cortexr5 ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_hello_world",
+"os": "standalone",
+},
+"freertos_lwip_echo_server": {"userdefname": "FreeRTOS lwIP Echo Server",
+"description": "The FreeRTOS lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP) with FreeRTOS. This application sets up the board to use IP address 192.168.1.10 or IPv6 address FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_echo_server",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_client": {"userdefname": "FreeRTOS lwIP TCP Perf Client",
+"description": "The FreeRTOS LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address whenipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_tcp_perf_server": {"userdefname": "FreeRTOS lwIP TCP Perf Server",
+"description": "The FreeRTOS LwIP TCP Server application is used for creating TCP server using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection info and also display interim and average TCP statistics for data transfer. This application handles only 1 client connection at a time.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_tcp_perf_server",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_client": {"userdefname": "FreeRTOS lwIP UDP Perf Client",
+"description": "The FreeRTOS LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_client",
+"os": "standalone",
+},
+"freertos_lwip_udp_perf_server": {"userdefname": "FreeRTOS lwIP UDP Perf Server",
+"description": "The FreeRTOS LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "freertos10_xilinx",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/freertos_lwip_udp_perf_server",
+"os": "standalone",
+},
+"hello_world": {"userdefname": "Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/hello_world",
+"os": "standalone",
+},
+"libmetal_echo_demo": {"userdefname": "Libmetal AMP Demo",
+"description": "Libmetal AMP Application",
+"supp_proc": "psu_cortexr5",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/libmetal_echo_demo",
+"os": "standalone",
+},
+"lwip_echo_server": {"userdefname": "lwIP Echo Server",
+"description": "The lwIP Echo Server application provides a simple demonstration of how to use the light-weight IP stack (lwIP). This application sets up the board to use IP address 192.168.1.10 or IPv6 FE80:0:0:0:20A:35FF:FE00:102, with MAC address 00:0a:35:00:01:02. The server listens for input at port 7 and simply echoes back whatever data is sent to that port.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_echo_server",
+"os": "standalone",
+},
+"lwip_tcp_perf_client": {"userdefname": "lwIP TCP Perf Client",
+"description": "The LwIP TCP Perf Client application is used for creating TCP client and measure TCP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. This application creates TCP client on board and make connection with TCP server running on host machine. It will display connection information along with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_client",
+"os": "standalone",
+},
+"lwip_tcp_perf_server": {"userdefname": "lwIP TCP Perf Server",
+"description": "The LwIP TCP Perf Server application is used for creating TCP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IPv4 address 192.168.1.10 and IPv6 link local address when ipv6_enable is true, with MAC address 00:0a:35:00:01:02. The application creates TCP server on board and starts listening for TCP client connections. It will display client connection information with interim and average TCP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_tcp_perf_server",
+"os": "standalone",
+},
+"lwip_udp_perf_client": {"userdefname": "lwIP UDP Perf Client",
+"description": "The LwIP UDP Perf Client application is used for creating UDP client and measure UDP uplink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. This application creates UDP client on board and make connection with UDP server running on host machine. It will display connection information along with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_client",
+"os": "standalone",
+},
+"lwip_udp_perf_server": {"userdefname": "lwIP UDP Perf Server",
+"description": "The LwIP UDP Perf Server application is used for creating UDP server and measure downlink performance using light-weight IP stack (lwIP). This application sets up the board to use default IP address 192.168.1.10, with MAC address 00:0a:35:00:01:02. The application creates UDP server on board and starts listening for UDP client connections. It will display client connection information with interim and average UDP statistics for data transfer.",
+"supp_proc": "psu_cortexa53 psu_cortexr5 ps7_cortexa9 microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/lwip_udp_perf_server",
+"os": "standalone",
+},
+"mba_fs_boot": {"userdefname": "mba_fs_boot",
+"description": "fs-boot for microblaze by Xilinx Inc..",
+"supp_proc": "",
+"supp_os": "",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/mba_fs_boot",
+"os": "standalone",
+},
+"memory_tests": {"userdefname": "Memory Tests",
+"description": "This application tests Memory Regions present in the hardware.",
+"supp_proc": "microblaze ps7_cortexa9 psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/memory_tests",
+"os": "standalone",
+},
+"openamp_echo_test": {"userdefname": "OpenAMP echo-test",
+"description": " OpenAMP echo-test application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_echo_test",
+"os": "standalone",
+},
+"openamp_matrix_multiply": {"userdefname": "OpenAMP matrix multiplication Demo",
+"description": " OpenAMP matrix multiplication application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_matrix_multiply",
+"os": "standalone",
+},
+"openamp_rpc_demo": {"userdefname": "OpenAMP RPC Demo",
+"description": " OpenAMP rpc-demo application ",
+"supp_proc": "psu_cortexr5 ps7_cortexa9",
+"supp_os": "freertos10_xilinx standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/openamp_rpc_demo",
+"os": "standalone",
+},
+"peripheral_tests": {"userdefname": "Peripheral Tests",
+"description": "Simple test routines for all peripherals in the hardware.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 psu_cortexr5 microblaze",
+"supp_os": "standalone xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/peripheral_tests",
+"os": "standalone",
+},
+"rsa_auth_app": {"userdefname": "RSA Authentication App",
+"description": "Used to RSA authenticate a user application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/rsa_auth_app",
+"os": "standalone",
+},
+"srec_bootloader": {"userdefname": "SREC Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory. This program assumes that you have an SREC image programmed into BPI flash. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Don't forget to modify blconfig.h to reflect the physical address where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_bootloader",
+"os": "standalone",
+},
+"srec_spi_bootloader": {"userdefname": "SREC SPI Bootloader",
+"description": "Simple bootloader for loading SREC images from non volatile memory (SPI). This program assumes that you have an SREC image programmed into SPI flash already. The program also assumes that the target SREC image is an application for this processor that does not overlap the bootloader and resides in separate physical memory in the hardware. Typically this application is initialized into BRAM so that it bootloads the SREC image when the FPGA is powered up.
+
+Update the serial_flash_family and serial_flash_interface in xilisf library in BSP settings!
+
+Don't forget to modify blconfig.h to reflect the offset where your SREC image resides in non-volatile memory!",
+"supp_proc": "microblaze",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/srec_spi_bootloader",
+"os": "standalone",
+},
+"xilkernel_thread_demo": {"userdefname": "Xilkernel POSIX Threads Demo",
+"description": "This Xilkernel based application provides a simple example of how to create multiple POSIX threads and synchronize with them when they are complete. This example creates an initial master thread. The master thread creates 4 worker threads that go off to compute parts of a sum and return the partial sum as the result. The master thread accumulates the partial sums and prints the result. This example can serve as your starting point for your end application thread structure.",
+"supp_proc": "microblaze",
+"supp_os": "xilkernel",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/xilkernel_thread_demo",
+"os": "standalone",
+},
+"zynqmp_dram_test": {"userdefname": "Zynq MP DRAM tests",
+"description": "This application runs out of OCM and performs memory tests on Zynq MP DRAM.  For more information about the test, refer to ZYNQMP_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "psu_cortexa53",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_dram_test",
+"os": "standalone",
+},
+"zynqmp_fsbl": {"userdefname": "Zynq MP FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq Ultrascale+ MPSoC. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/SD/QSPI) to RAM (DDR) and takes A53/R5 out of reset.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "psu_cortexa53 psu_cortexr5",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_fsbl",
+"os": "standalone",
+},
+"zynqmp_pmufw": {"userdefname": "ZynqMP PMU Firmware",
+"description": "Platform Management Unit Firmware for ZynqMP.",
+"supp_proc": "psu_pmu",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynqmp_pmufw",
+"os": "standalone",
+},
+"zynq_dram_test": {"userdefname": "Zynq DRAM tests",
+"description": "This application runs out of OCM and performs memory tests and read/write eye measurements on Zynq DRAM.  For more information about the test, refer to ZYNQ_DRAM_DIAGNOSTICS_TEST.docx, in the src directory of the application",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_dram_test",
+"os": "standalone",
+},
+"zynq_fsbl": {"userdefname": "Zynq FSBL",
+"description": "First Stage Bootloader (FSBL) for Zynq. The FSBL configures the FPGA with HW bit stream (if it exists)  and loads the Operating System (OS) Image or Standalone (SA) Image or 2nd Stage Boot Loader image from the  non-volatile memory (NAND/NOR/QSPI) to RAM (DDR) and starts executing it.  It supports multiple partitions,  and each partition can be a code image or a bit stream.",
+"supp_proc": "ps7_cortexa9",
+"supp_os": "standalone",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps/zynq_fsbl",
+"os": "standalone",
+},
+"linux_empty_app": {"userdefname": "Linux Empty Application",
+"description": "A blank Linux C project.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_empty_app",
+"os": "linux",
+},
+"linux_hello_world": {"userdefname": "Linux Hello World",
+"description": "Let's say 'Hello World' in C.",
+"supp_proc": "ps7_cortexa9 psu_cortexa53 microblaze",
+"supp_os": "linux",
+"path": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/lib/sw_apps_linux/linux_hello_world",
+"os": "linux",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:38.267
+!MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app empty_application -sw {} -arch {}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:38.282
+!MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.188
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -sw Hello_World_bsp -dir D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp -processor microblaze_0 -os standalone -app empty_application], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.209
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -sw Hello_World_bsp -dir D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp -processor microblaze_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.430
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.441
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.448
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.455
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:40.462
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:50.501
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.883
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.890
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.896
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.904
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.909
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.916
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.922
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.931
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.937
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.943
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.950
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.956
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.964
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.985
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:51.993
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.016
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.024
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.030
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.037
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.047
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.055
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, axi_iic_0 axi_uartlite_0 microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.060
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.070
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"axi_iic_0": {"name": "iic",
+"ver": "3.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.085
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.131
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_iic_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"iic_v3_4": {"name": "iic",
+"version": "3.4",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/iic_v3_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_uartlite_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"clk_wiz_0": {"version": "6.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"clk_wiz_v1_2": {"name": "clk_wiz",
+"version": "1.2",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clk_wiz_v1_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"mdm_1": {"version": "3.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartlite_v3_2": {"name": "uartlite",
+"version": "3.2",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartlite_v3_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0": {"version": "10.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_v2_7": {"name": "cpu",
+"version": "2.7",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_v2_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_dlmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"version": "4.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"bram_v4_2": {"name": "bram",
+"version": "4.2",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/bram_v4_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"microblaze_0_local_memory_ilmb_v10": {"version": "3.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"microblaze_0_local_memory_lmb_bram": {"version": "8.4",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_clk_wiz_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "D:/vivado2018.2/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.138
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.148
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.155
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.164
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.170
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.177
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.254
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.316
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.322
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.339
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.344
+!MESSAGE XSCT Command: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.358
+!MESSAGE XSCT command with result: [::hsi::utils::openhw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.365
+!MESSAGE XSCT Command: [::hsi::utils::opensw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.376
+!MESSAGE XSCT command with result: [::hsi::utils::opensw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.382
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:52.640
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf -sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.457
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.518
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.524
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.537
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.574
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.583
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"axi_iic_0": {"name": "iic",
+"ver": "3.4",
+},
+"axi_uartlite_0": {"name": "uartlite",
+"ver": "3.2",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"name": "bram",
+"ver": "4.2",
+},
+"microblaze_0": {"name": "cpu",
+"ver": "2.7",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.729
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.738
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.745
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.753
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.768
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.775
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.855
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:53.861
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.679
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.705
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.713
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.720
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.774
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.819
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper_hw_platform_0/system.hdf D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.888
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-23 12:54:54.896
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:55.347
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:287)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:250)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:55.639
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:55.699
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.019
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.077
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-23 12:54:56.379
+!MESSAGE Indexed 'Hello_World_bsp' (53 sources, 44 headers) in 1.58 sec: 1,554 declarations; 9,548 references; 29 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-23 12:54:56.413
+!MESSAGE Indexed 'Hello_World' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.441
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.455
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.744
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:56.784
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:57.198
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:57.208
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:57.351
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:57.384
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:57.463
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.116
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.220
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.229
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.310
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.599
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.613
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:54:58.694
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:00.377
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:00.388
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:00.586
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:01.206
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:01.214
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:01.233
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:04.456
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:04.469
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:04.554
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:05.362
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-23 12:55:05.414
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:98)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:193)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:259)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:273)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-03-23 12:57:08.911
+!MESSAGE Executed Webtalk command

@@ -1,0 +1,6 @@
+12:53:05 INFO  : Registering command handlers for SDK TCF services
+12:53:06 INFO  : Launching XSCT server: xsct.bat -interactive D:\GitHub-Project\SEA\Hello-World\FPGA\MicroBlaze\HelloWorld-MicroBlaze\HelloWorld-MicroBlaze.sdk\temp_xsdb_launch_script.tcl
+12:53:14 INFO  : XSCT server has started successfully.
+12:53:30 INFO  : Successfully done setting XSCT server connection channel  
+12:53:30 INFO  : Successfully done setting SDK workspace  
+12:53:30 INFO  : Processing command line option -hwspec D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.sdk/Hello_World_wrapper.hdf.

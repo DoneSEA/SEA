@@ -1,0 +1,408 @@
+
+*** Running vivado
+    with args -log Hello_World_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Hello_World_wrapper.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Hello_World_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018.2/Vivado/2018.2/data/ip'.
+add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 365.520 ; gain = 66.582
+Command: synth_design -top Hello_World_wrapper -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 473.488 ; gain = 101.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_wrapper' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/hdl/Hello_World_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_axi_iic_0_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_axi_iic_0_0' (1#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_iic_0' of module 'Hello_World_axi_iic_0_0' requires 27 connections, but only 25 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:144]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_axi_uartlite_0_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_axi_uartlite_0_0' (2#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_uartlite_0' of module 'Hello_World_axi_uartlite_0_0' requires 22 connections, but only 21 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:170]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_clk_wiz_0_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_clk_wiz_0_0' (3#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_mdm_1_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_mdm_1_0' (4#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_microblaze_0_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_microblaze_0_0' (5#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'Hello_World_microblaze_0_0' requires 52 connections, but only 51 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:209]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_microblaze_0_axi_periph_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:357]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_7S7PWN' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:819]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_7S7PWN' (6#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:819]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_10KWXH5' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:951]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_10KWXH5' (7#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:951]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1ULRLDJ' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1317]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1ULRLDJ' (8#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1317]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_xbar_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_xbar_0' (9#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'Hello_World_xbar_0' requires 40 connections, but only 38 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:778]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_microblaze_0_axi_periph_0' (10#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:357]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1Y6FM0M' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_dlmb_bram_if_cntlr_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_dlmb_bram_if_cntlr_0' (11#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_dlmb_v10_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_dlmb_v10_0' (12#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'Hello_World_dlmb_v10_0' requires 25 connections, but only 24 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1229]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_ilmb_bram_if_cntlr_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_ilmb_bram_if_cntlr_0' (13#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_ilmb_v10_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_ilmb_v10_0' (14#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'Hello_World_ilmb_v10_0' requires 25 connections, but only 24 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1275]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_lmb_bram_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_lmb_bram_0' (15#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'Hello_World_lmb_bram_0' requires 16 connections, but only 14 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1300]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1Y6FM0M' (16#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:1083]
+INFO: [Synth 8-6157] synthesizing module 'Hello_World_rst_clk_wiz_0_100M_0' [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_rst_clk_wiz_0_100M_0' (17#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/.Xil/Vivado-3516-DESKTOP-TGQVA1V/realtime/Hello_World_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_0_100M' of module 'Hello_World_rst_clk_wiz_0_100M_0' requires 10 connections, but only 9 given [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:345]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World' (18#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/synth/Hello_World.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/vivado2018.2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (19#1) [D:/vivado2018.2/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+INFO: [Synth 8-6155] done synthesizing module 'Hello_World_wrapper' (20#1) [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/hdl/Hello_World_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1ULRLDJ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1ULRLDJ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1ULRLDJ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1ULRLDJ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_10KWXH5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_10KWXH5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_10KWXH5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_10KWXH5 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_7S7PWN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_7S7PWN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_7S7PWN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_7S7PWN has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 527.770 ; gain = 155.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 527.770 ; gain = 155.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 527.770 ; gain = 155.328
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_microblaze_0_0/Hello_World_microblaze_0_0/Hello_World_microblaze_0_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_microblaze_0_0/Hello_World_microblaze_0_0/Hello_World_microblaze_0_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0_in_context.xdc] for cell 'Hello_World_i/clk_wiz_0'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0_in_context.xdc] for cell 'Hello_World_i/clk_wiz_0'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_axi_uartlite_0_0/Hello_World_axi_uartlite_0_0/Hello_World_axi_uartlite_0_0_in_context.xdc] for cell 'Hello_World_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_axi_uartlite_0_0/Hello_World_axi_uartlite_0_0/Hello_World_axi_uartlite_0_0_in_context.xdc] for cell 'Hello_World_i/axi_uartlite_0'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_axi_iic_0_0/Hello_World_axi_iic_0_0/Hello_World_axi_iic_0_0_in_context.xdc] for cell 'Hello_World_i/axi_iic_0'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_axi_iic_0_0/Hello_World_axi_iic_0_0/Hello_World_axi_iic_0_0_in_context.xdc] for cell 'Hello_World_i/axi_iic_0'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_mdm_1_0/Hello_World_mdm_1_0/Hello_World_mdm_1_0_in_context.xdc] for cell 'Hello_World_i/mdm_1'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_mdm_1_0/Hello_World_mdm_1_0/Hello_World_mdm_1_0_in_context.xdc] for cell 'Hello_World_i/mdm_1'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_rst_clk_wiz_0_100M_0/Hello_World_rst_clk_wiz_0_100M_0/Hello_World_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'Hello_World_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_rst_clk_wiz_0_100M_0/Hello_World_rst_clk_wiz_0_100M_0/Hello_World_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'Hello_World_i/rst_clk_wiz_0_100M'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_xbar_0/Hello_World_xbar_0/Hello_World_xbar_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_xbar_0/Hello_World_xbar_0/Hello_World_xbar_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_dlmb_v10_0/Hello_World_dlmb_v10_0/Hello_World_dlmb_v10_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_dlmb_v10_0/Hello_World_dlmb_v10_0/Hello_World_dlmb_v10_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_ilmb_v10_0/Hello_World_ilmb_v10_0/Hello_World_dlmb_v10_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_ilmb_v10_0/Hello_World_ilmb_v10_0/Hello_World_dlmb_v10_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_dlmb_bram_if_cntlr_0/Hello_World_dlmb_bram_if_cntlr_0/Hello_World_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_dlmb_bram_if_cntlr_0/Hello_World_dlmb_bram_if_cntlr_0/Hello_World_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_ilmb_bram_if_cntlr_0/Hello_World_ilmb_bram_if_cntlr_0/Hello_World_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_ilmb_bram_if_cntlr_0/Hello_World_ilmb_bram_if_cntlr_0/Hello_World_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_lmb_bram_0/Hello_World_lmb_bram_0/Hello_World_lmb_bram_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_lmb_bram_0/Hello_World_lmb_bram_0/Hello_World_lmb_bram_0_in_context.xdc] for cell 'Hello_World_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Hello_World_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Hello_World_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 793.090 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'Hello_World_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 793.090 ; gain = 420.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 793.090 ; gain = 420.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  d:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.srcs/sources_1/bd/Hello_World/ip/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0/Hello_World_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Hello_World_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/axi_iic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Hello_World_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 793.090 ; gain = 420.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 793.090 ; gain = 420.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Hello_World_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 793.090 ; gain = 420.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Hello_World_i/clk_wiz_0/clk_out1' to pin 'Hello_World_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Hello_World_i/mdm_1/Dbg_Clk_0' to pin 'Hello_World_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Hello_World_i/mdm_1/Dbg_Update_0' to pin 'Hello_World_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Hello_World_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Hello_World_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Hello_World_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'Hello_World_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 810.602 ; gain = 438.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 810.750 ; gain = 438.309
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 811.438 ; gain = 438.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |Hello_World_xbar_0               |         1|
+|2     |Hello_World_axi_iic_0_0          |         1|
+|3     |Hello_World_axi_uartlite_0_0     |         1|
+|4     |Hello_World_clk_wiz_0_0          |         1|
+|5     |Hello_World_mdm_1_0              |         1|
+|6     |Hello_World_microblaze_0_0       |         1|
+|7     |Hello_World_rst_clk_wiz_0_100M_0 |         1|
+|8     |Hello_World_dlmb_bram_if_cntlr_0 |         1|
+|9     |Hello_World_dlmb_v10_0           |         1|
+|10    |Hello_World_ilmb_bram_if_cntlr_0 |         1|
+|11    |Hello_World_ilmb_v10_0           |         1|
+|12    |Hello_World_lmb_bram_0           |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |Hello_World_axi_iic_0_0          |     1|
+|2     |Hello_World_axi_uartlite_0_0     |     1|
+|3     |Hello_World_clk_wiz_0_0          |     1|
+|4     |Hello_World_dlmb_bram_if_cntlr_0 |     1|
+|5     |Hello_World_dlmb_v10_0           |     1|
+|6     |Hello_World_ilmb_bram_if_cntlr_0 |     1|
+|7     |Hello_World_ilmb_v10_0           |     1|
+|8     |Hello_World_lmb_bram_0           |     1|
+|9     |Hello_World_mdm_1_0              |     1|
+|10    |Hello_World_microblaze_0_0       |     1|
+|11    |Hello_World_rst_clk_wiz_0_100M_0 |     1|
+|12    |Hello_World_xbar_0               |     1|
+|13    |IBUF                             |     2|
+|14    |IOBUF                            |     2|
+|15    |OBUF                             |     1|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1096|
+|2     |  Hello_World_i               |Hello_World                           |  1091|
+|3     |    microblaze_0_axi_periph   |Hello_World_microblaze_0_axi_periph_0 |   263|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1Y6FM0M |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 812.094 ; gain = 439.652
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 812.102 ; gain = 174.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 812.102 ; gain = 439.660
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 831.184 ; gain = 465.664
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/GitHub-Project/SEA/Hello-World/FPGA/MicroBlaze/HelloWorld-MicroBlaze/HelloWorld-MicroBlaze.runs/synth_1/Hello_World_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Hello_World_wrapper_utilization_synth.rpt -pb Hello_World_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 831.496 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 12:48:59 2020...

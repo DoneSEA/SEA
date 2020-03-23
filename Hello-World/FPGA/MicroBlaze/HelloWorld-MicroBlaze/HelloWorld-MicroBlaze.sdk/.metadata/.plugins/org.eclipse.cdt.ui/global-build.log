@@ -1,0 +1,151 @@
+12:54:54 **** Build of project Hello_World_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/iic_v3_4/src"
+make -C microblaze_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+**** Build of configuration Debug for project Hello_World ****
+
+Nothing to build for project Hello_World
+12:55:10 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/vivado2018.2/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Hello_World.elf] ´íÎó 1
+12:55:24 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/vivado2018.2/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Hello_World.elf] ´íÎó 1
+12:55:43 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/vivado2018.2/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Hello_World.elf] ´íÎó 1
+12:55:58 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+../src/IIC.c:11:1: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+ ^~
+../src/IIC.c:11:34: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                  ^~
+../src/IIC.c:11:48: error: unknown type name 'u16'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                ^~~
+../src/IIC.c:11:61: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                             ^~
+../src/IIC.c:11:73: error: unknown type name 'u8'
+ u8 IIC_Write_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Reg_Data,u8 Dual_Addr){
+                                                                         ^~
+../src/IIC.c:30:1: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+ ^~
+../src/IIC.c:30:33: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                 ^~
+../src/IIC.c:30:47: error: unknown type name 'u16'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                               ^~~
+../src/IIC.c:30:60: error: unknown type name 'u8'
+ u8 IIC_Read_Data(int Base_Addr, u8 Slave_Addr,u16 Reg_Addr,u8 Dual_Addr)
+                                                            ^~
+make: *** [src/IIC.o] ´íÎó 1
+12:56:14 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/IIC.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
+'Finished building: ../src/IIC.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/vivado2018.2/sdk/2018.2/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Hello_World.elf] ´íÎó 1
+12:56:34 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:53:10: fatal error: Gyro.h: No such file or directory
+ #include "Gyro.h"
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+12:56:51 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Hello_World_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: Hello_World.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Hello_World_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Hello_World.elf"  ./src/IIC.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_World.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Hello_World.elf  |tee "Hello_World.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2116	    268	   3112	   5496	   1578	Hello_World.elf
+'Finished building: Hello_World.elf.size'
+' '
+12:56:54 **** Auto Build of configuration Debug for project Hello_World ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,9 +1,19 @@
-19:40:23 **** Auto Build of configuration Debug for project Gyro_Demo ****
+12:53:24 **** Build of configuration Debug for project Gyro_Demo ****
 make all 
+'Building file: ../src/Gyro.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Gyro.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Gyro.d" -MT"src/Gyro.o" -o "src/Gyro.o" "../src/Gyro.c"
+'Finished building: ../src/Gyro.c'
+' '
 'Building file: ../src/IIC.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/IIC.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/IIC.d" -MT"src/IIC.o" -o "src/IIC.o" "../src/IIC.c"
 'Finished building: ../src/IIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Gyro_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
 ' '
 'Building target: Gyro_Demo.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -17,5 +27,5 @@ mb-size Gyro_Demo.elf  |tee "Gyro_Demo.elf.size"
 'Finished building: Gyro_Demo.elf.size'
 ' '
 
-19:40:24 Build Finished (took 1s.136ms)
+12:53:29 Build Finished (took 5s.460ms)
 
