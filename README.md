@@ -1,42 +1,42 @@
 # SEA
 
-本仓库用于存放SEA板卡的官方案例，并提供社区交流。
+This repository is used to store official cases of SEA boards and provide communication.
 
 ![](/Images/SEA.jpg)
 
-## 官方案例
+## Official Cases
 
-官方案例，目前包括Hello World部分、Examples基础案例部分、Demos系统案例部分。
+The official cases include the Hello World part, the Examples (Basic Cases) part, and the Demos (System Cases) part currently.
 
 ### Hello World
 
-Hello World部分，提供SEA板卡的空白工程，包括ESP32部分和FPGA部分。
+ The Hello World part provides blank project of SEA board, including ESP32 part and FPGA part.
 
-| 序号 | 属性 | 名称                                                         | 描述                                       |
+| Number | Property | Case Name                                              | Discription                                |
 | ---- | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)         | 基于Arduino IDE平台，采用C语言编写的工程    |
-| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)   | 基于MicroPython平台，采用MicroPython语言编写的工程       |
-| 3    | FPGA | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | 纯硬核，采用Verilog语言编写的Vivado工程     |
-| 4    | FPGA | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | 纯软核，采用C语言编写的Vivado SDK工程       |
+| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)         | Project written in C based on the Arduino IDE platform    |
+| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)    | Project based on MicroPython platform, written in MicroPython language       |
+| 3    | FPGA | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | Pure hard core, Vivado project written in Verilog language     |
+| 4    | FPGA | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | Pure soft core, Vivado and Xilinx SDK project written in C language       |
 
 ### Examples
 
-Examples部分，提供SEA板卡的基础案例，包括ESP32部分的基础案例、FPGA部分的案例以及FPGA的IP核。
+The Examples part provides the basic cases of the SEA board, including the ESP32 part,the FPGA part, and the IP core of the FPGA.
 
 #### ESP32
 
-待补充......
+To be added......
 
 #### FPGA
 
-| 序号 | 名称                                                         | 描述                                       |
+| Number | Case Name                                                  | Discription                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | 数字电路案例，包含组合、时序、状态机三个系列的案例                   |
-| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | 通信接口案例，包含SPI、IIC、UART等的案例                            |
-| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | 普通IO接口案例，包含LED使用、PWM发生等的案例                        |
-| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | 模块接口案例，包含ADC、DAC、HDMI、MIPI摄像头、陀螺仪等板载模块的案例  |
-| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | 数据接口案例，包含FPGA中基本数据存取，如BRAM、ROM的使用案例          |
-| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | 扩展接口案例，包含扩展板使用的案例，如数码管、摇杆、蓝牙等           |
+| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | Digital circuit cases, including three cases: combination logic, sequential logic, and state machine        |
+| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | Communication interface cases, including cases of SPI, IIC, UART, etc.    |
+| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | Common IO interface cases, including cases of LED, PWM generation, etc.       |
+| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | Module interface cases, including cases of on-board modules such as ADC, DAC, HDMI, MIPI camera, gyroscope, etc.  |
+| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | Data interface cases, including basic data interactions in FPGA, such as BRAM, ROM,etc.         |
+| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | Expansion interface cases, including cases used by expansion boards, such as digital tubes, joysticks, Bluetooth, etc.           |
 
 #### FPGA-IP
 

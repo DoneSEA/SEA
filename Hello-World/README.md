@@ -1,22 +1,20 @@
-# Hello-World工程使用介绍
+# Hello-World projects introduction
 
-本仓库用于存放SEA的ESP32与FPGA的基础工程案例(Hello-World)。
+The Hello World part provides blank project of SEA board, including ESP32 part and FPGA part.
 
-## ESP32部分
+## ESP32 Part
 
-ESP32目录内包含Arduino IDE平台(C语言)工程、MicroPython平台(MicroPython语言)的源代码。
+The ESP32 directory contains the source code of the Arduino IDE platform (C language) project and the MicroPython platform (MicroPython language).
 
-## FPGA部分
+## FPGA Part
 
-FPGA目录内包含纯硬核(Verilog)工程、纯软核工程(MicroBlaze)的源代码。
+The FPGA directory contains the source code for pure hard core (Verilog) projects and pure soft core projects (MicroBlaze).
 
-## 内容结构介绍
+## Content structure
 
-具体内容如下:
-
-| 序号 | 属性 | 名称                                                         | 描述                                       |
+| Number | Property | Case Name                                              | Discription                                |
 | ---- | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)         | 基于Arduino IDE平台，采用C语言编写的工程    |
-| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)   | 基于MicroPython平台，采用MicroPython语言编写的工程       |
-| 3    | FPGA | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | 纯硬核，采用Verilog语言编写的Vivado工程     |
-| 4    | FPGA | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | 纯软核，采用C语言编写的Vivado SDK工程       |
+| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)         | Project written in C based on the Arduino IDE platform    |
+| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)    | Project based on MicroPython platform, written in MicroPython language       |
+| 3    | FPGA | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | Pure hard core, Vivado project written in Verilog language     |
+| 4    | FPGA | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | Pure soft core, Vivado and Xilinx SDK project written in C language       |
