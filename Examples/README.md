@@ -1,40 +1,41 @@
 # Examples
 
-本部分用于存放SEA板卡的基础案例，包括ESP32案例、FPGA案例以及FPGA的IP核。
+This part stores the basic cases of the SEA board, including the cases of the ESP32 part, the FPGA part, and the IP core of the FPGA.
 
 ## ESP32
 
-待补充......
+Waited to be added...
 
 ## FPGA
 
-### 案例结构
+### Repository Structure
 
-| 序号 | 名称                                                         | 描述                                       |
+| Number | Case Name                                                  | Discription                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | 数字电路案例，包含组合、时序、状态机三个系列的案例                   |
-| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | 通信接口案例，包含SPI、IIC、UART等的案例                            |
-| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | 普通IO接口案例，包含LED使用、PWM发生等的案例                        |
-| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | 模块接口案例，包含ADC、DAC、HDMI、MIPI摄像头、陀螺仪等板载模块的案例  |
-| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | 数据接口案例，包含FPGA中基本数据存取，如BRAM、ROM的使用案例          |
-| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | 扩展接口案例，包含扩展板使用的案例，如数码管、摇杆、蓝牙等           |
+| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | Digital circuit cases, including three cases: combination logic, sequential logic, and state machine        |
+| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | Communication interface cases, including cases of SPI, IIC, UART, etc.    |
+| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | Common IO interface cases, including cases of LED, PWM generation, etc.       |
+| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | Module interface cases, including cases of on-board modules such as ADC, DAC, Mini HDMI, MIPI camera, gyroscope, etc.  |
+| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | Data interface cases, including basic data interactions in FPGA, such as BRAM, ROM, etc.         |
+| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | Expansion interface cases, including cases used by expansion boards, such as digital tubes, joysticks, Bluetooth, etc.           |
 
 ## FPGA-IP
 
-### 案例结构
+### Repository Structure
 
-| 序号 | 名称                                                         | 描述                                       |
+| Number | Case Name                                                  | Discription                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [ADC-IP](/Examples/FPGA-IP/ADC-IP)                           | 板载ADC模块的驱动IP核                        |
-| 2    | [Camera-IP](/Examples/FPGA-IP/Camera-IP)                     | 板载MIPI摄像头的驱动IP核                     |
-| 3    | [DAC-IP](/Examples/FPGA-IP/DAC-IP)                           | 板载DAC模块的驱动IP核                        |
-| 4    | [Frequency-Divider-IP](/Examples/FPGA-IP/Frequency-Divider-IP) | 整数分频器的驱动IP核                       |
-| 5    | [Gyro-IP](/Examples/FPGA-IP/Gyro-IP)                         | 板载陀螺仪的驱动IP核                         |
-| 6    | [IIC-IP](/Examples/FPGA-IP/IIC-IP)                           | IIC接口的驱动IP核                           |
-| 7    | [Image-Process-IP](/Examples/FPGA-IP/Image-Process-IP)       | 图像处理相关的IP核                           |
-| 8    | [LED-IP](/Examples/FPGA-IP/LED-IP)                           | 板载LED/RGB LED的驱动IP核                   |
-| 9    | [PWM-IP](/Examples/FPGA-IP/PWM-IP)                           | PWM发生器的IP核                             |
-| 10   | [SPI-IP](/Examples/FPGA-IP/SPI-IP)                           | SPI接口的驱动IP核                           |
-| 11   | [UART-IP](Examples/FPGA-IP/UART-IP)                          | UART接口的驱动IP核                          |
-| 12   | [RGB2Stream-IP](/Examples/FPGA-IP/RGB2Stream-IP)             | RGB图像输入转流输出的IP核                    |
-| 13   | [Stream2RGB-IP](Examples/FPGA-IP/Stream2RGB-IP)              | 流输入转RGB图像输出的IP核                    |
+| 1    | [ADC-IP](/Examples/FPGA-IP/ADC-IP)                           | Driver IP core of onboard ADC module       |
+| 2    | [Camera-IP](/Examples/FPGA-IP/Camera-IP)                     | Driver IP core of onboard MIPI camera      |
+| 3    | [DAC-IP](/Examples/FPGA-IP/DAC-IP)                           | Driver IP core of onboard DAC module       |
+| 4    | [Frequency-Divider-IP](/Examples/FPGA-IP/Frequency-Divider-IP) | Driver IP core for integer divider       |
+| 5    | [Gyro-IP](/Examples/FPGA-IP/Gyro-IP)                         | Driver IP core for onboard gyroscope       |
+| 6    | [IIC-IP](/Examples/FPGA-IP/IIC-IP)                           | Driver IP core of IIC interface            |
+| 7    | [Image-Process-IP](/Examples/FPGA-IP/Image-Process-IP)       | IP cores related to image processing       |
+| 8    | [Mini-HDMI-IP](/Examples/FPGA-IP/Mini-HDMI-IP)               | Driver IP core of Mini HDMI interface      |
+| 9    | [LED-IP](/Examples/FPGA-IP/LED-IP)                           | Driver IP core for onboard LED / RGB LED   |
+| 10   | [PWM-IP](/Examples/FPGA-IP/PWM-IP)                           | IP core of PWM generator                   |
+| 11   | [SPI-IP](/Examples/FPGA-IP/SPI-IP)                           | Driver IP core for SPI interface           |
+| 12   | [UART-IP](Examples/FPGA-IP/UART-IP)                          | Driver IP core for UART interface          |
+| 13   | [RGB2Stream-IP](/Examples/FPGA-IP/RGB2Stream-IP)             | IP core for RGB image input transformed to stream output     |
+| 14   | [Stream2RGB-IP](Examples/FPGA-IP/Stream2RGB-IP)              | IP core for stream input transformed to RGB image output     |

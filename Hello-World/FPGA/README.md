@@ -1,17 +1,15 @@
-# Hello-World工程FPGA部分
+# FPGA part
 
-本部分用于存放SEA的FPGA基础工程案例（Hello-World）。
+The Hello World part provides blank project of the FPGA part.
 
-## 工程组成
+## Directory composition
 
-目录内包含纯硬核(Verilog)工程、纯软核工程(MicroBlaze)的源代码。
+The FPGA directory contains the source code for pure hard core (Verilog) projects and pure soft core projects (MicroBlaze).
 
-## 内容结构
+## Content structure
 
-目录如下:
-
-| 序号 | 名称                                                         | 描述                                       |
-| ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | 纯硬核，采用Verilog语言编写的Vivado工程     |
-| 2    | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | 纯软核，采用C语言编写的Vivado SDK工程       |
+| Number | Property | Case Name                                              | Discription                                |
+| ---- | ---- | ------------------------------------------------------------ | ------------------------------------------ |
+| 1    | FPGA | [HelloWorld-Verilog](/Hello-World/FPGA/Verilog)              | Pure hard core, Vivado project written in Verilog language     |
+| 2    | FPGA | [HelloWorld-MicroBlaze](/Hello-World/FPGA/MicroBlaze)        | Pure soft core, Vivado and Xilinx SDK project written in C language       |
 
