@@ -1,47 +1,47 @@
-# Image-Process-IP系列介绍
+# Image-Process-IP Series introduction
 
-## IP核介绍
+## IP Core Introduction
 
-图像处理系列IP核，提供了RGB转灰度、RGB转HSV、HSV转RGB、边缘检测四种IP核。
+Image processing series IP cores provide four types of IP cores: RGB to grayscale, RGB to HSV, HSV to RGB, and edge detection.
 
-## RGB转灰度模块构成
+## Composition of RGB to grayscale module
 
-RGB转灰度模块，利用转换公式Gray=x·R+y·G+z·B，进行转换。
+This module uses the conversion formula Gray = x · R + y · G + z · B for conversion.
 
-传统的转换方式，精度较低，这里采用二进制移位方式代替小数，减小精度损失。
+The traditional conversion method has lower accuracy. Here, a binary shift method is used instead of decimal to reduce the loss of accuracy.
 
-本模块总共提供1-20位共计20种精度的灰度转换。
+This module provides a total of 20 gray resolutions with a total of 1-20 bits.
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module RGB_To_Gray(
-    input [7:0]RGB_Data_R,              //Pixel data R
-    input [7:0]RGB_Data_G,              //Pixel data G
-    input [7:0]RGB_Data_B,              //Pixel data B
-    input [4:0]Accuracy_Num,            //Grayscale precision digits
-    output [7:0]Gray_Data               //Output grayscale data
+    input [7:0]RGB_Data_R,         
+    input [7:0]RGB_Data_G,  
+    input [7:0]RGB_Data_B,  
+    input [4:0]Accuracy_Num,  
+    output [7:0]Gray_Data   
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | RGB_Data_R      | 需要转换的R通道值 |
-| 输入信号 | RGB_Data_G      | 需要转换的G通道值       |
-| 输入信号 | RGB_Data_B      | 需要转换的B通道值       |
-| 输入信号 | Accuracy_Num    | 精度位数，1-20，超出部分按照20位计算，低于部分按照1位计算       |
-| 输出信号 | Gray_Data       | 转换后输出的灰度数据     |
+| input | RGB_Data_R      | R channel value needed to be converted |
+| input | RGB_Data_G      | G channel value needed to be converted       |
+| input | RGB_Data_B      | B channel value needed to be converted       |
+| input | Accuracy_Num    | Precision digits: 1-20 bit, the excess part is calculated as 20 digits, the lower part is calculated as 1 digit       |
+| output | Gray_Data      | Grayscale data output after conversion     |
 
-## RGB转HSV模块构成
+## Composition of RGB to HSV module
 
-RGB转HSV模块，利用RGB转HSV的转换公式进行转换。
+RGB to HSV module uses the conversion formula of RGB to HSV for conversion.
 
-由于一般转换方式，将HSV三个通道数据，归一化到0-1之间，在FPGA上运算会造成精度损失。
+As the general conversion method normalizes the three channels of HSV data to 0-1, the calculation on the FPGA will cause a loss of accuracy.
 
-这里，不进行归一化，保持原值。
+Here, no normalization is performed and the original value is maintained.
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module RGB_To_HSV(
@@ -57,21 +57,21 @@ module RGB_To_HSV(
     );
 ```
 
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_Image_Process | 时钟信号 |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | RGB_Data_R      | 需要转换的R通道值 |
-| 输入信号 | RGB_Data_G      | 需要转换的G通道值       |
-| 输入信号 | RGB_Data_B      | 需要转换的B通道值       |
-| 输出信号 | HSV_H           | 转换后输出的H通道数据     |
-| 输出信号 | HSV_S           | 转换后输出的S通道数据     |
-| 输出信号 | HSV_V           | 转换后输出的V通道数据     |
-| 输出信号 | Delay_Num       | 转换过程用到除法，这里输出延时的时钟数     |
+| input | clk_Image_Process | Clock signal |
+| input | Rst             | Reset signal, active low       |
+| input | RGB_Data_R      | R channel value needed to be converted |
+| input | RGB_Data_G      | G channel value needed to be converted       |
+| input | RGB_Data_B      | B channel value needed to be converted       |
+| output | HSV_H           | H channel data output after conversion     |
+| output | HSV_S           | S channel data output after conversion     |
+| output | HSV_V           | V channel data output after conversion     |
+| output | Delay_Num       | Since the conversion process uses division, this is the number of clocks for the output delay     |
 
-## HSV转RGB模块构成
+## Composition of HSV to RGB module
 
 HSV转RGB模块，利用HSV转RGB的转换公式进行转换。
 

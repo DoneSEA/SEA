@@ -2,26 +2,26 @@
 
 ## IP Core Introduction
 
-陀螺仪驱动IP核，需要外接IIC驱动，仅对IIC读取数据的地址、输出数据进行处理。
+Driver IP core of onboard gyroscope module requires an external IIC driver to process only the address and output data of the IIC read data.
 
-IIC地址处理，根据陀螺仪手册，得到以下地址：
+IIC address processing, according to the gyroscope manual, get the following address:
 
-| **地址名称**    | **地址低位**  | **地址高位** | **描述** |
+| **Address Name**    | **Low Address**  | **High Address** | **Discription** |
 | ----------- | ----------- | ----------- | -------- |
-| Slave       |     D6H     |     /       |IIC选中陀螺仪的地址 |
-| Temperature |     20H     |    21H      |  温度地址 |
-| Gyro_X      |     22H     |    23H      |  加速度X轴地址 |
-| Gyro_Y      |     24H     |    25H      |  加速度Y轴地址 |
-| Gyro_Z      |     26H     |    27H      |  加速度Z轴地址 |
-| Mag_X       |     66H     |    67H      |  磁力X轴地址   |
-| Mag_Y       |     68H     |    69H      |  磁力Y轴地址   |
-| Mag_Z       |     6AH     |    6BH      |  磁力Z轴地址   |
+| Slave       |     D6H     |     /       |Gyro address selected by IIC |
+| Temperature |     20H     |    21H      |  Temperature address |
+| Gyro_X      |     22H     |    23H      |  Acceleration X axis address |
+| Gyro_Y      |     24H     |    25H      |  Acceleration Y axis address |
+| Gyro_Z      |     26H     |    27H      |  Acceleration Z axis address |
+| Mag_X       |     66H     |    67H      |  Magnetic X axis address   |
+| Mag_Y       |     68H     |    69H      |  Magnetic Y axis address   |
+| Mag_Z       |     6AH     |    6BH      |  Magnetic Z axis address   |
 
-IIC输出数据，经过高低位拼接后，输出16位数据。
+IIC output data is 16-bit data after high and low bit splicing.
 
-### 陀螺仪驱动模块构成
+### Module Composition
 
-构成如下:
+The module structure diagram is as follows:
 
 ```c
 module Driver_Gyro(
@@ -49,34 +49,34 @@ module Driver_Gyro(
     output reg Ctrl_IIC=0
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_100MHz     | 100MHz的时钟 |
-| 输入信号 | clk_10MHz      | 10MHz的时钟  |
-| 输入信号 | IIC_Busy       | IIC忙碌标志，低电平有效  |
-| 输入信号 | Enable_Gyro    | 使能信号，高低平有效  |
-| 输入信号 | IIC_Data       | IIC读取到的数据  |
-| 输入信号 | Ctrl_Temp_Out  | 控制温度输出，高电平有效  |
-| 输入信号 | Ctrl_Gyro_Out  | 控制加速度输出，高电平有效  |
-| 输入信号 | Ctrl_Mag_Out   | 控制磁力输出，高电平有效  |
-| 输出信号 | Addr           | 从机地址     |
-| 输出信号 | Reg_Addr       | 寄存器地址   |
-| 输出信号 | Reg_Data       | 寄存器数据   |
-| 输出信号 | Temp_Data      | 温度数据     |
-| 输出信号 | Gyro_Data_X    | 加速度X轴数据|
-| 输出信号 | Gyro_Data_Y    | 加速度Y轴数据|
-| 输出信号 | Gyro_Data_Z    | 加速度Z轴数据|
-| 输出信号 | Mag_Data_X     | 磁力X轴数据  |
-| 输出信号 | Mag_Data_X     | 磁力Y轴数据  |
-| 输出信号 | Mag_Data_X     | 磁力Z轴数据  |
-| 输出信号 | IIC_Write      | IIC写信号,上升沿有效  |
-| 输出信号 | IIC_Read       | IIC读信号，上升沿有效 |
-| 输出信号 | Reg_2Addr      | 寄存器双地址位，高有效|
-| 输出信号 | Ctrl_IIC       | IIC使能     |
+| input | clk_100MHz     | 100MHz clock |
+| input | clk_10MHz      | 10MHz clock  |
+| input | IIC_Busy       | IIC busy flag, active low  |
+| input | Enable_Gyro    | Enable signal, active high |
+| input | IIC_Data       | Data read by IIC  |
+| input | Ctrl_Temp_Out  | Control temperature output, active high  |
+| input | Ctrl_Gyro_Out  | Control acceleration output, active high  |
+| input | Ctrl_Mag_Out   | Control magnetic output, active high  |
+| output | Addr           | Slave address     |
+| output | Reg_Addr       | Register address   |
+| output | Reg_Data       | Register data   |
+| output | Temp_Data      | Temperature data     |
+| output | Gyro_Data_X    | X-axis acceleration data|
+| output | Gyro_Data_Y    | Y-axis acceleration data|
+| output | Gyro_Data_Z    | Z-axis acceleration data|
+| output | Mag_Data_X     | Magnetic X-axis data  |
+| output | Mag_Data_X     | Magnetic Y-axis data  |
+| output | Mag_Data_X     | Magnetic Z-axis data  |
+| output | IIC_Write      | IIC write signal, rising edge is valid  |
+| output | IIC_Read       | IIC read signal, rising edge is valid |
+| output | Reg_2Addr      | Register double address bit, active high|
+| output | Ctrl_IIC       | IIC enable, active high     |
 
-## 使用说明
+## Using Instructions
 
-本IP核仅配合板载陀螺仪模块(LSM6DS3TR)使用，在[Examples](/Examples)中可以找到对应的使用案例[Gyro_Demo](/Examples/FPGA/4.Module-Interface/Gyro-Interface)。
+This IP core is only used with the onboard gyro module (LSM6DS3TR). The corresponding use case [Gyro_Demo](/Examples/FPGA/4.Module-Interface/Gyro-Interface) can be found in [Examples](/Examples).
 

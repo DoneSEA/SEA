@@ -1,16 +1,16 @@
-# IIC-IP使用介绍
+# IIC-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
-IIC驱动IP核，支持双地址寄存器读写，不支持连续读写。
+Driver IP core of IIC supports dual address register read and write, does not support continuous read and write.
 
-默认设定IIC传输速率为100k，参数为SCL_SUM=100M/100k。
+The default setting of IIC transmission rate is 100kHz, and the parameter is SCL_SUM = 100M / 100k.
 
-如需调整传输速率，或者调整IIC的工作时钟，那么需要相应的调整IP核的参数SCL_SUM。
+If you need to adjust the transmission rate, or adjust the working clock of the IIC, you need to adjust the SCL_SUM parameter of the IP core accordingly.
 
-### IIC驱动模块构成
+### Module Composition
 
-构成如下:
+The module structure diagram is as follows:
 
 ```c
 module Driver_IIC(
@@ -30,28 +30,28 @@ module Driver_IIC(
     output reg SDA_Out=0   
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk             | IIC工作时钟,默认为100MHz |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | Addr            | 从机地址       |
-| 输入信号 | Reg_Addr        | 寄存器地址       |
-| 输入信号 | Data            | 数据       |
-| 输入信号 | IIC_Write       | IIC写使能，上升沿有效       |
-| 输入信号 | IIC_Read        | IIC读使能，上升沿有效       |
-| 输入信号 | Reg_2Addr       | 寄存器双地址位,高电平为双地址       |
-| 输入信号 | IIC_SDA_In      | IIC总线的SDA数据线       |
-| 输出信号 | IIC_Read_Data   | IIC读到的数据     |
-| 输出信号 | IIC_Busy        | IIC忙信号，高电平为忙     |
-| 输出信号 | IIC_SCL         | IIC总线的SCL时钟线     |
-| 输出信号 | SDA_Dir         | IIC总线的SDA数据线方向，0模式为输入，1模式为输出     |
-| 输出信号 | SDA_Out         | IIC总线的SDA数据线     |
+| input | clk             | IIC working clock, default is 100MHz |
+| input | Rst             | Reset signal, active low       |
+| input | Addr            | Slave address       |
+| input | Reg_Addr        | Register address       |
+| input | Data            | Data transmitted by IIC      |
+| input | IIC_Write       | IIC write enable, valid on rising edge       |
+| input | IIC_Read        | IIC read enable, valid on rising edge       |
+| input | Reg_2Addr       | Register dual address bit, high level for dual address       |
+| input | IIC_SDA_In      | SDA data line of IIC bus       |
+| output | IIC_Read_Data   | Data read by IIC     |
+| output | IIC_Busy        | IIC busy signal, high level is busy     |
+| output | IIC_SCL         | SCL clock line of IIC bus     |
+| output | SDA_Dir         | SDA data line direction of IIC bus, 0 mode is input, 1 mode is output     |
+| output | SDA_Out         | SDA data line of IIC bus     |
 
 
-## 使用说明
+## Using Instructions
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Interface)以及[Gyro_Demo](/Examples/FPGA/4.Module-Interface/Gyro-Interface)。
+The corresponding use cases [Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Interface) and [Gyro_Demo](/Examples/FPGA/4.Module-Interface/Gyro-Interface) can be found in [Examples](/Examples) for this IP core.
 
 
