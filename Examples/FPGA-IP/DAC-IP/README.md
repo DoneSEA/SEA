@@ -1,23 +1,23 @@
-# DAC-IP使用介绍
+# DAC-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
-DAC驱动IP核，由地址产生器、DAC数据总线输出、数据存储模块组成。该DAC驱动，预置了三种输出波形，可应用在函数发生器。
+Driver IP core of onboard DAC module consists of an address generator, a DAC data bus output, and a data storage module. This DAC driver is preset with three output waveforms and can be used in a function generator.
 
-### 模块构成
+### Module Composition
 
-地址产生器，利用给定的相位和目标的频率(这里设定为1k)，转化为相位控制字(PWORD)和频率控制字(FWORD)，FWORD决定了地址产生器的时钟频率，PWORD决定了地址产生器每周期累加的值的大小。
+The address generator uses the given phase and target frequency (here set to 1kHz) to convert it into a phase control word (PWORD) and a frequency control word (FWORD). FWORD determines the clock frequency of the address generator, and PWORD determines The value accumulated by the address generator per cycle.
 
-数据存储模块，利用工程中提供的Matlab代码，生成三角波、正弦波、矩形波的coe数据，预置存储在FPGA的ROM中。当进行DAC转换时，选择一种波形输出。
+The data storage module uses the Matlab code provided in the project to generate the coe data of triangle wave, sine wave, and rectangular wave, and stores it in the ROM of FPGA in advance. When performing a DAC conversion, select a waveform output.
 
-模块结构图如下：
+The module structure diagram is as follows:
 
 ![](/Examples/Images/DAC-IP.png)
 
 
-### DAC驱动构成
+### DAC Driver Configuration
 
-驱动构成如下:
+The driver configuration is as follows:
 
 ```c
 module Driver_DAC(
@@ -30,19 +30,19 @@ module Driver_DAC(
     output reg DAC_Sync
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_100MHz  | 100MHz的时钟             |
-| 输入信号 | clk_DAC     | DAC同步时钟信号           |
-| 输入信号 | DAC_En      | DAC使能信号,高电平有效    |
-| 输入信号 | Wave_Mode   | 波形模式,1模式-正弦波,2模式-三角波，3模式-方波   |
-| 输入信号 | Phase       | 相位信号，给定波形偏置相位0-360   |
-| 输出信号 | DAC_Din     | DAC数据线，单总线输出   |
-| 输出信号 | DAC_Sync    | DAC数据有效信号,低电平有效   |
+| input | clk_100MHz  | 100MHz clock             |
+| input | clk_DAC     | DAC chip's synchronization clock signal           |
+| input | DAC_En      | DAC chip's enable signal, active high    |
+| input | Wave_Mode   | Wave mode, 1 mode-sine wave, 2 mode-triangle wave, 3 mode-square wave   |
+| input | Phase       | Phase signal, given waveform offset phase 0-360   |
+| output | DAC_Din     | DAC data line, single bus output   |
+| output | DAC_Sync    | DAC data valid signal, active low  |
 
-## 使用说明
+## Using Instructions
 
-本IP核仅配合板载DAC模块(DAC7311)使用，在[Examples](/Examples)中可以找到对应的使用案例[DAC_Demo](/Examples/FPGA/4.Module-Interface/DAC-Interface)。
+This IP core is only used with the on-board DAC chip (DAC7311). The corresponding use case [DAC_Demo](/Examples/FPGA/4.Module-Interface/DAC-Interface) can be found in [Examples](/Examples).
 

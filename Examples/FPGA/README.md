@@ -2,7 +2,7 @@
 
 In this part, based on the FPGA part and peripheral resources of the SEA board, six groups of FPGA cases are divided, which are digital circuit class, communication interface class, IO interface class, module interface class, data interface class, and extended interface class.
 
-## Case composition introduction
+## Case Composition Introduction
 
 Among them, each group of cases includes several sub-cases of the corresponding type, such as the digital circuit part, including three series of cases: combinational logic circuit, sequential logic circuit, and state machine.
 

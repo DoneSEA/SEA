@@ -1,6 +1,6 @@
-# Gyro-IP使用介绍
+# Gyro-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
 陀螺仪驱动IP核，需要外接IIC驱动，仅对IIC读取数据的地址、输出数据进行处理。
 
