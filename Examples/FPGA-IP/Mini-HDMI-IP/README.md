@@ -1,47 +1,47 @@
-# HDMI-IP使用介绍
+# HDMI-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
-HDMI驱动IP核，提供了720p@60Hz与1280p@60Hz两种视频信号的HDMI驱动。
+The HDMI driver IP core provides HDMI drivers for two video signals, 720p@60Hz and 1280p@60Hz.
 
-在IP文件夹中，除了HDMI驱动IP核外，还提供了官方的rgb2dvi的IP核，用以连接驱动及最终的HDMI数据线。
+In the IP folder, in addition to the HDMI driver IP core, an official rgb2dvi IP core is also provided to connect the driver and the final HDMI data cable.
 
-### HDMI驱动模块构成
+### Composition of HDMI Driver Module
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module Driver_HDMI(
-    input clk,                          //Clock
-    input Rst,                          //Reset signal, low reset
-    input Video_Mode,                   //Video format,0 is 1920*1080@60Hz,1 is 1280*720@60Hz
-    input [23:0]RGB_In,                 //Input data
-    output [23:0]RGB_Data,              //Output Data
-    output reg RGB_HSync=0,            //Line signal
-    output reg RGB_VSync=0,            //Field signal
-    output reg RGB_VDE=0,              //Data valid signal
-    output reg [11:0]Set_X=0,          //Image coordinate X
-    output reg [11:0]Set_Y=0           //Image coordinate Y
+    input clk,   
+    input Rst,    
+    input Video_Mode,    
+    input [23:0]RGB_In,    
+    output [23:0]RGB_Data,    
+    output reg RGB_HSync=0,    
+    output reg RGB_VSync=0,    
+    output reg RGB_VDE=0,    
+    output reg [11:0]Set_X=0,    
+    output reg [11:0]Set_Y=0    
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk             | HDMI的系统时钟，720p@60Hz图像需要74.25MHz，1080p@60Hz图像需要148.5MHz |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | Video_Mode      | 视频模式，0模式-1080p@60Hz，1模式-720p@60Hz       |
-| 输入信号 | RGB_In          | RGB数据，需要传输的数据       |
-| 输出信号 | RGB_Data        | RGB数据，需要传输的数据     |
-| 输出信号 | RGB_HSync       | 视频传输行同步信号，高电平有效     |
-| 输出信号 | RGB_VSync       | 视频传输场同步信号，高电平有效     |
-| 输出信号 | RGB_VDE         | 视频传输有效信号，高电平有效     |
-| 输出信号 | Set_X           | 当前X轴坐标，横向，左边为原点     |
-| 输出信号 | Set_Y           | 当前Y轴坐标，纵向，上边为原点     |
+| input | clk             | HDMI system clock, 720p@60Hz image requires 74.25MHz, 1080p@60Hz image requires 148.5MHz |
+| input | Rst             | Reset signal, active low       |
+| input | Video_Mode      | Video mode, 0 mode-1080p@60Hz, 1 mode-720p@60Hz       |
+| input | RGB_In          | RGB data, data to be transmitted       |
+| output | RGB_Data        | RGB data, data to be transmitted     |
+| output | RGB_HSync       | Video transmission line synchronization signal, high level effective     |
+| output | RGB_VSync       | Video transmission field synchronization signal, high level effective     |
+| output | RGB_VDE         | Video transmission effective signal, high level effective     |
+| output | Set_X           | Current X-axis coordinate, horizontal, left is the origin     |
+| output | Set_Y           | The current Y-axis coordinate, vertical, and the top is the origin     |
 
 
-## 使用说明
+## Using Instructions
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[HDMI_Demo](/Examples/FPGA/4.Module-Interface/HDMI-Interface)。
+This IP core can find the corresponding use case [HDMI_Demo](/Examples/FPGA/4.Module-Interface/HDMI-Interface) in [Examples](/Examples).
 
 

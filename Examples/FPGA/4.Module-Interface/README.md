@@ -1,4 +1,4 @@
-# 模块接口案例
+# Module Interface Cases
 
 模块接口案例，依托于板载的外设模块，提供DAC接口案例、ADC接口案例、HDMI接口案例、陀螺仪接口案例、MIPI接口案例
 

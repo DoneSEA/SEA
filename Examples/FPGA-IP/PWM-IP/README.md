@@ -1,12 +1,12 @@
-# PWM-IP使用介绍
+# PWM-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
-PWM驱动IP核，提供了频率、占空比两个设定参数。
+The PWM drives the IP core and provides two setting parameters for frequency and duty cycle.
 
-### PWM驱动模块构成
+### Composition of PWM Driver Module
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module Driver_PWM(
@@ -18,20 +18,20 @@ module Driver_PWM(
     output reg PWM
     );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_100MHz      | 100MHz的时钟信号 |
-| 输入信号 | Freq            | 设定的PWM频率       |
-| 输入信号 | Duty            | 设定的PWM占空比       |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | En              | 使能信号，高电平有效       |
-| 输出信号 | PWM             | 输出的PWM信号     |
+| input | clk_100MHz      | 100MHz clock signal |
+| input | Freq            | Set PWM frequency       |
+| input | Duty            | Set PWM duty cycle       |
+| input | Rst             | Reset signal, active low       |
+| input | En              | Enable signal, high level effective       |
+| output | PWM             | Output PWM signal     |
 
 
-## 使用说明
+## Using Instructions
 
-由于PWM驱动的时钟信号为100MHz,那么所产生的PWM波的频率不能超过100MHz。
+Since the clock signal driven by the PWM is 100MHz, the frequency of the generated PWM wave cannot exceed 100MHz.
 
 

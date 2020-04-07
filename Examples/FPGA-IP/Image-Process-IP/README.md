@@ -73,13 +73,13 @@ module RGB_To_HSV(
 
 ## Composition of HSV to RGB module
 
-HSV转RGB模块，利用HSV转RGB的转换公式进行转换。
+The HSV to RGB module uses the HSV to RGB conversion formula for conversion.
 
-转换公式如下：
+The conversion formula is as follows:
 
 ![](/Examples/Images/HSV2RGB-IP.png)
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module HSV_To_RGB(
@@ -95,32 +95,32 @@ module HSV_To_RGB(
     );
 ```
 
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_Image_Process | 时钟信号 |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | HSV_Data_H      | 需要转换的H通道值 |
-| 输入信号 | HSV_Data_S      | 需要转换的S通道值       |
-| 输入信号 | HSV_Data_V      | 需要转换的V通道值       |
-| 输出信号 | RGB_Data_R      | 转换后输出的R通道数据     |
-| 输出信号 | RGB_Data_G      | 转换后输出的G通道数据     |
-| 输出信号 | RGB_Data_B      | 转换后输出的B通道数据     |
-| 输出信号 | Delay_Num       | 转换过程用到除法，这里输出延时的时钟数     |
+| input | clk_Image_Process |  Clock signal |
+| input | Rst             | Reset signal, active low       |
+| input | HSV_Data_H      | H channel value needed to be converted |
+| input | HSV_Data_S      | S channel value needed to be converted       |
+| input | HSV_Data_V      | V channel value needed to be converted       |
+| output | RGB_Data_R      | R channel data output after conversion     |
+| output | RGB_Data_G      | G channel data output after conversion     |
+| output | RGB_Data_B      | B channel data output after conversion     |
+| output | Delay_Num       | Since the conversion process uses division, this is the number of clocks for the output delay     |
 
-## 边缘检测模块构成
+## Composition of edge detection module
 
-边缘检测模块，利用Sobel算子对灰度图像进行边缘检测。
+The edge detection module uses the Sobel operator to perform edge detection on grayscale images.
 
-Sobel算子公式如下：
+The Sobel operator formula is as follows:
 
 ![](/Examples/Images/Edge-Check-IP.png)
 
 
-其中f(a,b), 表示图像(a,b)点的灰度值。再由Gx和Gy求出▽f，如果▽f大于某一阈值，则认为点(x,y)为边缘点。
+Where f (a, b), represents the gray value of the image (a, b) point. Then find ▽ f from Gx and Gy. If ▽ f is greater than a certain threshold, the point (x, y) is considered as an edge point.
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module Edge_Check(
@@ -134,20 +134,20 @@ module Edge_Check(
     );
 ```
 
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_Image_Process | 时钟信号 |
-| 输入信号 | Rst               | 复位信号，低电平复位       |
-| 输入信号 | RGB_DE            | 图像数据有效信号，高电平有效 |
-| 输入信号 | Gray_Data         | 灰度数据       |
-| 输入信号 | Gray_Gate         | 灰度阈值       |
-| 输出信号 | Delay_Num         | 转换过程用到除法，这里输出延时的时钟数     |
-| 输出信号 | RGB_Data          | 边缘检测输出的二值化RGB数据     |
+| input | clk_Image_Process | Clock signal |
+| input | Rst               | Reset signal, active low       |
+| input | RGB_DE            | Image data effective signal, high level effective |
+| input | Gray_Data         | Grayscale data       |
+| input | Gray_Gate         | Grayscale threshold       |
+| output | Delay_Num         | Since the conversion process uses division, this is the number of clocks for the output delay     |
+| output | RGB_Data          | Binary RGB data output by edge detection     |
 
-## 使用说明
+## Using Instructions
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[Image_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface)。
+This IP core can find the corresponding use case [Image_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface) in [Examples](/Examples).
 
 

@@ -1,23 +1,23 @@
-# SPI-IP使用介绍
+# SPI-IP Instructions
 
-## IP核介绍
+## IP Core Introduction
 
-SPI驱动IP核，只提供通信主机的0模式。
+Driver IP core of SPI only provides the 0 mode of the communication host.
 
-SPI 通信的主机在读写数据时序的过程中，有 4 种模式。通过 CPOL 和 CPHA 的组合来表示。
+The host of SPI communication has 4 modes in the process of reading and writing data sequence. It is expressed by the combination of CPOL and CPHA.
 
-* CPOL：时钟的极性，通信过程中分为空闲时刻和通信时刻，SCK 在数据发送前后的空闲状态是高电平，那么 CPOL为 1，否则为 0   
-* CPHA：时钟的相位。 
+* CPOL: The polarity of the clock, which is divided into idle time and communication time during the communication process. The idle state of SCK before and after data transmission is high, then CPOL is 1, otherwise it is 0.
+* CPHA: The phase of the clock. 
 
-SPI 的 4 种模式分别如下: 
-* 模式 0：CPOL=0,CPHA=0   
-* 模式 1：CPOL=0,CPHA=1   
-* 模式 2：CPOL=1,CPHA=0   
-* 模式 3：CPOL=1,CPHA=1   
+The four modes of SPI are as follows:
+* Mode 0：CPOL=0, CPHA=0   
+* Mode 1：CPOL=0, CPHA=1   
+* Mode 2：CPOL=1, CPHA=0   
+* Mode 3：CPOL=1, CPHA=1   
 
-### SPI驱动模块构成
+### Composition of SPI Driver Module
 
-构成如下:
+The module configuration is as follows:
 
 ```c
 module SPI_Master(
@@ -32,23 +32,23 @@ module SPI_Master(
     output reg ACK=0   
 );
 ```
-### 输入输出信号介绍
+### Signal Introduction
   
-| **信号类型**    | **信号名称**    | **描述** |
+| **Signal Type**    | **Signal Name**    | **Discription** |
 | ----------- | ----------- | -------- |
-| 输入信号 | clk_100MHz      | 100MHz的时钟信号 |
-| 输入信号 | Rst             | 复位信号，低电平复位       |
-| 输入信号 | En              | 使能信号，高电平有效      |
-| 输入信号 | MISO            | 主机读取从机的状态或者数据的通道       |
-| 输入信号 | Data            | 需要传输的数据       |
-| 输出信号 | SCK             | SPI时钟信号     |
-| 输出信号 | MOSI            | 主机给从机发送指令或者数据的通道     |
-| 输出信号 | CS              | 片选信号，高电平选中     |
-| 输出信号 | ACK             | 中断信号，上升沿为发送或接收完毕     |
+| input | clk_100MHz      | 100MHz clock signal |
+| input | Rst             | Reset signal, active low       |
+| input | En              | Enable signal, active high      |
+| input | MISO            | The channel for the master to read the status or data of the slave       |
+| input | Data            | Data to be transferred       |
+| output | SCK             | SPI clock signal     |
+| output | MOSI            | The channel from which the master sends instructions or data to the slave     |
+| output | CS              | Chip select signal, high level select     |
+| output | ACK             | Interrupt signal, the rising edge is the end of sending or receiving     |
 
 
-## 使用说明
+## Using Instructions
 
-本IP核在[Examples](/Examples)中可以找到对应的使用案例[SPI_Demo](/Examples/FPGA/2.Community-Interface/SPI)。
+This IP core use case [SPI_Demo](/Examples/FPGA/2.Community-Interface/SPI) can be found in [Examples](/Examples).
 
 
