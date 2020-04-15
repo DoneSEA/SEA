@@ -1,16 +1,26 @@
 # SEA
 
-This repository is used to store official cases of SEA boards and provide communication.
+This repository is used to store official cases of SEA boards and provide communication. 
+
+The official case contains three parts: Hello-World, Examples and Demos.
+
+* The Hello-World part provides the initial project of the FPGA part and the initial project of the ESP32 part on the board.
+* The Examples part provides basic case applications of ESP32 and FPGA on the board, and is equipped with rich FPGA open source IP cores.
+* The Demos part, as an official perfect case, is divided into multiple categories according to different applications. It provides a systematic application case of the board.
+
+The communication part is divided into many categories. If the developer has a good creation, he can upload it to the corresponding category. Of course, if the developer can provide complete technical documentation and corresponding introductions, we will put it in our Demos and show it as an official case.
+
+At present, we have not opened the exchange area, only open the official cases. 
 
 ![](/Images/SEA.jpg)
 
 ## Official Cases
 
-The official cases include the Hello World part, the Examples (Basic Cases) part, and the Demos (System Cases) part currently.
+The official cases include the Hello World part, the Examples (Basic Cases) part, and the Demos (System Cases) part currently. We show the composition of the official case in the form of a table.
 
 ### Hello World
 
- The Hello World part provides blank project of SEA board, including ESP32 part and FPGA part.
+The structure of the Hello-World part is shown in the following table. At present, we provide the Hello-World project of the ESP32 part realized by the Arduino IDE platform and the MicroPython platform individually and the Hello-World project of the FPGA part realized by the Vivado platform.
 
 | Number | Property | Case Name                                              | Discription                                |
 | ---- | ---- | ------------------------------------------------------------ | ------------------------------------------ |
@@ -21,7 +31,11 @@ The official cases include the Hello World part, the Examples (Basic Cases) part
 
 ### Examples
 
-The Examples part provides the basic cases of the SEA board, including the ESP32 part,the FPGA part, and the IP core of the FPGA.
+The Examples section is divided into three parts by us, namely ESP32, FPGA and FPGA-IP. 
+
+* The ESP32 part contains ESP32 communication interface cases, IO interface cases, etc. 
+* The FPGA part also provides a series of module interface cases based on the on-board module, in addition to the basic part of the digital circuit basic case, communication interface case, IO interface case, data interface case.
+* The FPGA-IP part contains various required IP cores of the FPGA, and we will update it from time to time to improve the rich resources.
 
 #### ESP32
 
@@ -59,7 +73,8 @@ Waited to be added...
 
 ### Demos
 
-The Demos part provides system examples of SEA boards.
+This part, based on the SEA board, is divided into 8 categories according to the application of the cases, which are game applications, IoT applications, image processing applications, system structure applications, algorithm applications, instrumentation applications, interface applications, other.
+
 
 | Number | Case Name                                                  | Discription                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
