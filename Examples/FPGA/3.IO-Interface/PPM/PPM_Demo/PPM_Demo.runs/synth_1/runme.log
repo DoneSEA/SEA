@@ -1,0 +1,597 @@
+
+*** Running vivado
+    with args -log PPM_Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source PPM_Demo.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PPM_Demo.tcl -notrace
+Command: synth_design -top PPM_Demo -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21976 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 451.203 ; gain = 99.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PPM_Demo' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.runs/synth_1/.Xil/Vivado-15000-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.runs/synth_1/.Xil/Vivado-15000-DESKTOP-DU9F0PS/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Driver_PPM' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_PPM.v:23]
+	Parameter PULSE_MIN bound to: 800 - type: integer 
+	Parameter PULSE_MAX bound to: 2200 - type: integer 
+	Parameter PULSE_ERROR bound to: 4400 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Capture_Pulse' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Capture_Pulse.v:23]
+	Parameter State_IDLE bound to: 0 - type: integer 
+	Parameter State_START bound to: 1 - type: integer 
+	Parameter State_END bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Clk_Division.v:23]
+WARNING: [Synth 8-5788] Register Pulse_Num_reg in module Capture_Pulse is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Capture_Pulse.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Capture_Pulse' (3#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Capture_Pulse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_PPM' (4#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_PPM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_UART' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:24]
+INFO: [Synth 8-6157] synthesizing module 'UART_Rx' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:70]
+	Parameter RECEIVE_IDLE bound to: 2'b00 
+	Parameter RECEIVE bound to: 2'b01 
+	Parameter RECEIVE_END bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'UART_Rx' (5#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:70]
+INFO: [Synth 8-6157] synthesizing module 'UART_Tx' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:135]
+	Parameter SEND_IDLE bound to: 0 - type: integer 
+	Parameter SEND_START bound to: 1 - type: integer 
+	Parameter SEND bound to: 2 - type: integer 
+	Parameter SEND_END bound to: 3 - type: integer 
+	Parameter SEND_WAIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'UART_Tx' (6#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_UART' (7#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:24]
+INFO: [Synth 8-6157] synthesizing module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:23]
+	Parameter State_Send_Temp bound to: 0 - type: integer 
+	Parameter State_Send_Gyro bound to: 1 - type: integer 
+	Parameter State_Send_Mag bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:87]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:102]
+WARNING: [Synth 8-5788] Register Tx_En_reg in module UART_Send is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Send' (8#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/UART_Send.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'Temp_Data' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:79]
+WARNING: [Synth 8-689] width (13) of port connection 'Gyro_Data_X' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:80]
+WARNING: [Synth 8-689] width (13) of port connection 'Gyro_Data_Y' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:81]
+WARNING: [Synth 8-689] width (13) of port connection 'Gyro_Data_Z' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:82]
+WARNING: [Synth 8-689] width (13) of port connection 'Mag_Data_X' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:83]
+WARNING: [Synth 8-689] width (13) of port connection 'Mag_Data_Y' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:84]
+WARNING: [Synth 8-689] width (13) of port connection 'Mag_Data_Z' does not match port width (16) of module 'UART_Send' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'PPM_Demo' (9#1) [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/PPM_Demo.v:23]
+WARNING: [Synth 8-3331] design UART_Send has unconnected port Enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 504.938 ; gain = 153.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 504.938 ; gain = 153.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 504.938 ; gain = 153.070
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Finished Parsing XDC File [c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_10'
+Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PPM_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PPM_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 801.984 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_10. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Current_State_reg' in module 'Capture_Pulse'
+INFO: [Synth 8-5544] ROM "Current_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Current_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'State_Current_reg' in module 'UART_Rx'
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'State_Current_reg' in module 'UART_Tx'
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "State_Next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'Pulse_Init_Flag_reg' in module 'UART_Send'
+INFO: [Synth 8-802] inferred FSM for state register 'State_Temp_Cnt_reg' in module 'UART_Send'
+INFO: [Synth 8-802] inferred FSM for state register 'Send_State_reg' in module 'UART_Send'
+INFO: [Synth 8-802] inferred FSM for state register 'State_Gyro_Cnt_reg' in module 'UART_Send'
+INFO: [Synth 8-802] inferred FSM for state register 'State_Mag_Cnt_reg' in module 'UART_Send'
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_State" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_State" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_Buffer" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Send_State" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              State_IDLE |                               00 |                               00
+             State_START |                               01 |                               01
+               State_END |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Current_State_reg' using encoding 'sequential' in module 'Capture_Pulse'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_State_Next_reg' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_State_Next_reg' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            RECEIVE_IDLE |                              001 |                               00
+                 RECEIVE |                              010 |                               01
+             RECEIVE_END |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Current_reg' using encoding 'one-hot' in module 'UART_Rx'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_State_Next_reg' [C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.srcs/sources_1/new/Driver_UART.v:97]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               SEND_IDLE |                              000 |                              000
+              SEND_START |                              010 |                              001
+                    SEND |                              100 |                              010
+                SEND_END |                              011 |                              011
+               SEND_WAIT |                              001 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Current_reg' using encoding 'sequential' in module 'UART_Tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               10
+*
+                 iSTATE0 |                               01 |                               00
+                  iSTATE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Pulse_Init_Flag_reg' using encoding 'sequential' in module 'UART_Send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                       0000000001 |                             0000
+                 iSTATE2 |                       0000000010 |                             0001
+                 iSTATE1 |                       0000000100 |                             0010
+                  iSTATE |                       0000001000 |                             0011
+                 iSTATE0 |                       0000010000 |                             0100
+                 iSTATE8 |                       0000100000 |                             0101
+                 iSTATE6 |                       0001000000 |                             0110
+                 iSTATE5 |                       0010000000 |                             0111
+                 iSTATE7 |                       0100000000 |                             1000
+                 iSTATE4 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Mag_Cnt_reg' using encoding 'one-hot' in module 'UART_Send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                       0000000001 |                             0000
+                 iSTATE2 |                       0000000010 |                             0001
+                 iSTATE1 |                       0000000100 |                             0010
+                  iSTATE |                       0000001000 |                             0011
+                 iSTATE0 |                       0000010000 |                             0100
+                 iSTATE8 |                       0000100000 |                             0101
+                 iSTATE6 |                       0001000000 |                             0110
+                 iSTATE5 |                       0010000000 |                             0111
+                 iSTATE7 |                       0100000000 |                             1000
+                 iSTATE4 |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Gyro_Cnt_reg' using encoding 'one-hot' in module 'UART_Send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                           000001 |                             0000
+                 iSTATE0 |                           000010 |                             0001
+                 iSTATE1 |                           000100 |                             0010
+                 iSTATE2 |                           001000 |                             0011
+                 iSTATE3 |                           010000 |                             0100
+                 iSTATE4 |                           100000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_Temp_Cnt_reg' using encoding 'one-hot' in module 'UART_Send'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         State_Send_Temp |                              001 |                               00
+         State_Send_Gyro |                              010 |                               01
+          State_Send_Mag |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Send_State_reg' using encoding 'one-hot' in module 'UART_Send'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     28 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	              104 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input    104 Bit        Muxes := 1     
+	   8 Input    104 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 23    
+	   3 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module Capture_Pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module Driver_PPM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              104 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    104 Bit        Muxes := 1     
+	   8 Input    104 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+Module UART_Rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+Module UART_Tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module Driver_UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 1     
+Module UART_Send 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  10 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Driver_PPM0/Capture_Pulse0/Clk_Division_1MHz/Is_Odd_reg )
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[7]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[6]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[5]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[4]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[3]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[2]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[1]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (UART0/UART_Rx0/Data_reg[0]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Clk_Division_1MHz/Is_Odd_reg) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Clk_Division_1MHz/flag_reg) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[31]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[30]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[29]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[28]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[27]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[26]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[25]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[24]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[23]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[22]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[21]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[20]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[19]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[18]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[17]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[16]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[15]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/Capture_Pulse0/Pulse_Num_reg[14]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[90]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[89]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[88]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[87]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[86]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[85]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[84]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[83]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[82]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[81]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[80]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[79]) is unused and will be removed from module PPM_Demo.
+WARNING: [Synth 8-3332] Sequential element (Driver_PPM0/CH_Reg_reg[78]) is unused and will be removed from module PPM_Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_10/clk_out1' to pin 'clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 801.984 ; gain = 450.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 811.102 ; gain = 459.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    32|
+|4     |LUT1      |     3|
+|5     |LUT2      |    20|
+|6     |LUT3      |    53|
+|7     |LUT4      |    35|
+|8     |LUT5      |    29|
+|9     |LUT6      |    42|
+|10    |FDCE      |    18|
+|11    |FDPE      |     2|
+|12    |FDRE      |   253|
+|13    |LD        |     3|
+|14    |LDC       |     1|
+|15    |IBUF      |     2|
+|16    |OBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------+---------------+------+
+|      |Instance                |Module         |Cells |
++------+------------------------+---------------+------+
+|1     |top                     |               |   496|
+|2     |  Driver_PPM0           |Driver_PPM     |   241|
+|3     |    Capture_Pulse0      |Capture_Pulse  |   111|
+|4     |      Clk_Division_1MHz |Clk_Division_0 |    57|
+|5     |  UART0                 |Driver_UART    |   140|
+|6     |    UART_Clk            |Clk_Division   |    89|
+|7     |    UART_Rx0            |UART_Rx        |    14|
+|8     |    UART_Tx0            |UART_Tx        |    37|
+|9     |  UART_Send0            |UART_Send      |   110|
++------+------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 822.938 ; gain = 174.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 822.938 ; gain = 471.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 3 instances
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 822.938 ; gain = 482.910
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/PPM-Demo/PPM_Demo/PPM_Demo.runs/synth_1/PPM_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PPM_Demo_utilization_synth.rpt -pb PPM_Demo_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 822.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 16:02:50 2019...
