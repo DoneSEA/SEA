@@ -44,10 +44,10 @@
 | 序号 | 案例名称                                                      | 描述                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
 | 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | 数字电路系列案例，包括基本的组合逻辑电路案例、时序逻辑电路案例、状态机案例等         |
-| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | 通信接口系列案例，包括SPI、UART、IIC等案例                                       |
-| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | 普通IO接口案例，包括LED、PWM发生器、PPM解码器等案例                               |
-| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | 板载模块接口案例，包括ADC模块、DAC模块、Mini HDMI接口、MIPI摄像头接口、陀螺仪等案例 |
-| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | 数据接口案例，包括FPGA中的基本数据交互，如BRAM、ROM等等                           |
+| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | 通信接口系列案例，包括SPI、UART、IIC等                                           |
+| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | 普通IO接口案例，包括LED、PWM发生器、PPM解码器等                           |
+| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | 板载模块接口案例，包括ADC模块、DAC模块、Mini HDMI接口、MIPI摄像头接口、陀螺仪等     |
+| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | 数据接口案例，包括FPGA中的基本数据交互，如BRAM、ROM等                             |
 | 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | 扩展接口案例，该案例需要和配套的扩展板使用，如数码管、摇杆、蓝牙、EEPROM等            |
 
 #### FPGA-IP
