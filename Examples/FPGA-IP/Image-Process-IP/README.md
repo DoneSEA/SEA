@@ -1,10 +1,8 @@
-# Image-Process-IP Series introduction
+# Image-Process-IP系列简介
 
-## IP Core Introduction
+图像处理系列IP内核提供了四种IP核：RGB转灰度，RGB转HSV，HSV转RGB，以及边缘检测。
 
-Image processing series IP cores provide four types of IP cores: RGB to grayscale, RGB to HSV, HSV to RGB, and edge detection.
-
-## Composition of RGB to grayscale module
+## RGB转灰度模块
 
 This module uses the conversion formula Gray = x · R + y · G + z · B for conversion.
 
