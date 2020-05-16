@@ -1,14 +1,10 @@
-# Frequency-Divider-IP Instructions
+# Frequency-Divider-IP简介
 
-## IP Core Introduction
+该分频器IP核是在奇数分频器、偶数分频器的基础上进行改进的。
 
-This frequency divider IP core is adjusted based on the principle of a single odd frequency divider and a single even frequency divider.
+单个奇数或偶数分频器通常使用半周期或半周期减1作为时钟的跳变点进行分频。通过比较两个时钟波形，能发现根据奇数和偶数的符号，可以将奇数和偶数分频组合在一起。
 
-A single odd or even frequency divider generally uses half-cycle or half-cycle minus 1 as the jump point of the clock for frequency division. By comparing the two clock waveforms, it can be found that according to the signs from the even and odd numbers, the odd and even frequency divisions can be combined together.
-
-### Module Composition
-
-The module structure diagram is as follows:
+## 分频器模块组成
 
 ```c
 module Clk_Division(
@@ -17,15 +13,15 @@ module Clk_Division(
    output clk_out
    );
 ```
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | clk_100MHz  | 100MHz clock |
-| input | clk_mode    | Division numbers       |
-| output | clk_out     | Output clock     |
+| input | clk_100MHz  | 100MHz时钟，后续修改名称，分频与时钟频率无关 |
+| input | clk_mode    | 分频倍数       |
+| output | clk_out    | 分频输出时钟     |
 
-## Using Instructions
+## 使用说明
 
-An optimized version of this IP core will be followed in the future, and many use cases can be found in [Examples](/Examples).
+本分频器IP核，作为整数分频器IP核，可以在任何FPGA上使用。后续将会提供该IP核的优化版本，目前它的使用案例可以在[Examples](/Examples)中找到，基本上涉及1MHz以下时钟的案例，都需要用到本IP核。
 
