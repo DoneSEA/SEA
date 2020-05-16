@@ -1,21 +1,14 @@
-# ADC-IP Instructions
+# ADC-IP 简介
 
-## IP Core Introduction
-
-Driver IP core of onboard ADC module consists of an integer divider module, a frequency calculation module, and a data storage module.
-
-### Module Composition
-
-The frequency calculation module calculates the frequency by setting a rising edge trigger threshold and using the 8-bit data obtained by sampling the ADC to perform pulse detection.
-
-The module structure diagram is as follows:
+板载ADC模块的驱动IP核，由一个整数分频器模块、一个频率计算模块和一个数据存储模块组成。
 
 ![](/Examples/Images/ADC-IP.png)
 
+## 频率计算模块
 
-### ADC Driver Configuration
+频率计算模块通过设置上升沿触发阈值，并对ADC采样而获得的8位数据来执行脉冲检测来计算频率。
 
-The driver configuration is as follows:
+## ADC驱动的模块构成
 
 ```c
 module Driver_ADC(   
@@ -31,22 +24,22 @@ module Driver_ADC(
   output [7:0]ADC_Data_Out
   );
 ```
-### Signal Introduction
+### 信号介绍
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| Input       | clk_100MHz  | 100MHz clock             |
-| Input       | clk_system  | Clock for reading internal cache     |
-| Input       | Rst         | Reset signal, low reset       |
-| Input       | ADC_Data    | Data signal, connected to the corresponding pin of the ADC chip   |
-| Input       | Read_Addr   | Read the address of internal cache   |
-| Input       | Trigger_Gate | Trigger threshold, used to set the voltage triggered by the rising edge, 8 bits   |
-| output      | Period      | Output frequency   |
-| output      | clk_ADC     | ADC chip's synchronous clock   |
-| output      | ADC_En      | ADC chip's enable signal, active high   |
-| output      | ADC_Data_Out | Data output of the driven ADC module   |
+| Input       | clk_100MHz  | 100MHz时钟                                                     |
+| Input       | clk_system  | 读取内部缓存的时钟                                              |
+| Input       | Rst         | 复位信号，低电平复位                                            |
+| Input       | ADC_Data    | 数据信号，绑定板载ADC模块的数据输出引脚                           |
+| Input       | Read_Addr   | 需要读取的内部缓存地址                                           | 
+| Input       | Trigger_Gate | 触发阈值，设置8位上升沿触发的阈值                                |
+| output      | Period      | 输出的频率                                                      |
+| output      | clk_ADC     | 板载ADC模块工作的同步时钟   |
+| output      | ADC_En      | 板载ADC模块工作的使能信号，高电平有效   |
+| output      | ADC_Data_Out | ADC驱动模块的数据输出   |
 
-## Using Instructions
+## 使用说明
 
-This IP core is only used with the on-board ADC chip (ADC1173). The corresponding using cases [ADC_Demo](/Examples/FPGA/4.Module-Interface/ADC-Interface) can be found in [Examples](/Examples).
+本IP核仅供板载ADC1173模块使用，如需要换成驱动其他型号的ADC模块，需要按照对应的数据手册，进行本IP核的修改。对应的使用案例，可以在[Examples](/Examples)找到，比如[ADC_Demo](/Examples/FPGA/4.Module-Interface/ADC-Interface)。
 
