@@ -1,33 +1,33 @@
-# IP Contents of FPGA
+# FPGA-IP
 
-This section is used to store the IP core library and corresponding library projects of the SEA board FPGA.
+FPGA-IP部分，用来存储SEA Board开发板板载FPGA的开源IP，基本包括了FPGA的基础性IP，以及板载模块的使用IP。
 
-## Content Introduction
+## 内容简介
 
-FPGA IP core library officially provides the corresponding vivado version library file, and the corresponding vivado project.
+FPGA的开源IP库，提供了Vivado版本的库文件，以及相应的开源工程文件，方便开发者使用及二次开发。
 
-The specific structure of this part is carried out in the following format:
+本部分的结构遵循下面的格式:
 
   > XXX-IP
   > > Driver_XXX   
   > > IP   
 
-## Repository Structure
+## 仓库组成
 
-| Number | Case Name                                                  | Discription                                |
+| 序号 | IP核名称                                                      | 描述                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [ADC-IP](/Examples/FPGA-IP/ADC-IP)                           | Driver IP core of onboard ADC module       |
-| 2    | [Camera-IP](/Examples/FPGA-IP/Camera-IP)                     | Driver IP core of onboard MIPI camera      |
-| 3    | [DAC-IP](/Examples/FPGA-IP/DAC-IP)                           | Driver IP core of onboard DAC module       |
-| 4    | [Frequency-Divider-IP](/Examples/FPGA-IP/Frequency-Divider-IP) | Driver IP core for integer divider       |
-| 5    | [Gyro-IP](/Examples/FPGA-IP/Gyro-IP)                         | Driver IP core for onboard gyroscope       |
-| 6    | [IIC-IP](/Examples/FPGA-IP/IIC-IP)                           | Driver IP core of IIC interface            |
-| 7    | [Image-Process-IP](/Examples/FPGA-IP/Image-Process-IP)       | IP cores related to image processing       |
-| 8    | [Mini-HDMI-IP](/Examples/FPGA-IP/Mini-HDMI-IP)               | Driver IP core of Mini HDMI interface      |
-| 9    | [LED-IP](/Examples/FPGA-IP/LED-IP)                           | Driver IP core for onboard LED / RGB LED   |
-| 10   | [PWM-IP](/Examples/FPGA-IP/PWM-IP)                           | IP core of PWM generator                   |
-| 11   | [SPI-IP](/Examples/FPGA-IP/SPI-IP)                           | Driver IP core for SPI interface           |
-| 12   | [UART-IP](Examples/FPGA-IP/UART-IP)                          | Driver IP core for UART interface          |
-| 13   | [RGB2Stream-IP](/Examples/FPGA-IP/RGB2Stream-IP)             | IP core for RGB image input transformed to stream output     |
-| 14   | [Stream2RGB-IP](Examples/FPGA-IP/Stream2RGB-IP)              | IP core for stream input transformed to RGB image output     |
+| 1    | [ADC-IP](/Examples/FPGA-IP/ADC-IP)                           | 板载ADC1173模块的驱动IP核                        |
+| 2    | [Camera-IP](/Examples/FPGA-IP/Camera-IP)                     | 板载CSI MIPI摄像头接口的驱动IP核，搭配树莓派OV5647摄像头使用     |
+| 3    | [DAC-IP](/Examples/FPGA-IP/DAC-IP)                           | 板载DAC7311模块的驱动IP核       |
+| 4    | [Frequency-Divider-IP](/Examples/FPGA-IP/Frequency-Divider-IP) | 整数分频器的IP核       |
+| 5    | [Gyro-IP](/Examples/FPGA-IP/Gyro-IP)                         | 板载6轴传感器的驱动IP核       |
+| 6    | [IIC-IP](/Examples/FPGA-IP/IIC-IP)                           |IIC接口的驱动IP核            |
+| 7    | [Image-Process-IP](/Examples/FPGA-IP/Image-Process-IP)       | 图像处理相关的IP核      |
+| 8    | [Mini-HDMI-IP](/Examples/FPGA-IP/Mini-HDMI-IP)               | Mini HDMI接口的相关IP核      |
+| 9    | [LED-IP](/Examples/FPGA-IP/LED-IP)                           | 板载LED与RGB LED的驱动IP核   |
+| 10   | [PWM-IP](/Examples/FPGA-IP/PWM-IP)                           | PWM发生器的IP核                   |
+| 11   | [SPI-IP](/Examples/FPGA-IP/SPI-IP)                           | SPI接口的驱动IP核           |
+| 12   | [UART-IP](Examples/FPGA-IP/UART-IP)                          | UART接口的驱动IP核          |
+| 13   | [RGB2Stream-IP](/Examples/FPGA-IP/RGB2Stream-IP)             | RGB输入转流输出的IP核     |
+| 14   | [Stream2RGB-IP](Examples/FPGA-IP/Stream2RGB-IP)              | 流输入转RGB输出的IP核     |
 

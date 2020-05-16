@@ -1,20 +1,20 @@
-# FPGA Part
+# FPGA部分
 
-In this part, based on the FPGA part and peripheral resources of the SEA board, six groups of FPGA cases are divided, which are digital circuit class, communication interface class, IO interface class, module interface class, data interface class, and extended interface class.
+FPGA部分，除了提供基本的数字电路基础案例、通信接口案例、IO接口案例和数据接口案例之外，也提供了一系列基于SEA Board开发板板载模块的接口案例
 
-## Case Composition Introduction
+## 案例组成简介
 
-Among them, each group of cases includes several sub-cases of the corresponding type, such as the digital circuit part, including three series of cases: combinational logic circuit, sequential logic circuit, and state machine.
+其中，每组案例包括相应类型的几个子案例，例如数字电路部分，包括三个系列案例：组合逻辑电路，顺序逻辑电路和状态机。
 
-Each case, except the official IP core (frequency divider, etc.) that must be used, is implemented using verilog code (or has a soft core project).
+除必须使用的官方IP核（分频器等）外，每种情况均使用verilog代码（或具有软核项目）实现。
 
-### Repository Structure
+## 仓库组成
 
-| Number | Case Name                                                  | Discription                                |
+| 序号 | 案例名称                                                      | 描述                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | Digital circuit cases, including three cases: combination logic, sequential logic, and state machine        |
-| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | Communication interface cases, including cases of SPI, IIC, UART, etc.    |
-| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | Common IO interface cases, including cases of LED, PWM generation, etc.       |
-| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | Module interface cases, including cases of on-board modules such as ADC, DAC, Mini HDMI, MIPI camera, gyroscope, etc.  |
-| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | Data interface cases, including basic data interactions in FPGA, such as BRAM, ROM, etc.         |
-| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | Expansion interface cases, including cases used by expansion boards, such as digital tubes, joysticks, Bluetooth, etc.           |
+| 1    | [Digital-Circuits](/Examples/FPGA/1.Digital-Circuits)        | 数字电路系列案例，包括基本的组合逻辑电路案例、时序逻辑电路案例、状态机案例等         |
+| 2    | [Community-Interface](/Examples/FPGA/2.Community-Interface)  | 通信接口系列案例，包括SPI、UART、IIC等                                           |
+| 3    | [IO-Interface](/Examples/FPGA/3.IO-Interface)                | 普通IO接口案例，包括LED、PWM发生器、PPM解码器等                           |
+| 4    | [Module-Interface](/Examples/FPGA/4.Module-Interface)        | 板载模块接口案例，包括ADC模块、DAC模块、Mini HDMI接口、MIPI摄像头接口、陀螺仪等     |
+| 5    | [Data-Interface](/Examples/FPGA/5.Data-Interface)            | 数据接口案例，包括FPGA中的基本数据交互，如BRAM、ROM等                             |
+| 6    | [Extension-Interface](/Examples/FPGA/6.Extension-Interface)  | 扩展接口案例，该案例需要和配套的扩展板使用，如数码管、摇杆、蓝牙、EEPROM等            |
