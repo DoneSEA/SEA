@@ -1,14 +1,10 @@
-# ESP32 part
+# ESP32部分
 
-The Hello World part provides blank project of the ESP32 part.
+ESP32部分，分为Arduino平台和MicroPython平台两种方式。
 
-## Directory composition
+## 工程组成
 
-The directory contains the source code of the Arduino IDE platform (C language) project and the MicroPython platform (MicroPython language).
-
-## Content structure
-
-| Number | Property | Case Name                                              | Discription                                |
+| 序号  | 归属  | 案例名称                                                    | 描述                                |
 | ---- | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)         | Project written in C based on the Arduino IDE platform    |
-| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)    | Project based on MicroPython platform, written in MicroPython language       |
+| 1    | ESP32 | [HelloWorld-Arduino](/Hello-World/ESP32/Arduino-IDE)        | 本工程基于Arduino IDE平台，采用C语言实现   |
+| 2    | ESP32 | [HelloWorld-MicroPython](/Hello-World/ESP32/MicroPython)    | 本工程基于MicroPython平台，采用MicroPython语言实现        |
