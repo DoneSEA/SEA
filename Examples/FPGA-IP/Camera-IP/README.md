@@ -2,8 +2,7 @@
 
 摄像头系列的IP核，提供了两个MIPI数据的读取驱动(Driver_MIPI 和 Driver_MIPI0)，以及OV5647摄像头的初始化驱动。
 
-MIPI和MIPI0驱动的不同之处，在于MIPI0比MIPI少了一层(bayer2rgb)。MIPI输出
-The difference between the MIPI and MIPI0 drivers is that MIPI0 is one layer less than MIPI. MIPI输出RGB数据和相应的行场信号，而MIPI0输出8位Dvp格式数据和相应的行场信号。
+MIPI和MIPI0驱动的不同之处，在于MIPI0比MIPI少了一层(bayer2rgb)，MIPI输出RGB数据和相应的行场信号，而MIPI0输出8位Dvp格式数据和相应的行场信号。
 
 ## 使用说明
 
