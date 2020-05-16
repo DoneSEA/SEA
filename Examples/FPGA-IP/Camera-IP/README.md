@@ -1,13 +1,12 @@
-# Camera-IP Series Instructions
+# Camera-IP系列的简介
 
-## IP Core Introduction
+摄像头系列的IP核，提供了两个MIPI数据的读取驱动(Driver_MIPI 和 Driver_MIPI0)，以及OV5647摄像头的初始化驱动。
 
-The camera driver series IP core provides two MIPI data reading drivers (Driver_MIPI and Driver_MIPI0), and the OV5647 camera initialization driver.
+MIPI和MIPI0驱动的不同之处，在于MIPI0比MIPI少了一层(bayer2rgb)。MIPI输出
+The difference between the MIPI and MIPI0 drivers is that MIPI0 is one layer less than MIPI. MIPI输出RGB数据和相应的行场信号，而MIPI0输出8位Dvp格式数据和相应的行场信号。
 
-The difference between the MIPI and MIPI0 drivers is that MIPI0 is one layer less than MIPI. MIPI outputs RGB data and corresponding line-field signals, while MIPI0 outputs 8-bit Dvp format data and corresponding line-field signals.
+## 使用说明
 
-## Using Instructions
-
-The corresponding using case [Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface) can be found in [Examples](/Examples).
+摄像头的初始化驱动，仅适用于树莓派MIPI接口的OV5647摄像头，如有需要更换摄像头型号，则需通过数据手册，进行IP核驱动的修改。摄像头系列IP核的使用案例可以在[Examples](/Examples)中找到，例如[Camera_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface)。
 
 
