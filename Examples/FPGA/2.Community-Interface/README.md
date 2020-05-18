@@ -1,18 +1,18 @@
-# Community Interface Cases
+# 通信接口案例
 
-Communication interface cases currently provide SPI case and UART case.
+通信接口案例目前提供SPI和UART。
 
-## SPI Case
+## SPI
 
-This part currently provides [SPI Master](/Examples/FPGA/2.Community-Interface/SPI/SPI_Demo), cooperating with the [Arduino SPI Slave](/Examples/FPGA/2.Community-Interface/SPI/SPI-Arduino/SPI_Slave) to realize the unidirectional data transmission. In addition, [Arduino SPI Master](/Examples/FPGA/2.Community-Interface/SPI/SPI-Arduino/SPI_Master) is also provided.
+这个部分目前包[SPI Master](/Examples/FPGA/2.Community-Interface/SPI/SPI_Demo),配合 [Arduino SPI Slave](/Examples/FPGA/2.Community-Interface/SPI/SPI-Arduino/SPI_Slave)来实现数据传输。除此之外，还提供了[Arduino SPI Master](/Examples/FPGA/2.Community-Interface/SPI/SPI-Arduino/SPI_Master)。
 
-## UART Case
+## UART
 
-This case currently supports two-way transmission, the case transmits the received data back.
+UART目前支持双向传输，案例中将接收到的数据发回。
 
-### Repository Structure
+### 通信接口案例组成
 
-| Number | Case Name                                                  | Discription                                |
+| 序号 | 案例名称                                                  | 描述                                |
 | ---- | ------------------------------------------------------------ | ------------------------------------------ |
-| 1    | [SPI](/Examples/FPGA/2.Community-Interface/SPI)   | SPI Case  |
-| 2    | [UART](/Examples/FPGA/2.Community-Interface/UART)   | UART Case  |
+| 1    | [SPI](/Examples/FPGA/2.Community-Interface/SPI)   | SPI  |
+| 2    | [UART](/Examples/FPGA/2.Community-Interface/UART)   | UART  |
