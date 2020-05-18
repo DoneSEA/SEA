@@ -1,6 +1,4 @@
-# UART-IP Instructions
-
-## IP Core Introduction
+# UART-IP简介
 
 Driver IP core of UART provides baud rate setting parameters, and communication modes for receiving and sending.
 

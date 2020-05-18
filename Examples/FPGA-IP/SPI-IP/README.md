@@ -1,23 +1,19 @@
-# SPI-IP Instructions
+# SPI-IP 简介
 
-## IP Core Introduction
+SPI的驱动程序IP内核仅提供通信主机的0模式。
 
-Driver IP core of SPI only provides the 0 mode of the communication host.
+SPI通信的主机在读取和写入数据序列的过程中有4种模式。 它由CPOL和CPHA的组合表示。
 
-The host of SPI communication has 4 modes in the process of reading and writing data sequence. It is expressed by the combination of CPOL and CPHA.
+* CPOL：时钟的极性，在通信过程中分为空闲时间和通信时间。 数据传输前后SCK的空闲状态为高电平，则CPOL为1，否则为0。
+* CPHA：时钟的相位。
 
-* CPOL: The polarity of the clock, which is divided into idle time and communication time during the communication process. The idle state of SCK before and after data transmission is high, then CPOL is 1, otherwise it is 0.
-* CPHA: The phase of the clock. 
+SPI的四种模式如下：
+* 模式0：CPOL = 0，CPHA = 0
+* 模式1：CPOL = 0，CPHA = 1
+* 模式2：CPOL = 1，CPHA = 0
+* 模式3：CPOL = 1，CPHA = 1
 
-The four modes of SPI are as follows:
-* Mode 0：CPOL=0, CPHA=0   
-* Mode 1：CPOL=0, CPHA=1   
-* Mode 2：CPOL=1, CPHA=0   
-* Mode 3：CPOL=1, CPHA=1   
-
-### Composition of SPI Driver Module
-
-The module configuration is as follows:
+## SPI驱动IP核的组成
 
 ```c
 module SPI_Master(
@@ -32,23 +28,24 @@ module SPI_Master(
     output reg ACK=0   
 );
 ```
-### Signal Introduction
+
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | clk_100MHz      | 100MHz clock signal |
-| input | Rst             | Reset signal, active low       |
-| input | En              | Enable signal, active high      |
-| input | MISO            | The channel for the master to read the status or data of the slave       |
-| input | Data            | Data to be transferred       |
-| output | SCK             | SPI clock signal     |
-| output | MOSI            | The channel from which the master sends instructions or data to the slave     |
-| output | CS              | Chip select signal, high level select     |
-| output | ACK             | Interrupt signal, the rising edge is the end of sending or receiving     |
+| input | clk_100MHz      | 100MHz的时钟信号 |
+| input | Rst             | 复位信号，低电平有效      |
+| input | En              | 使能信号，高电平有效      |
+| input | MISO            | 主机读取从机数据或信息的通道    |
+| input | Data            | 需要传输的数据       |
+| output | SCK             | SPI时钟信号     |
+| output | MOSI            | 主机发送指令或数据给从机的通道     |
+| output | CS              | 片选信号，高电平选中             |
+| output | ACK             | 应答信号，上升沿代表发送或接收完成     |
 
 
-## Using Instructions
+## 使用说明
 
-This IP core use case [SPI_Demo](/Examples/FPGA/2.Community-Interface/SPI) can be found in [Examples](/Examples).
+SPI驱动IP核的使用案例可以在[Examples](/Examples)中找到，例如[SPI_Demo](/Examples/FPGA/2.Community-Interface/SPI)。
 
 
