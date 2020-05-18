@@ -4,13 +4,9 @@
 
 ## RGB转灰度模块
 
-This module uses the conversion formula Gray = x · R + y · G + z · B for conversion.
+RGB转灰度模块使用转换公式Gray = x·R + y·G + z·B进行转换。
 
-The traditional conversion method has lower accuracy. Here, a binary shift method is used instead of decimal to reduce the loss of accuracy.
-
-This module provides a total of 20 gray resolutions with a total of 1-20 bits.
-
-The module configuration is as follows:
+传统的转换方法精度较低。在此，使用二进制移位方法代替十进制数以减少精度损失。模块提供总共20种灰度分辨率，共1-20位。
 
 ```c
 module RGB_To_Gray(
@@ -21,25 +17,23 @@ module RGB_To_Gray(
     output [7:0]Gray_Data   
     );
 ```
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | RGB_Data_R      | R channel value needed to be converted |
-| input | RGB_Data_G      | G channel value needed to be converted       |
-| input | RGB_Data_B      | B channel value needed to be converted       |
-| input | Accuracy_Num    | Precision digits: 1-20 bit, the excess part is calculated as 20 digits, the lower part is calculated as 1 digit       |
-| output | Gray_Data      | Grayscale data output after conversion     |
+| input | RGB_Data_R      | 需要被转换的R通道数据 |
+| input | RGB_Data_G      | 需要被转换的G通道数据       |
+| input | RGB_Data_B      | 需要被转换的B通道数据       |
+| input | Accuracy_Num    | 数据精度：1-20种精度，其他部分按照20位精度计算      |
+| output | Gray_Data      | 转换后的灰度数据输出     |
 
-## Composition of RGB to HSV module
+## RGB转HSV模块
 
-RGB to HSV module uses the conversion formula of RGB to HSV for conversion.
+RGB到HSV模块使用RGB到HSV的转换公式进行转换。
 
-As the general conversion method normalizes the three channels of HSV data to 0-1, the calculation on the FPGA will cause a loss of accuracy.
+由于一般的转换方法会将HSV数据的三个通道归一化为0-1，因此FPGA上的计算将导致精度损失。
 
-Here, no normalization is performed and the original value is maintained.
-
-The module configuration is as follows:
+这里，我们没有进行归一化，而是保持了原始值。
 
 ```c
 module RGB_To_HSV(
@@ -55,29 +49,27 @@ module RGB_To_HSV(
     );
 ```
 
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | clk_Image_Process | Clock signal |
-| input | Rst             | Reset signal, active low       |
-| input | RGB_Data_R      | R channel value needed to be converted |
-| input | RGB_Data_G      | G channel value needed to be converted       |
-| input | RGB_Data_B      | B channel value needed to be converted       |
-| output | HSV_H           | H channel data output after conversion     |
-| output | HSV_S           | S channel data output after conversion     |
-| output | HSV_V           | V channel data output after conversion     |
-| output | Delay_Num       | Since the conversion process uses division, this is the number of clocks for the output delay     |
+| input | clk_Image_Process | 时钟信号 |
+| input | Rst             | 复位信号，低电平有效      |
+| input | RGB_Data_R      | 需要被转换的R通道数据 |
+| input | RGB_Data_G      | 需要被转换的G通道数据       |
+| input | RGB_Data_B      | 需要被转换的B通道数据       |
+| output | HSV_H           | 转换后的H通道数据输出     |
+| output | HSV_S           | 转换后的S通道数据输出     |
+| output | HSV_V           | 转换后的V通道数据输出     |
+| output | Delay_Num       | 由于转换过程中用到除法，那么需要给输出进行延时，这里输出的是延时数目     |
 
-## Composition of HSV to RGB module
+## HSV转RGB模块
 
-The HSV to RGB module uses the HSV to RGB conversion formula for conversion.
+HSV转RGB模块使用HSV到RGB的转换公式进行转换。
 
-The conversion formula is as follows:
+转换公式，如下图所示：
 
 ![](/Examples/Images/HSV2RGB-IP.png)
-
-The module configuration is as follows:
 
 ```c
 module HSV_To_RGB(
@@ -93,32 +85,29 @@ module HSV_To_RGB(
     );
 ```
 
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | clk_Image_Process |  Clock signal |
-| input | Rst             | Reset signal, active low       |
-| input | HSV_Data_H      | H channel value needed to be converted |
-| input | HSV_Data_S      | S channel value needed to be converted       |
-| input | HSV_Data_V      | V channel value needed to be converted       |
-| output | RGB_Data_R      | R channel data output after conversion     |
-| output | RGB_Data_G      | G channel data output after conversion     |
-| output | RGB_Data_B      | B channel data output after conversion     |
-| output | Delay_Num       | Since the conversion process uses division, this is the number of clocks for the output delay     |
+| input | clk_Image_Process |  时钟信号 |
+| input | Rst             | 复位信号，低电平有效       |
+| input | HSV_Data_H      | 需要被转换的H通道数据 |
+| input | HSV_Data_S      | 需要被转换的S通道数据       |
+| input | HSV_Data_V      | 需要被转换的V通道数据       |
+| output | RGB_Data_R      | 转换后的R通道数据输出     |
+| output | RGB_Data_G      | 转换后的G通道数据输出     |
+| output | RGB_Data_B      | 转换后的B通道数据输出     |
+| output | Delay_Num       | 由于转换过程中用到除法，那么需要给输出进行延时，这里输出的是延时数目     |
 
-## Composition of edge detection module
+## 边缘检测模块
 
-The edge detection module uses the Sobel operator to perform edge detection on grayscale images.
+边缘检测模块使用Sobel算子对灰度图像进行边缘检测。
 
-The Sobel operator formula is as follows:
+Sobel算子的计算公式如下：
 
 ![](/Examples/Images/Edge-Check-IP.png)
 
-
-Where f (a, b), represents the gray value of the image (a, b) point. Then find ▽ f from Gx and Gy. If ▽ f is greater than a certain threshold, the point (x, y) is considered as an edge point.
-
-The module configuration is as follows:
+其中f（a，b）代表图像（a，b）点的灰度值。 然后从Gx和Gy中找到▽f。 如果▽f大于某个阈值，则将点（x，y）视为边缘点。
 
 ```c
 module Edge_Check(
@@ -132,20 +121,20 @@ module Edge_Check(
     );
 ```
 
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
-| input | clk_Image_Process | Clock signal |
-| input | Rst               | Reset signal, active low       |
-| input | RGB_DE            | Image data effective signal, high level effective |
-| input | Gray_Data         | Grayscale data       |
-| input | Gray_Gate         | Grayscale threshold       |
-| output | Delay_Num         | Since the conversion process uses division, this is the number of clocks for the output delay     |
-| output | RGB_Data          | Binary RGB data output by edge detection     |
+| input | clk_Image_Process | 时钟信号 |
+| input | Rst               | 复位信号，低电平有效       |
+| input | RGB_DE            | 图像数据有效信号，高电平有效 |
+| input | Gray_Data         | 灰度数据       |
+| input | Gray_Gate         | 灰度阈值       |
+| output | Delay_Num         | 由于转换过程中用到除法，那么需要给输出进行延时，这里输出的是延时数目     |
+| output | RGB_Data          |边缘检测后输出的二值化RGB数据     |
 
-## Using Instructions
+## 使用说明
 
-This IP core can find the corresponding use case [Image_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface) in [Examples](/Examples).
+图像处理系列IP核的相关使用案例，可以在[Examples](/Examples)中找到，例如[Image_Demo](/Examples/FPGA/4.Module-Interface/MIPI-Camera-Interface)。
 
 
