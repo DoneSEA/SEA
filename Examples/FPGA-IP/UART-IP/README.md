@@ -1,10 +1,8 @@
 # UART-IP简介
 
-Driver IP core of UART provides baud rate setting parameters, and communication modes for receiving and sending.
+UART的驱动IP核提供波特率设置参数以及用于接收和发送的通信模式。
 
-### Composition of UART Driver Module
-
-The module configuration is as follows:
+## UART驱动IP核的组成
 
 ```c
 module Driver_UART(
@@ -21,9 +19,9 @@ module Driver_UART(
     output Tx_ACK
     );
 ```
-### Signal Introduction
+### 信号简介
   
-| **Signal Type**    | **Signal Name**    | **Discription** |
+| **信号类型**    | **信号名称**    | **描述** |
 | ----------- | ----------- | -------- |
 | input | clk_100MHz      | 100MHz clock signal |
 | input | Rst             | Reset signal, active low       |
@@ -39,8 +37,8 @@ module Driver_UART(
 
 
 
-## Using Instructions
+## 使用说明
 
-This IP core can find the corresponding use case [HDMI_Demo](/Examples/FPGA/2.Community-Interface/UART) in [Examples](/Examples).
+UART驱动IP核的使用案例，可以在[Examples](/Examples)中找到,例如[HDMI_Demo](/Examples/FPGA/2.Community-Interface/UART)。
 
 
