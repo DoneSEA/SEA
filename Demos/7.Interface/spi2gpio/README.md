@@ -20,7 +20,7 @@ Generate bitstream
 <br><br>
 Load bitstream to FPGA
 ----------------------
-  Click [here](https://github.com/sea-s7/spartan-edge-esp32-boot)
+  Click [here](https://github.com/DoneSEA/DoneSEA.github.io/tree/master/Downloads/spartan-edge-esp32-boot)
 
 <br><br>
 Arduino(UNO) Demo

@@ -18,10 +18,6 @@ FPGA 和 ESP32 通过QSPI进行通信，通信的硬件如上，信号通过开�
 **qspi_clk**为通信端口时钟，由QSPI主机(ESP32端)提供。无传输期间，qspi_clk为空闲低电平状态。  
 **qspi_d**为通信数据输入输出端口。 qspi_clk下降沿时数据更新， qspi_clk上升沿时进行采样。
 
-QSPI时序：
-![image](https://i.screenshot.net/x6l4vhv)
-
-
 ## 寄存器
 控制寄存器为QSPI对应FPGA端RAM地址0 的 8位寄存器 D[7:0]
 
