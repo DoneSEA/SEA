@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 31 10:41:48 2019
+# Process ID: 3636
+# Current directory: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8704 C:\Users\dell\Desktop\xilinx\test\IO_LED_sw\test\test.xpr
+# Log file: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/vivado.log
+# Journal file: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 895.801 ; gain = 140.570
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:test:1.0 - test_0
+Successfully read diagram <TEST> from BD file <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 13:36:37 2019...

@@ -1,0 +1,74 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port io11_0 -pg 1 -y 300 -defaultsOSRD
+preplace port io2_0 -pg 1 -y 120 -defaultsOSRD
+preplace port k4_0 -pg 1 -y 330 -defaultsOSRD
+preplace port adc_en_0 -pg 1 -y 420 -defaultsOSRD
+preplace port clk_in1_0 -pg 1 -y 200 -defaultsOSRD
+preplace port led1_0 -pg 1 -y 360 -defaultsOSRD
+preplace port io0_0 -pg 1 -y 80 -defaultsOSRD
+preplace port io8_0 -pg 1 -y 240 -defaultsOSRD
+preplace port io10_0 -pg 1 -y 280 -defaultsOSRD
+preplace port k1_0 -pg 1 -y 270 -defaultsOSRD
+preplace port IN4_0 -pg 1 -y 500 -defaultsOSRD
+preplace port clk_out3_0 -pg 1 -y 40 -defaultsOSRD
+preplace port io13_0 -pg 1 -y 340 -defaultsOSRD
+preplace port io5_0 -pg 1 -y 180 -defaultsOSRD
+preplace port SDA_0 -pg 1 -y 520 -defaultsOSRD
+preplace port led2_0 -pg 1 -y 380 -defaultsOSRD
+preplace port io7_0 -pg 1 -y 220 -defaultsOSRD
+preplace port io1_0 -pg 1 -y 100 -defaultsOSRD
+preplace port k2_0 -pg 1 -y 290 -defaultsOSRD
+preplace port din_0 -pg 1 -y 440 -defaultsOSRD
+preplace port io4_0 -pg 1 -y 160 -defaultsOSRD
+preplace port io6_0 -pg 1 -y 200 -defaultsOSRD
+preplace port sync_0 -pg 1 -y 460 -defaultsOSRD
+preplace port io9_0 -pg 1 -y 260 -defaultsOSRD
+preplace port IN1_0 -pg 1 -y 480 -defaultsOSRD
+preplace port SCL_0 -pg 1 -y 540 -defaultsOSRD
+preplace port clk_out2_0 -pg 1 -y 20 -defaultsOSRD
+preplace port fpga_rgb_0 -pg 1 -y 400 -defaultsOSRD
+preplace port k3_0 -pg 1 -y 310 -defaultsOSRD
+preplace port io12_0 -pg 1 -y 320 -defaultsOSRD
+preplace port io3_0 -pg 1 -y 140 -defaultsOSRD
+preplace portBus adc_date_0 -pg 1 -y 370 -defaultsOSRD
+preplace inst test_0 -pg 1 -lvl 2 -y 310 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 200 -defaultsOSRD
+preplace netloc test_0_io0 1 2 1 NJ
+preplace netloc k4_0_1 1 0 2 NJ 330 NJ
+preplace netloc k2_0_1 1 0 2 NJ 290 NJ
+preplace netloc adc_date_0_1 1 0 2 NJ 370 NJ
+preplace netloc test_0_io1 1 2 1 NJ
+preplace netloc test_0_io2 1 2 1 NJ
+preplace netloc test_0_io3 1 2 1 NJ
+preplace netloc test_0_SCL 1 2 1 NJ
+preplace netloc test_0_fpga_rgb 1 2 1 NJ
+preplace netloc test_0_io4 1 2 1 NJ
+preplace netloc test_0_IN1 1 2 1 NJ
+preplace netloc test_0_led1 1 2 1 NJ
+preplace netloc test_0_io5 1 2 1 NJ
+preplace netloc test_0_led2 1 2 1 NJ
+preplace netloc test_0_io6 1 2 1 NJ
+preplace netloc test_0_din 1 2 1 NJ
+preplace netloc clk_in1_0_1 1 0 1 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 1 220
+preplace netloc test_0_io7 1 2 1 NJ
+preplace netloc test_0_IN4 1 2 1 NJ
+preplace netloc clk_wiz_0_clk_out2 1 1 2 230 20 490J
+preplace netloc test_0_io8 1 2 1 NJ
+preplace netloc test_0_io10 1 2 1 NJ
+preplace netloc test_0_sync 1 2 1 NJ
+preplace netloc test_0_adc_en 1 2 1 NJ
+preplace netloc test_0_io11 1 2 1 NJ
+preplace netloc test_0_io9 1 2 1 NJ
+preplace netloc k3_0_1 1 0 2 NJ 310 NJ
+preplace netloc test_0_SDA 1 2 1 NJ
+preplace netloc test_0_io12 1 2 1 NJ
+preplace netloc test_0_io13 1 2 1 NJ
+preplace netloc k1_0_1 1 0 2 NJ 270 NJ
+levelinfo -pg 1 0 120 360 510 -top 0 -bot 600
+",
+}
+0

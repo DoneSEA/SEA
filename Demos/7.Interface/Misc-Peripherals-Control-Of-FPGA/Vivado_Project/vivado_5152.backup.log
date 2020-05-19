@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 29 10:28:59 2019
+# Process ID: 5152
+# Current directory: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2252 C:\Users\dell\Desktop\xilinx\test\IO_LED_sw\test\test.xpr
+# Log file: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/vivado.log
+# Journal file: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 891.531 ; gain = 137.582
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:test:1.0 - test_0
+Successfully read diagram <TEST> from BD file <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd>
+update_module_reference TEST_test_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'dac_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'dac_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd'
+INFO: [IP_Flow 19-1972] Upgraded TEST_test_0_0 from test_v1_0 1.0 to test_v1_0 1.0
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 'dac_clk' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'TEST_test_0_0'.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'adc_date'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'adc_en'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'dac_clk'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'din'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'sync'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'TEST_test_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'TEST_test_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd> 
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/ui/bd_d48753f2.ui> 
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {20.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {100.000} CONFIG.MMCM_CLKOUT1_DIVIDE {50} CONFIG.NUM_OUT_CLKS {2} CONFIG.CLKOUT1_JITTER {209.588} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {183.243} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins clk_wiz_0/clk_out2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {20.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT2_DIVIDE {50} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT3_JITTER {183.243} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins clk_wiz_0/clk_out3]
+endgroup
+delete_bd_objs [get_bd_nets clk_wiz_0_clk_out3]
+startgroup
+set_property -dict [list CONFIG.CLKOUT3_USED {false} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT2_DIVIDE {1} CONFIG.NUM_OUT_CLKS {2}] [get_bd_cells clk_wiz_0]
+endgroup
+connect_bd_net [get_bd_ports clk_out3_0] [get_bd_pins clk_wiz_0/clk_out2]
+connect_bd_net [get_bd_pins test_0/dac_clk] [get_bd_pins clk_wiz_0/clk_out2]
+startgroup
+make_bd_pins_external  [get_bd_pins test_0/adc_date]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins test_0/adc_en]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins test_0/din]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins test_0/sync]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd> 
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/ui/bd_d48753f2.ui> 
+generate_target all [get_files  C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd]
+INFO: [BD 41-1662] The design 'TEST.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/synth/TEST.v
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/sim/TEST.v
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hdl/TEST_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hw_handoff/TEST.hwh
+Generated Block Design Tcl file C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hw_handoff/TEST_bd.tcl
+Generated Hardware Definition File C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/synth/TEST.hwdef
+catch { config_ip_cache -export [get_ips -all TEST_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd]
+launch_runs -jobs 8 {TEST_clk_wiz_0_0_synth_1 TEST_test_0_0_synth_1}
+[Wed May 29 10:38:22 2019] Launched TEST_clk_wiz_0_0_synth_1, TEST_test_0_0_synth_1...
+Run output will be captured here:
+TEST_clk_wiz_0_0_synth_1: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/TEST_clk_wiz_0_0_synth_1/runme.log
+TEST_test_0_0_synth_1: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/TEST_test_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -directory C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files -ipstatic_source_dir C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/modelsim} {questa=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/questa} {riviera=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/riviera} {activehdl=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May 29 10:42:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/synth_1/runme.log
+[Wed May 29 10:42:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+set_property PROGRAM.FILE {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/TEST_wrapper.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/TEST_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+ERROR: [Labtoolstcl 44-514] HW Server shutdown. Disconnecting from server: localhost:3121
+update_module_reference TEST_test_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'dac_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'dac_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd'
+INFO: [IP_Flow 19-1972] Upgraded TEST_test_0_0 from test_v1_0 1.0 to test_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'IN1'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'IN4'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SCL'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'SDA'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'TEST_test_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'TEST_test_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd> 
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/ui/bd_d48753f2.ui> 
+startgroup
+make_bd_pins_external  [get_bd_pins test_0/IN1] [get_bd_pins test_0/IN4] [get_bd_pins test_0/SDA] [get_bd_pins test_0/SCL]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+generate_target all [get_files  C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd]
+INFO: [BD 41-1662] The design 'TEST.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd> 
+Wrote  : <C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/ui/bd_d48753f2.ui> 
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/synth/TEST.v
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/sim/TEST.v
+VHDL Output written to : C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hdl/TEST_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block test_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hw_handoff/TEST.hwh
+Generated Block Design Tcl file C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/hw_handoff/TEST_bd.tcl
+Generated Hardware Definition File C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/synth/TEST.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd]
+launch_runs -jobs 8 TEST_test_0_0_synth_1
+[Wed May 29 17:09:32 2019] Launched TEST_test_0_0_synth_1...
+Run output will be captured here: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/TEST_test_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -directory C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files -ipstatic_source_dir C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/modelsim} {questa=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/questa} {riviera=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/riviera} {activehdl=C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.srcs/sources_1/bd/TEST/TEST.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May 29 17:11:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/synth_1/runme.log
+[Wed May 29 17:11:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+set_property PROGRAM.FILE {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/TEST_wrapper.bit} [get_hw_devices xc7s15_0]
+current_hw_device [get_hw_devices xc7s15_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s15_0]
+set_property PROGRAM.FILE {C:/Users/dell/Desktop/xilinx/test/IO_LED_sw/test/test.runs/impl_1/TEST_wrapper.bit} [get_hw_devices xc7s15_0]
+program_hw_devices [get_hw_devices xc7s15_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s15_0] 0]
+INFO: [Labtools 27-1434] Device xc7s15 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018627ad001
+INFO: [Labtools 27-1435] Device xc7s15 (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 17:27:03 2019...
