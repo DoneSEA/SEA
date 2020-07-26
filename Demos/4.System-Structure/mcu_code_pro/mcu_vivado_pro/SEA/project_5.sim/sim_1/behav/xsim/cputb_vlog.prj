@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/IO_reg.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/alu.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/decoder.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/distribute.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/timer.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ipshared/f788/pic16c56.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_pic16c56_0_0_1/sim/design_1_pic16c56_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/ip/design_1_dist_mem_gen_0_0/sim/design_1_dist_mem_gen_0_0.v" \
+"../../../../project_5.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../project_5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../time1.v" \
+"../../../../project_5.srcs/sources_1/new/top.v" \
+"../../../../project_5.srcs/sim_1/new/cputb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

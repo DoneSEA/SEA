@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Mar  8 13:43:06 2020
+# Process ID: 106780
+# Current directory: C:/Users/hp/Desktop/vivado/project_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent97696 C:\Users\hp\Desktop\vivado\project_5\project_5.xpr
+# Log file: C:/Users/hp/Desktop/vivado/project_5/vivado.log
+# Journal file: C:/Users/hp/Desktop/vivado/project_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/hp/Desktop/vivado/project_5/project_5.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {C:/Users/hp/Desktop/vivado/1.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs design_1_dist_mem_gen_0_0_synth_1
+wait_on_run design_1_dist_mem_gen_0_0_synth_1
+generate_target all [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+endgroup
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files c:/Users/SZY/Desktop/coe/1/1.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/SZY/Desktop/coe/1/1.coe
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/2.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/3.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+close_bd_design [get_bd_designs design_1]
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/4.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs design_1_dist_mem_gen_0_0_synth_1
+wait_on_run design_1_dist_mem_gen_0_0_synth_1
+generate_target all [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+launch_simulation
+source cputb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 ms
+step
+run 10 s
+close_sim
+launch_simulation
+source cputb.tcl
+run 10 s
+close_sim
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+close_bd_design [get_bd_designs design_1]
+close_design
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/5.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+generate_target Simulation [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files -ipstatic_source_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/modelsim} {questa=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/questa} {riviera=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/riviera} {activehdl=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source cputb.tcl
+run 10 s
+reset_run design_1_dist_mem_gen_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/6.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+close_sim
+generate_target Simulation [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files -ipstatic_source_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/modelsim} {questa=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/questa} {riviera=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/riviera} {activehdl=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source cputb.tcl
+run 10 s
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/1.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/hp/Desktop/vivado/1.coe
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/2.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/3.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/4.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/5.coe] -no_script -reset -force -quiet
+remove_files  {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/2.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/3.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/4.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/5.coe}
+file delete -force c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/2.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/3.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/4.coe c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/5.coe
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+endgroup
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs design_1_dist_mem_gen_0_0_synth_1
+wait_on_run design_1_dist_mem_gen_0_0_synth_1
+generate_target all [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source cputb.tcl
+restart
+run 10 s
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/5.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/7.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/8.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/9.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/10.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/11.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_dist_mem_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation
+source cputb.tcl
+run 10 s
+restart
+run 10 s
+run 10 s
+export_ip_user_files -of_objects  [get_files c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/10.coe] -no_script -reset -force -quiet
+remove_files  c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/10.coe
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation -mode post-synthesis -type functional
+source cputb.tcl
+launch_simulation -mode post-synthesis -type timing
+source cputb.tcl
+run 10 s
+current_design rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_runs impl_1 -jobs 12
+wait_on_run impl_1
+close_sim
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+source cputb.tcl
+run 10 s
+restart
+run 10 s
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:pic16c56:1.2 [get_ips  design_1_pic16c56_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_pic16c56_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_pic16c56_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 12 design_1_pic16c56_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files -ipstatic_source_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/modelsim} {questa=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/questa} {riviera=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/riviera} {activehdl=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_sim simulation_6
+close_sim
+launch_simulation
+source cputb.tcl
+run 10 s
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.coefficient_file {c:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/6.coe}] [get_bd_cells dist_mem_gen_0]
+endgroup
+report_ip_status -name ip_status 
+save_bd_design
+close_sim
+generate_target Simulation [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd]
+current_sim simulation_9
+export_ip_user_files -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files -ipstatic_source_dir C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/modelsim} {questa=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/questa} {riviera=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/riviera} {activehdl=C:/Users/hp/Desktop/vivado/project_5/project_5.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source cputb.tcl
+run 10 s
+current_sim simulation_7
+close_sim
+current_sim simulation_11
+close_sim
+launch_simulation
+source cputb.tcl
+run 10 s
+current_sim simulation_9
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type timing
+source cputb.tcl
+run 10 s
+launch_simulation -mode post-synthesis -type functional
+source cputb.tcl
+run 10 s
+current_sim simulation_12
+close_sim
+launch_simulation
+source cputb.tcl
+close_sim
+launch_simulation
+source cputb.tcl
+restart
+run 10 s
+current_sim simulation_13
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source cputb.tcl
+run 10 ns
+restart
+run 10 ns
+run 10 ns
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_sim simulation_16
+close_sim
+launch_simulation
+source cputb.tcl
+restart
+run 10 ms
+run 10 ms
+open_bd_design {C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sources_1/bd/design_1/design_1.bd}
+close_sim
+current_sim simulation_17
+close_sim
+close_sim

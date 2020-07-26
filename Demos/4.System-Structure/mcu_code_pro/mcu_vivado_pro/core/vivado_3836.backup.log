@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar  5 20:20:26 2020
+# Process ID: 3836
+# Current directory: D:/vivadohls/1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4996 D:\vivadohls\1\project_1\project_1.xpr
+# Log file: D:/vivadohls/1/project_1/vivado.log
+# Journal file: D:/vivadohls/1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadohls/1/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 744.160 ; gain = 93.855
+update_compile_order -fileset sources_1
+close_project
+open_project D:/vivadohls/1/project_5/project_5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 778.754 ; gain = 11.758
+update_compile_order -fileset sources_1
+close_project
+create_project spartan D:/vivadohls/1/spartan -part xc7s25ftgb196-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 797.004 ; gain = 0.000
+set_property  ip_repo_paths  D:/vivadohls/1/project_1 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+update_ip_catalog
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+update_ip_catalog
+update_ip_catalog
+create_bd_design "design_1"
+Wrote  : <D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:pic16c56:1.0 pic16c56_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 dist_mem_gen_0
+endgroup
+set_property -dict [list CONFIG.depth {1024} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/SZY/Desktop/rom.coe}] [get_bd_cells dist_mem_gen_0]
+set_property location {2.5 670 -77} [get_bd_cells dist_mem_gen_0]
+connect_bd_net [get_bd_pins dist_mem_gen_0/a] [get_bd_pins pic16c56_0/romaddr]
+connect_bd_net [get_bd_pins dist_mem_gen_0/spo] [get_bd_pins pic16c56_0/romdata]
+startgroup
+create_bd_port -dir I mclr
+connect_bd_net [get_bd_pins /pic16c56_0/mclr] [get_bd_ports mclr]
+endgroup
+startgroup
+create_bd_port -dir I osc1
+connect_bd_net [get_bd_pins /pic16c56_0/osc1] [get_bd_ports osc1]
+endgroup
+startgroup
+create_bd_port -dir IO -from 3 -to 0 RA
+connect_bd_net [get_bd_pins /pic16c56_0/RA] [get_bd_ports RA]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+save_bd_design
+Wrote  : <D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse D:/vivadohls/1/spartan/spartan.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+add_files -norecurse D:/vivadohls/1/spartan/time1.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 21:08:04 2020...

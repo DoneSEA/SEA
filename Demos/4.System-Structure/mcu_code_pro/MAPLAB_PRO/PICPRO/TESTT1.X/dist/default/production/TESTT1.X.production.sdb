@@ -1,0 +1,33 @@
+[p GLOBOPT AUTOSTATIC PIC12 PICREGULAR PIC12COM ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16C56 ]
+[d frameptr 0 ]
+"62 D:\xc8\v2.10\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\xc8\v2.10\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 D:\PICPRO\TESTT1.X\main.c
+[v _delay delay `(v  1 e 1 0 ]
+"13
+[v _main main `(v  1 e 1 0 ]
+"197 D:/xc8/v2.10/pic/include\pic16c56.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"303
+[v _OPTION OPTION `VEWuc  1 e 1 @0 ]
+"307
+[v _TRISA TRISA `VEWuc  1 e 1 @5 ]
+"13 D:\PICPRO\TESTT1.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"32
+} 0
+"5
+[v _delay delay `(v  1 e 1 0 ]
+{
+"7
+[v delay@c c `ui  1 a 2 4 ]
+[v delay@b b `ui  1 a 2 2 ]
+[v delay@a a `ui  1 a 2 0 ]
+"11
+} 0

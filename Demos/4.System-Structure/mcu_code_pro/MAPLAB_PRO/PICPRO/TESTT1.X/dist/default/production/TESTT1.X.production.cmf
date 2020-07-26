@@ -1,0 +1,221 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+reset_wrap ENTRY 0 0 0 2 2
+reset_vec CODE 0 3FF 3FF 1 2
+end_init ENTRY 0 2 2 2 2
+$dist/default/production\TESTT1.X.production.obj
+cinit ENTRY 0 4 4 3 2
+text1 CODE 0 1CC 1CC 34 2
+maintext CODE 0 1AF 1AF 1D 2
+cstackBANK0 BANK0 1 7 7 6 1
+jmp_tab ENTRY 0 7 7 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM D-1B 1
+BANK0 D-1B 1
+ENTRY 9-FF 2
+ENTRY 200-2FF 2
+IDLOC 400-403 2
+STACK D-1B 1
+CODE 9-1AE 2
+CODE 200-3FE 2
+SFR0 0-6 1
+CONFIG FFF-FFF 2
+STRCODE 9-1AE 2
+STRCODE 200-3FE 2
+STRING 9-FF 2
+STRING 200-2FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TESTT1.X.production.obj
+4 cinit ENTRY >115:C:\Users\SZY\AppData\Local\Temp\s5qg.as
+4 cinit ENTRY >118:C:\Users\SZY\AppData\Local\Temp\s5qg.as
+4 cinit ENTRY >124:C:\Users\SZY\AppData\Local\Temp\s5qg.as
+4 cinit ENTRY >126:C:\Users\SZY\AppData\Local\Temp\s5qg.as
+5 cinit ENTRY >127:C:\Users\SZY\AppData\Local\Temp\s5qg.as
+7 jmp_tab ENTRY >5:D:\PICPRO\TESTT1.X\main.c
+1CC text1 CODE >5:D:\PICPRO\TESTT1.X\main.c
+1CC text1 CODE >8:D:\PICPRO\TESTT1.X\main.c
+1D0 text1 CODE >9:D:\PICPRO\TESTT1.X\main.c
+1D4 text1 CODE >10:D:\PICPRO\TESTT1.X\main.c
+1E5 text1 CODE >9:D:\PICPRO\TESTT1.X\main.c
+1F2 text1 CODE >8:D:\PICPRO\TESTT1.X\main.c
+1AF maintext CODE >13:D:\PICPRO\TESTT1.X\main.c
+1AF maintext CODE >16:D:\PICPRO\TESTT1.X\main.c
+1B1 maintext CODE >17:D:\PICPRO\TESTT1.X\main.c
+1B3 maintext CODE >21:D:\PICPRO\TESTT1.X\main.c
+1B5 maintext CODE >22:D:\PICPRO\TESTT1.X\main.c
+1B8 maintext CODE >23:D:\PICPRO\TESTT1.X\main.c
+1BA maintext CODE >24:D:\PICPRO\TESTT1.X\main.c
+1BD maintext CODE >25:D:\PICPRO\TESTT1.X\main.c
+1BF maintext CODE >26:D:\PICPRO\TESTT1.X\main.c
+1C2 maintext CODE >27:D:\PICPRO\TESTT1.X\main.c
+1C4 maintext CODE >28:D:\PICPRO\TESTT1.X\main.c
+1C7 maintext CODE >29:D:\PICPRO\TESTT1.X\main.c
+1C8 maintext CODE >30:D:\PICPRO\TESTT1.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__Hspace_0 400 0 ABS 0 - -
+__Hspace_1 D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+delay@a 7 0 BANK0 1 cstackBANK0 dist/default/production\TESTT1.X.production.obj
+delay@b 9 0 BANK0 1 cstackBANK0 dist/default/production\TESTT1.X.production.obj
+delay@c B 0 BANK0 1 cstackBANK0 dist/default/production\TESTT1.X.production.obj
+ltemp0 1C 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__Hstrings 0 0 STRING 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+_main 35E 0 CODE 0 maintext dist/default/production\TESTT1.X.production.obj
+btemp 1C 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+start 4 0 ENTRY 0 init C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+ttemp0 1C 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+wtemp0 1C 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+wtemp1 1E 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext E 0 ENTRY 0 clrtext -
+__pjmp_tab E 0 ENTRY 0 jmp_tab dist/default/production\TESTT1.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+___stackhi 0 0 ABS 0 - C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+___stacklo 0 0 ABS 0 - C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+__Hjmp_tab 0 0 ABS 0 jmp_tab -
+__size_of_delay 0 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+start_initialization 8 0 ENTRY 0 cinit dist/default/production\TESTT1.X.production.obj
+_OPTION 0 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__pcstackBANK0 7 0 BANK0 1 cstackBANK0 dist/default/production\TESTT1.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hcinit E 0 ENTRY 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 0 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lcinit 8 0 ENTRY 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 ENTRY 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 ENTRY 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 200 0 ABS 0 - -
+__S1 D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+reset_vec 7FE 0 CODE 0 reset_vec C:\Users\SZY\AppData\Local\Temp\s5qg.obj
+__pmaintext 35E 0 CODE 0 maintext dist/default/production\TESTT1.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 0 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 4 0 ENTRY 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 8 0 ENTRY 0 cinit dist/default/production\TESTT1.X.production.obj
+__Lstrings 0 0 STRING 0 strings -
+__Hreset_vec 800 0 CODE 0 reset_vec -
+__ptext1 398 0 CODE 0 text1 dist/default/production\TESTT1.X.production.obj
+entry__delay E 0 ENTRY 0 jmp_tab dist/default/production\TESTT1.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Lreset_vec 7FE 0 CODE 0 reset_vec -
+__end_of__initialization 8 0 ENTRY 0 cinit dist/default/production\TESTT1.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext E 0 ENTRY 0 clrtext -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\TESTT1.X.production.obj
+__Hreset_wrap 4 0 ENTRY 0 reset_wrap -
+__Hend_init 8 0 ENTRY 0 end_init -
+__end_of_main 398 0 CODE 0 maintext dist/default/production\TESTT1.X.production.obj
+__end_of_delay 400 0 CODE 0 text1 dist/default/production\TESTT1.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+_TRISA 5 0 ABS 0 - dist/default/production\TESTT1.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_delay 398 0 CODE 0 text1 dist/default/production\TESTT1.X.production.obj
+__initialization 8 0 ENTRY 0 cinit dist/default/production\TESTT1.X.production.obj
+__Ljmp_tab 0 0 ABS 0 jmp_tab -
+__Lreset_wrap 0 0 ENTRY 0 reset_wrap -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 1C 4
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 1CC 398 34 2
+maintext 0 1AF 35E 1D 2
+cstackBANK0 1 7 7 6 1
+reset_wrap 0 0 0 9 2
+reset_vec 0 3FF 7FE 1 2
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

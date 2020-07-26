@@ -1,0 +1,45 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0c5a3c11c8a94cc28290b0b9cb8b87c9 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot cputb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.cputb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "cputb_time_synth.sdf", for root module "cputb/wrapp".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "cputb_time_synth.sdf", for root module "cputb/wrapp".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.design_1_dist_mem_gen_0_0_dist_m...
+Compiling module xil_defaultlib.design_1_dist_mem_gen_0_0
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.FDRE_default
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_decoder
+Compiling module simprims_ver.FDRE(IS_C_INVERTED=1'b1)
+Compiling module simprims_ver.FDCE(IS_C_INVERTED=1'b1)
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.FDPE(IS_C_INVERTED=1'b1)
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_distribute
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_alu
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_IO_reg
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_timer
+Compiling module xil_defaultlib.design_1_pic16c56_0_0_pic16c56
+Compiling module xil_defaultlib.design_1_pic16c56_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.cputb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cputb_time_synth

@@ -1,0 +1,243 @@
+
+# 1 "main.c"
+
+# 18 "../../xc8/v2.10/pic/include\xc.h"
+extern const char __xc8_OPTIM_SPEED;
+
+extern double __fpnormalize(double);
+
+
+# 13 "D:\xc8\v2.10\pic\include\c90\xc8debug.h"
+#pragma intrinsic(__builtin_software_breakpoint)
+extern void __builtin_software_breakpoint(void);
+
+# 52 "../../xc8/v2.10/pic/include\pic16c56.h"
+extern volatile unsigned char INDF __at(0x000);
+
+asm("INDF equ 00h");
+
+
+typedef union {
+struct {
+unsigned INDF :8;
+};
+} INDFbits_t;
+extern volatile INDFbits_t INDFbits __at(0x000);
+
+# 72
+extern volatile unsigned char TMR0 __at(0x001);
+
+asm("TMR0 equ 01h");
+
+
+typedef union {
+struct {
+unsigned TMR0 :8;
+};
+} TMR0bits_t;
+extern volatile TMR0bits_t TMR0bits __at(0x001);
+
+# 92
+extern volatile unsigned char PCL __at(0x002);
+
+asm("PCL equ 02h");
+
+
+typedef union {
+struct {
+unsigned PCL :8;
+};
+} PCLbits_t;
+extern volatile PCLbits_t PCLbits __at(0x002);
+
+# 112
+extern volatile unsigned char STATUS __at(0x003);
+
+asm("STATUS equ 03h");
+
+
+typedef union {
+struct {
+unsigned C :1;
+unsigned DC :1;
+unsigned Z :1;
+unsigned nPD :1;
+unsigned nTO :1;
+unsigned PA :2;
+};
+struct {
+unsigned CARRY :1;
+unsigned :1;
+unsigned ZERO :1;
+};
+} STATUSbits_t;
+extern volatile STATUSbits_t STATUSbits __at(0x003);
+
+# 177
+extern volatile unsigned char FSR __at(0x004);
+
+asm("FSR equ 04h");
+
+
+typedef union {
+struct {
+unsigned FSR :8;
+};
+} FSRbits_t;
+extern volatile FSRbits_t FSRbits __at(0x004);
+
+# 197
+extern volatile unsigned char PORTA __at(0x005);
+
+asm("PORTA equ 05h");
+
+
+typedef union {
+struct {
+unsigned RA0 :1;
+unsigned RA1 :1;
+unsigned RA2 :1;
+unsigned RA3 :1;
+unsigned T0CKI :1;
+};
+} PORTAbits_t;
+extern volatile PORTAbits_t PORTAbits __at(0x005);
+
+# 241
+extern volatile unsigned char PORTB __at(0x006);
+
+asm("PORTB equ 06h");
+
+
+typedef union {
+struct {
+unsigned RB0 :1;
+unsigned RB1 :1;
+unsigned RB2 :1;
+unsigned RB3 :1;
+unsigned RB4 :1;
+unsigned RB5 :1;
+unsigned RB6 :1;
+unsigned RB7 :1;
+};
+} PORTBbits_t;
+extern volatile PORTBbits_t PORTBbits __at(0x006);
+
+# 303
+extern volatile __control unsigned char OPTION __at(0x000);
+
+
+
+extern volatile __control unsigned char TRISA __at(0x005);
+
+
+
+extern volatile __control unsigned char TRISB __at(0x006);
+
+# 329
+extern volatile __bit CARRY __at(0x18);
+
+
+extern volatile __bit DC __at(0x19);
+
+
+extern volatile __bit RA0 __at(0x28);
+
+
+extern volatile __bit RA1 __at(0x29);
+
+
+extern volatile __bit RA2 __at(0x2A);
+
+
+extern volatile __bit RA3 __at(0x2B);
+
+
+extern volatile __bit RB0 __at(0x30);
+
+
+extern volatile __bit RB1 __at(0x31);
+
+
+extern volatile __bit RB2 __at(0x32);
+
+
+extern volatile __bit RB3 __at(0x33);
+
+
+extern volatile __bit RB4 __at(0x34);
+
+
+extern volatile __bit RB5 __at(0x35);
+
+
+extern volatile __bit RB6 __at(0x36);
+
+
+extern volatile __bit RB7 __at(0x37);
+
+
+extern volatile __bit T0CKI __at(0x2C);
+
+
+extern volatile __bit ZERO __at(0x1A);
+
+
+extern volatile __bit nPD __at(0x1B);
+
+
+extern volatile __bit nTO __at(0x1C);
+
+
+# 30 "../../xc8/v2.10/pic/include\pic.h"
+#pragma intrinsic(__nop)
+extern void __nop(void);
+
+# 78
+__attribute__((__unsupported__("The " "FLASH_READ" " macro function is no longer supported. Please use the MPLAB X MCC."))) unsigned char __flash_read(unsigned short addr);
+
+__attribute__((__unsupported__("The " "FLASH_WRITE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_write(unsigned short addr, unsigned short data);
+
+__attribute__((__unsupported__("The " "FLASH_ERASE" " macro function is no longer supported. Please use the MPLAB X MCC."))) void __flash_erase(unsigned short addr);
+
+
+# 91
+#pragma intrinsic(_delay)
+extern __nonreentrant void _delay(unsigned long);
+#pragma intrinsic(_delaywdt)
+extern __nonreentrant void _delaywdt(unsigned long);
+
+# 137
+extern __bank0 unsigned char __resetbits;
+extern __bank0 __bit __powerdown;
+extern __bank0 __bit __timeout;
+
+# 5 "main.c"
+void delay(void)
+{
+unsigned int a,b,c;
+for(a=200;a>0;a--)
+for(b=110;b>0;b--)
+for(c=100;c>0;c--);
+}
+
+void main()
+{
+
+OPTION=8;
+TRISA=0;
+
+while(1)
+{
+PORTA = 1;
+delay();
+PORTA = 2;
+delay();
+PORTA = 4;
+delay();
+PORTA = 8;
+delay();
+PORTA = 0;
+delay();
+}
+}

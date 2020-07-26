@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar  9 18:19:06 2020" VIVADOVERSION="2018.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="mclr" SIGIS="undef" SIGNAME="External_Ports_mclr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pic16c56_0" PORT="mclr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="osc1" SIGIS="undef" SIGNAME="External_Ports_osc1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pic16c56_0" PORT="osc1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="3" NAME="RA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_RA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pic16c56_0" PORT="RA"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/dist_mem_gen_0" HWVERSION="8.0" INSTANCE="dist_mem_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dist_mem_gen" VLNV="xilinx.com:ip:dist_mem_gen:8.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=dist_mem_gen;v=v8_0;d=pg063-dist-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_HAS_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_D" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPRA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_I_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SPO" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_WE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="design_1_dist_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_QCE_JOINED" VALUE="0"/>
+        <PARAMETER NAME="C_QUALIFY_WE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_MIF" VALUE="1"/>
+        <PARAMETER NAME="C_REG_A_D_INPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_REG_DPRA_INPUT" VALUE="0"/>
+        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="12"/>
+        <PARAMETER NAME="C_PARSER_TYPE" VALUE="1"/>
+        <PARAMETER NAME="depth" VALUE="1024"/>
+        <PARAMETER NAME="data_width" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_dist_mem_gen_0_0"/>
+        <PARAMETER NAME="memory_type" VALUE="rom"/>
+        <PARAMETER NAME="input_options" VALUE="non_registered"/>
+        <PARAMETER NAME="input_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="qualify_we_with_i_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="simple_dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="output_options" VALUE="non_registered"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="common_output_clk" VALUE="false"/>
+        <PARAMETER NAME="single_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="common_output_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="simple_dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="coefficient_file" VALUE="6.coe"/>
+        <PARAMETER NAME="default_data_radix" VALUE="16"/>
+        <PARAMETER NAME="default_data" VALUE="0"/>
+        <PARAMETER NAME="reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="ce_overrides" VALUE="ce_overrides_sync_controls"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="9" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="pic16c56_0_romaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pic16c56_0" PORT="romaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="spo" RIGHT="0" SIGIS="undef" SIGNAME="dist_mem_gen_0_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pic16c56_0" PORT="romdata"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/pic16c56_0" HWVERSION="1.3" INSTANCE="pic16c56_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pic16c56" VLNV="xilinx.com:user:pic16c56:1.3">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pic16c56_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="mclr" SIGIS="undef" SIGNAME="External_Ports_mclr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mclr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="osc1" SIGIS="undef" SIGNAME="External_Ports_osc1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="osc1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="romdata" RIGHT="0" SIGIS="undef" SIGNAME="dist_mem_gen_0_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="osc2" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="9" NAME="romaddr" RIGHT="0" SIGIS="undef" SIGNAME="pic16c56_0_romaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="dist_mem_gen_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="3" NAME="RA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_RA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="RB" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="c3" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

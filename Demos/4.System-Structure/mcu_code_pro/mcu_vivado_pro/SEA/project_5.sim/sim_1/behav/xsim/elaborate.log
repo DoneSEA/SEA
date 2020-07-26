@@ -1,0 +1,31 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0c5a3c11c8a94cc28290b0b9cb8b87c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cputb_behav xil_defaultlib.cputb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/pic16c56.v" Line 1. Module pic16c56 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/decoder.v" Line 11. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/distribute.v" Line 12. Module distribute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/IO_reg.v" Line 1. Module IO_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/hp/Desktop/vivado/project_5/project_5.ip_user_files/bd/design_1/ipshared/f788/timer.v" Line 1. Module timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="z...
+Compiling module xil_defaultlib.design_1_dist_mem_gen_0_0
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.distribute
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.IO_reg
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.pic16c56
+Compiling module xil_defaultlib.design_1_pic16c56_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.time1
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.cputb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cputb_behav

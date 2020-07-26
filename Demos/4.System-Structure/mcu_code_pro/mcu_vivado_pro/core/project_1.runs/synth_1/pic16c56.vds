@@ -1,0 +1,905 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Mar  8 17:29:15 2020
+# Process ID: 16716
+# Current directory: D:/vivadohls/1/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log pic16c56.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pic16c56.tcl
+# Log file: D:/vivadohls/1/project_1/project_1.runs/synth_1/pic16c56.vds
+# Journal file: D:/vivadohls/1/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pic16c56.tcl -notrace
+Command: synth_design -top pic16c56 -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15648 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 357.508 ; gain = 99.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pic16c56' [D:/vivadohls/1/project_1/pic16c56.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/vivadohls/1/project_1/decoder.v:11]
+	Parameter NOP bound to: 12'b000000000000 
+	Parameter MOVWF bound to: 7'b0000001 
+	Parameter CLRW bound to: 12'b000001000000 
+	Parameter CLRF bound to: 7'b0000011 
+	Parameter SUBWF bound to: 6'b000010 
+	Parameter DECF bound to: 6'b000011 
+	Parameter IORWF bound to: 6'b000100 
+	Parameter ANDWF bound to: 6'b000101 
+	Parameter XORWF bound to: 6'b000110 
+	Parameter ADDWF bound to: 6'b000111 
+	Parameter MOVF bound to: 6'b001000 
+	Parameter COMF bound to: 6'b001001 
+	Parameter INCF bound to: 6'b001010 
+	Parameter DECFSZ bound to: 6'b001011 
+	Parameter RRF bound to: 6'b001100 
+	Parameter RLF bound to: 6'b001101 
+	Parameter SWAPF bound to: 6'b001110 
+	Parameter INCFSZ bound to: 6'b001111 
+	Parameter BCF bound to: 4'b0100 
+	Parameter BSF bound to: 4'b0101 
+	Parameter BTFSC bound to: 4'b0110 
+	Parameter BTFSS bound to: 4'b0111 
+	Parameter OPTION bound to: 12'b000000000010 
+	Parameter SLEEP bound to: 12'b000000000011 
+	Parameter CLRWDT bound to: 12'b000000000100 
+	Parameter RETLW bound to: 4'b1000 
+	Parameter CALL bound to: 4'b1001 
+	Parameter GOTO bound to: 3'b101 
+	Parameter MOVLW bound to: 4'b1100 
+	Parameter IORLW bound to: 4'b1101 
+	Parameter ANDLW bound to: 4'b1110 
+	Parameter XORLW bound to: 4'b1111 
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/vivadohls/1/project_1/decoder.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (1#1) [D:/vivadohls/1/project_1/decoder.v:11]
+INFO: [Synth 8-6157] synthesizing module 'distribute' [D:/vivadohls/1/project_1/distribute.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivadohls/1/project_1/distribute.v:546]
+WARNING: [Synth 8-6014] Unused sequential element regfile7_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:172]
+WARNING: [Synth 8-6014] Unused sequential element regfile8_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:173]
+WARNING: [Synth 8-6014] Unused sequential element regfile9_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:174]
+WARNING: [Synth 8-6014] Unused sequential element regfile10_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:175]
+WARNING: [Synth 8-6014] Unused sequential element regfile11_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:176]
+WARNING: [Synth 8-6014] Unused sequential element regfile12_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:177]
+WARNING: [Synth 8-6014] Unused sequential element regfile13_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:178]
+WARNING: [Synth 8-6014] Unused sequential element regfile14_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:179]
+WARNING: [Synth 8-6014] Unused sequential element regfile15_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:180]
+WARNING: [Synth 8-6014] Unused sequential element regfile16_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:181]
+WARNING: [Synth 8-6014] Unused sequential element regfile17_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:182]
+WARNING: [Synth 8-6014] Unused sequential element regfile18_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:183]
+WARNING: [Synth 8-6014] Unused sequential element regfile19_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:184]
+WARNING: [Synth 8-6014] Unused sequential element regfile20_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:185]
+WARNING: [Synth 8-6014] Unused sequential element regfile21_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:186]
+WARNING: [Synth 8-6014] Unused sequential element regfile22_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:187]
+WARNING: [Synth 8-6014] Unused sequential element regfile23_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:188]
+WARNING: [Synth 8-6014] Unused sequential element regfile24_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:189]
+WARNING: [Synth 8-6014] Unused sequential element regfile25_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:190]
+WARNING: [Synth 8-6014] Unused sequential element regfile26_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:191]
+WARNING: [Synth 8-6014] Unused sequential element regfile27_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:192]
+WARNING: [Synth 8-6014] Unused sequential element regfile28_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:193]
+WARNING: [Synth 8-6014] Unused sequential element regfile29_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:194]
+WARNING: [Synth 8-6014] Unused sequential element regfile30_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:195]
+WARNING: [Synth 8-6014] Unused sequential element regfile31_reg was removed.  [D:/vivadohls/1/project_1/distribute.v:196]
+WARNING: [Synth 8-5788] Register rtccount_reg in module distribute is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/distribute.v:331]
+WARNING: [Synth 8-5788] Register frs_reg_reg in module distribute is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/distribute.v:343]
+WARNING: [Synth 8-5788] Register RA_out_reg in module distribute is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/distribute.v:347]
+WARNING: [Synth 8-5788] Register RB_out_reg in module distribute is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/distribute.v:351]
+WARNING: [Synth 8-5788] Register pc_reg in module distribute is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/distribute.v:501]
+INFO: [Synth 8-6155] done synthesizing module 'distribute' (2#1) [D:/vivadohls/1/project_1/distribute.v:12]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/vivadohls/1/project_1/alu.v:1]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:283]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:284]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:285]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:286]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:287]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:288]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:289]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:290]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:297]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:298]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:299]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:300]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:301]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:302]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:303]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:304]
+WARNING: [Synth 8-6090] variable 'skip' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:310]
+WARNING: [Synth 8-6090] variable 'skip' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:311]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [D:/vivadohls/1/project_1/alu.v:316]
+WARNING: [Synth 8-6090] variable 'skip' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:316]
+WARNING: [Synth 8-6090] variable 'skip' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:317]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:324]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:329]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:334]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:339]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:344]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:352]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:361]
+WARNING: [Synth 8-6090] variable 'yi' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/vivadohls/1/project_1/alu.v:368]
+WARNING: [Synth 8-6014] Unused sequential element yi_dc_reg was removed.  [D:/vivadohls/1/project_1/alu.v:130]
+WARNING: [Synth 8-6014] Unused sequential element c_reg_reg was removed.  [D:/vivadohls/1/project_1/alu.v:140]
+WARNING: [Synth 8-5788] Register yi_reg in module alu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/alu.v:99]
+WARNING: [Synth 8-5788] Register skip_reg in module alu is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivadohls/1/project_1/alu.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (3#1) [D:/vivadohls/1/project_1/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IO_reg' [D:/vivadohls/1/project_1/IO_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IO_reg' (4#1) [D:/vivadohls/1/project_1/IO_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timer' [D:/vivadohls/1/project_1/timer.v:1]
+	Parameter S1 bound to: 8'b00000001 
+	Parameter S2 bound to: 8'b00000010 
+	Parameter S3 bound to: 8'b00000100 
+	Parameter S4 bound to: 8'b00001000 
+	Parameter S5 bound to: 8'b00010000 
+	Parameter S6 bound to: 8'b00100000 
+	Parameter S7 bound to: 8'b01000000 
+	Parameter S8 bound to: 8'b10000000 
+	Parameter idle bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'timer' (5#1) [D:/vivadohls/1/project_1/timer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pic16c56' (6#1) [D:/vivadohls/1/project_1/pic16c56.v:1]
+WARNING: [Synth 8-3331] design distribute has unconnected port nop
+WARNING: [Synth 8-3331] design distribute has unconnected port sleep
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[7]
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[6]
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[5]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 416.273 ; gain = 158.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 416.273 ; gain = 158.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 416.273 ; gain = 158.363
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-5546] ROM "nop0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "movwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrw0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "subwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "xorwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iorwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "movf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "comf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "decfsz0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rrf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rlf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "swapf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incfsz0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bcf0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bsf0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "btfsc0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "btfss0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "option0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sleep0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrwdt0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retlw0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "call0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "goto0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "movlw0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "iorlw0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "andlw0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xorlw0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "regfile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rtccount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trisa" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trisb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "regfile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regfile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rtccount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "trisa" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trisb" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stacklevel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stacklevel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stack1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stack2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 437.316 ; gain = 179.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 11    
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 41    
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 85    
+	   3 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 25    
+	  13 Input      1 Bit        Muxes := 1     
+	  27 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 39    
+Module distribute 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 11    
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 50    
+	   3 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 25    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 26    
+	  13 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	  27 Input      1 Bit        Muxes := 1     
+Module timer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "nop0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "movwf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrw0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrf0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "option0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sleep0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clrwdt0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design distribute has unconnected port nop
+WARNING: [Synth 8-3331] design distribute has unconnected port sleep
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[7]
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[6]
+WARNING: [Synth 8-3331] design decoder has unconnected port fsr[5]
+INFO: [Synth 8-3886] merging instance 'A1/bbb_reg[0]' (FD) to 'A1/d_reg'
+INFO: [Synth 8-3886] merging instance 'A1/bbb_reg[1]' (FD) to 'A1/longk_reg[6]'
+INFO: [Synth 8-3886] merging instance 'A1/bbb_reg[2]' (FD) to 'A1/longk_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A5/state_reg[7]' (FDCE) to 'A5/state_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\A5/state_reg[6] )
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[0]' (FD) to 'A1/k_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A1/f_reg[0]' (FD) to 'A1/k_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[1]' (FD) to 'A1/k_reg[1]'
+INFO: [Synth 8-3886] merging instance 'A1/f_reg[1]' (FD) to 'A1/k_reg[1]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[2]' (FD) to 'A1/k_reg[2]'
+INFO: [Synth 8-3886] merging instance 'A1/f_reg[2]' (FD) to 'A1/k_reg[2]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[3]' (FD) to 'A1/k_reg[3]'
+INFO: [Synth 8-3886] merging instance 'A1/f_reg[3]' (FD) to 'A1/k_reg[3]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[4]' (FD) to 'A1/k_reg[4]'
+INFO: [Synth 8-3886] merging instance 'A1/f_reg[4]' (FD) to 'A1/k_reg[4]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[5]' (FD) to 'A1/d_reg'
+INFO: [Synth 8-3886] merging instance 'A1/k_reg[5]' (FD) to 'A1/d_reg'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[6]' (FD) to 'A1/k_reg[6]'
+INFO: [Synth 8-3886] merging instance 'A1/longk_reg[7]' (FD) to 'A1/k_reg[7]'
+WARNING: [Synth 8-3332] Sequential element (A1/nop_reg) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/sleep_reg) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/fsel_reg[4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/fsel_reg[3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/fsel_reg[2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/fsel_reg[1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A1/fsel_reg[0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][3]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][2]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][1]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[31][0]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[31][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][3]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][2]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][1]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[30][0]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[30][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][3]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][2]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][1]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[29][0]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[29][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][3]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][2]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][1]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[28][0]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[28][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][3]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][2]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][1]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[27][0]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[27][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][7]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][6]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][5]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][4]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][3]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][2]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][1]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][0]) is unused and will be removed from module pic16c56.
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][7]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][6]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][5]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][5]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][4]__0) is unused and will be removed from module pic16c56.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][4]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+WARNING: [Synth 8-3332] Sequential element (A2/regfile_reg[26][3]__0) is unused and will be removed from module pic16c56.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][3]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][2]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][1]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[26][0]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[25][7]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'A2/regfile_reg[25][6]__0/Q' [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [D:/vivadohls/1/project_1/distribute.v:242]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [D:/vivadohls/1/project_1/distribute.v:242]
+INFO: [Common 17-14] Message 'Synth 8-5559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\A2/pc_reg[9]_LDC )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 604.891 ; gain = 346.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 604.891 ; gain = 346.980
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     2|
+|4     |LUT2   |    51|
+|5     |LUT3   |    26|
+|6     |LUT4   |    49|
+|7     |LUT5   |    47|
+|8     |LUT6   |   197|
+|9     |MUXF7  |     2|
+|10    |FDCE   |    68|
+|11    |FDPE   |    22|
+|12    |FDRE   |    68|
+|13    |IBUF   |    14|
+|14    |IOBUF  |    12|
+|15    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   579|
+|2     |  A1     |decoder    |   230|
+|3     |  A2     |distribute |   270|
+|4     |  A3     |alu        |    14|
+|5     |  A5     |timer      |    24|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 600 critical warnings and 527 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 605.898 ; gain = 347.988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 174 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 692.426 ; gain = 447.332
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/vivadohls/1/project_1/project_1.runs/synth_1/pic16c56.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pic16c56_utilization_synth.rpt -pb pic16c56_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.398 . Memory (MB): peak = 692.426 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  8 17:29:58 2020...

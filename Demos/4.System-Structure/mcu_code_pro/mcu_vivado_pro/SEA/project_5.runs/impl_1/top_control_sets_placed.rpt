@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Mar  9 19:07:50 2020
+| Host         : DESKTOP-2RGUD32 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    97 |
+| Unused register locations in slices containing registers |   426 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           45 |
+|      4 |           12 |
+|      8 |            2 |
+|     10 |            7 |
+|     12 |           12 |
+|    16+ |           19 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              90 |           19 |
+| No           | No                    | Yes                    |              56 |           24 |
+| No           | Yes                   | No                     |              18 |            9 |
+| Yes          | No                    | No                     |              56 |           11 |
+| Yes          | No                    | Yes                    |             538 |          127 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|                   Clock Signal                  |                      Enable Signal                     |                     Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++-------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[7]_C            |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[28][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A2/skip_reg_C             |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A2/skip_reg_P             |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[2]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[2]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A2/trisa_reg[0]_0         |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[2]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[3]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[5]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[1]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[4]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[6]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[6]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[6]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[7]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[2]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[3]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P_0          |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[4]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[1]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[5]_P            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P           | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[6]_P            |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[26][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[3]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[3]_C            |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[27][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_P_0 |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[0]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[4]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[4]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[1]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[1]_C            |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[24][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[5]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[5]_C            |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[23][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[31][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[31][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[30][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[30][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[21][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[29][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[29][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[25][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+|  osc1_IBUF                                      |                                                        | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[25][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              2 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[28][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A1/yi_reg[7]_P   |                                                        | ww/design_1_i/pic16c56_0/inst/A1/yi_reg[7]_C            |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A2/skip_reg_P    |                                                        | ww/design_1_i/pic16c56_0/inst/A2/skip_reg_C             |                1 |              2 |
+|  osc1_IBUF                                      |                                                        | ww/design_1_i/pic16c56_0/inst/A2/trisa_reg[0]_0         |                1 |              2 |
+|  ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[22][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[27][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[19][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[23][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[24][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[17][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[21][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[26][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[18][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[16][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[20][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |              4 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/RA_out_reg[3][0]      |                                                         |                1 |              8 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/trisa_reg[3][0]       | ww/design_1_i/pic16c56_0/inst/A2/trisa_reg[0]_0         |                1 |              8 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            |                                                        | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                3 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[26][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[21][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[23][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[24][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                3 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[27][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                1 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/status0               | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                4 |             10 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[29][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                1 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[19][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                3 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[25][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                4 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[22][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[28][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                6 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[17][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[20][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                3 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[18][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                3 |             12 |
+|  osc1_IBUF                                      | ww/design_1_i/pic16c56_0/inst/A5/state                 | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                2 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[16][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                2 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[30][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                6 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[31][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][6]_i_1_n_0 |                5 |             12 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[12][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[10][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/RB_out_reg[7][0]      |                                                         |                4 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[7][7][0]  | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/CLK           |                                                        | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                6 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[9][7][0]  | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                4 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/trisb_reg[7][0]       | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/rtccount_reg[7][0]    |                                                         |                4 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/w_reg[7][0]           | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/frs_reg_reg[7][0]     |                                                         |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[11][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[15][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[14][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                1 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[8][7][0]  | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                3 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/regfile_reg[13][7][0] | ww/design_1_i/pic16c56_0/inst/A2/regfile[31][0]_i_1_n_0 |                2 |             16 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/E[0]                  | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                3 |             20 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/stack2_reg[9][0]      | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                4 |             20 |
+| ~ww/design_1_i/pic16c56_0/inst/A5/c2            | ww/design_1_i/pic16c56_0/inst/A1/pc_reg[0]_P_0         | ww/design_1_i/pic16c56_0/inst/A2/regfile_reg[23][7]_0   |                6 |             20 |
+|  ww/design_1_i/pic16c56_0/inst/A5/CLK           |                                                        |                                                         |               19 |             90 |
++-------------------------------------------------+--------------------------------------------------------+---------------------------------------------------------+------------------+----------------+
+
+

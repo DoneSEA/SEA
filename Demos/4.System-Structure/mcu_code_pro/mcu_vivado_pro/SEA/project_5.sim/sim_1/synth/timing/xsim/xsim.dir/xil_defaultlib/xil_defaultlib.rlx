@@ -1,0 +1,6 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/hp/Desktop/vivado/project_5/project_5.sim/sim_1/synth/timing/xsim/cputb_time_synth.v,1583663277,verilog,,C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sim_1/new/cputb.v,,design_1;design_1_dist_mem_gen_0_0;design_1_dist_mem_gen_0_0_dist_mem_gen_v8_0_12;design_1_pic16c56_0_0;design_1_pic16c56_0_0_IO_reg;design_1_pic16c56_0_0_alu;design_1_pic16c56_0_0_decoder;design_1_pic16c56_0_0_distribute;design_1_pic16c56_0_0_pic16c56;design_1_pic16c56_0_0_timer;design_1_wrapper;glbl;top,,,,,,,,
+C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sim_1/new/cputb.v,1583647511,verilog,,,,cputb,,,,,,,,

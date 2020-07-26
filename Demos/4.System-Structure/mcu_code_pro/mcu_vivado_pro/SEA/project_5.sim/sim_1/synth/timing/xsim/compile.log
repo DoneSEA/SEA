@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Desktop/vivado/project_5/project_5.sim/sim_1/synth/timing/xsim/cputb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_dist_mem_gen_0_0
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_IO_reg
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_alu
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_decoder
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_distribute
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_pic16c56
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0_timer
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module design_1_dist_mem_gen_0_0_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/hp/Desktop/vivado/project_5/project_5.srcs/sim_1/new/cputb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cputb

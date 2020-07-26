@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar  9 16:59:32 2020
+# Process ID: 14240
+# Current directory: D:/vivadohls/1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10072 D:\vivadohls\1\project_1\project_1.xpr
+# Log file: D:/vivadohls/1/project_1/vivado.log
+# Journal file: D:/vivadohls/1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadohls/1/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 741.297 ; gain = 85.805
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir d:/vivadohls/1/project_1 -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/vivadohls/1/project_1
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/vivadohls/1/project_1'
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 17:17:29 2020...

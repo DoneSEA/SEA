@@ -1,0 +1,10 @@
+IO_reg.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/IO_reg.v,
+alu.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/alu.v,
+decoder.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/decoder.v,
+distribute.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/distribute.v,
+timer.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/timer.v,
+pic16c56.v,verilog,xil_defaultlib,../../../bd/design_1/ipshared/2fbb/pic16c56.v,
+design_1_pic16c56_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_pic16c56_0_0_1/sim/design_1_pic16c56_0_0.v,
+design_1_dist_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_dist_mem_gen_0_0/sim/design_1_dist_mem_gen_0_0.v,
+design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

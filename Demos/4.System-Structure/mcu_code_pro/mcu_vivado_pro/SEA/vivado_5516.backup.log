@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar  7 21:34:44 2020
+# Process ID: 5516
+# Current directory: D:/vivadohls/1/project_5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12388 D:\vivadohls\1\project_5\project_5.xpr
+# Log file: D:/vivadohls/1/project_5/vivado.log
+# Journal file: D:/vivadohls/1/project_5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivadohls/1/project_5/project_5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/vivadohls/1/project_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 809.078 ; gain = 87.254
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cputb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim/design_1_dist_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim/rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cputb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/IO_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IO_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/distribute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module distribute
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic16c56
+INFO: [VRFC 10-2458] undeclared symbol c1, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:44]
+INFO: [VRFC 10-2458] undeclared symbol nop, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:46]
+INFO: [VRFC 10-2458] undeclared symbol movwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:47]
+INFO: [VRFC 10-2458] undeclared symbol clrw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:48]
+INFO: [VRFC 10-2458] undeclared symbol clrf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:49]
+INFO: [VRFC 10-2458] undeclared symbol subwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:50]
+INFO: [VRFC 10-2458] undeclared symbol decf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:51]
+INFO: [VRFC 10-2458] undeclared symbol andwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:53]
+INFO: [VRFC 10-2458] undeclared symbol xorwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:54]
+INFO: [VRFC 10-2458] undeclared symbol addwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:55]
+INFO: [VRFC 10-2458] undeclared symbol iorwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:56]
+INFO: [VRFC 10-2458] undeclared symbol movf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:57]
+INFO: [VRFC 10-2458] undeclared symbol comf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:58]
+INFO: [VRFC 10-2458] undeclared symbol incf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:59]
+INFO: [VRFC 10-2458] undeclared symbol decfsz, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:60]
+INFO: [VRFC 10-2458] undeclared symbol rrf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:61]
+INFO: [VRFC 10-2458] undeclared symbol rlf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:62]
+INFO: [VRFC 10-2458] undeclared symbol swapf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:63]
+INFO: [VRFC 10-2458] undeclared symbol incfsz, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:64]
+INFO: [VRFC 10-2458] undeclared symbol bcf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:66]
+INFO: [VRFC 10-2458] undeclared symbol bsf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:67]
+INFO: [VRFC 10-2458] undeclared symbol btfsc, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:68]
+INFO: [VRFC 10-2458] undeclared symbol btfss, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:69]
+INFO: [VRFC 10-2458] undeclared symbol option, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:71]
+INFO: [VRFC 10-2458] undeclared symbol sleep, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:72]
+INFO: [VRFC 10-2458] undeclared symbol clrwdt, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:73]
+INFO: [VRFC 10-2458] undeclared symbol tris, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:75]
+INFO: [VRFC 10-2458] undeclared symbol retlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:76]
+INFO: [VRFC 10-2458] undeclared symbol call, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:77]
+INFO: [VRFC 10-2458] undeclared symbol goto, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:78]
+INFO: [VRFC 10-2458] undeclared symbol movlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:79]
+INFO: [VRFC 10-2458] undeclared symbol iorlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:80]
+INFO: [VRFC 10-2458] undeclared symbol andlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:81]
+INFO: [VRFC 10-2458] undeclared symbol xorlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:82]
+INFO: [VRFC 10-2458] undeclared symbol c2, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:91]
+INFO: [VRFC 10-2458] undeclared symbol z, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol dc, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol c, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol skip, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:136]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ip/design_1_pic16c56_0_0_1/sim/design_1_pic16c56_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ip/design_1_dist_mem_gen_0_0/sim/design_1_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sources_1/new/time1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sim_1/new/cputb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cputb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 821.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0c5a3c11c8a94cc28290b0b9cb8b87c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cputb_behav xil_defaultlib.cputb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v" Line 1. Module pic16c56 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/decoder.v" Line 11. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/distribute.v" Line 12. Module distribute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/IO_reg.v" Line 1. Module IO_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/timer.v" Line 1. Module timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.time1
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="z...
+Compiling module xil_defaultlib.design_1_dist_mem_gen_0_0
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.distribute
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.IO_reg
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.pic16c56
+Compiling module xil_defaultlib.design_1_pic16c56_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.cputb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cputb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim/xsim.dir/cputb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Mar  7 21:36:06 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 821.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cputb_behav -key {Behavioral:sim_1:Functional:cputb} -tclbatch {cputb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source cputb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cputb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:37 . Memory (MB): peak = 844.863 ; gain = 24.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 866.164 ; gain = 4.121
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'cputb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim/design_1_dist_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim/rom.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj cputb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/IO_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IO_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/distribute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module distribute
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pic16c56
+INFO: [VRFC 10-2458] undeclared symbol c1, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:44]
+INFO: [VRFC 10-2458] undeclared symbol nop, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:46]
+INFO: [VRFC 10-2458] undeclared symbol movwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:47]
+INFO: [VRFC 10-2458] undeclared symbol clrw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:48]
+INFO: [VRFC 10-2458] undeclared symbol clrf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:49]
+INFO: [VRFC 10-2458] undeclared symbol subwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:50]
+INFO: [VRFC 10-2458] undeclared symbol decf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:51]
+INFO: [VRFC 10-2458] undeclared symbol andwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:53]
+INFO: [VRFC 10-2458] undeclared symbol xorwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:54]
+INFO: [VRFC 10-2458] undeclared symbol addwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:55]
+INFO: [VRFC 10-2458] undeclared symbol iorwf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:56]
+INFO: [VRFC 10-2458] undeclared symbol movf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:57]
+INFO: [VRFC 10-2458] undeclared symbol comf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:58]
+INFO: [VRFC 10-2458] undeclared symbol incf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:59]
+INFO: [VRFC 10-2458] undeclared symbol decfsz, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:60]
+INFO: [VRFC 10-2458] undeclared symbol rrf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:61]
+INFO: [VRFC 10-2458] undeclared symbol rlf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:62]
+INFO: [VRFC 10-2458] undeclared symbol swapf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:63]
+INFO: [VRFC 10-2458] undeclared symbol incfsz, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:64]
+INFO: [VRFC 10-2458] undeclared symbol bcf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:66]
+INFO: [VRFC 10-2458] undeclared symbol bsf, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:67]
+INFO: [VRFC 10-2458] undeclared symbol btfsc, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:68]
+INFO: [VRFC 10-2458] undeclared symbol btfss, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:69]
+INFO: [VRFC 10-2458] undeclared symbol option, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:71]
+INFO: [VRFC 10-2458] undeclared symbol sleep, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:72]
+INFO: [VRFC 10-2458] undeclared symbol clrwdt, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:73]
+INFO: [VRFC 10-2458] undeclared symbol tris, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:75]
+INFO: [VRFC 10-2458] undeclared symbol retlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:76]
+INFO: [VRFC 10-2458] undeclared symbol call, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:77]
+INFO: [VRFC 10-2458] undeclared symbol goto, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:78]
+INFO: [VRFC 10-2458] undeclared symbol movlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:79]
+INFO: [VRFC 10-2458] undeclared symbol iorlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:80]
+INFO: [VRFC 10-2458] undeclared symbol andlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:81]
+INFO: [VRFC 10-2458] undeclared symbol xorlw, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:82]
+INFO: [VRFC 10-2458] undeclared symbol c2, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:91]
+INFO: [VRFC 10-2458] undeclared symbol z, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol dc, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol c, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:129]
+INFO: [VRFC 10-2458] undeclared symbol skip, assumed default net type wire [D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v:136]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ip/design_1_pic16c56_0_0_1/sim/design_1_pic16c56_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_pic16c56_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ip/design_1_dist_mem_gen_0_0/sim/design_1_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sources_1/new/time1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivadohls/1/project_5/project_5.srcs/sim_1/new/cputb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cputb
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 866.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0c5a3c11c8a94cc28290b0b9cb8b87c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cputb_behav xil_defaultlib.cputb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/pic16c56.v" Line 1. Module pic16c56 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/decoder.v" Line 11. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/distribute.v" Line 12. Module distribute doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/alu.v" Line 1. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/IO_reg.v" Line 1. Module IO_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivadohls/1/project_5/project_5.ip_user_files/bd/design_1/ipshared/46db/timer.v" Line 1. Module timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.time1
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="z...
+Compiling module xil_defaultlib.design_1_dist_mem_gen_0_0
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.distribute
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.IO_reg
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.pic16c56
+Compiling module xil_defaultlib.design_1_pic16c56_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.cputb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cputb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 866.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/vivadohls/1/project_5/project_5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cputb_behav -key {Behavioral:sim_1:Functional:cputb} -tclbatch {cputb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source cputb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 870.301 ; gain = 4.137
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cputb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 870.301 ; gain = 4.137
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  7 21:41:37 2020...
